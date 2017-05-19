@@ -307,6 +307,7 @@ void QString_escape()
 
 void TestQString()
 {
+	std::cout << "===>Test QString ..." << std::endl;
 	QString_basic();
 	QString_init();
 	QString_access();
