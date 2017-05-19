@@ -1,6 +1,7 @@
 #include "TestQString.h"
 #include "TestQDateTime.h"
 #include "TestContainers.h"
+#include "TestQFile.h"
 
 #include <QtCore>
 #include <iostream>
@@ -11,6 +12,7 @@ void UnitTest()
 	TestQString();
 	TestQDateTime();
 	TestQContainers();
+	TestQFileAndQDir();
 
 }
 

@@ -72,12 +72,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TestContainers.cpp" />
     <ClCompile Include="TestQDateTime.cpp" />
+    <ClCompile Include="TestQFile.cpp" />
     <ClCompile Include="TestQString.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book.h" />
     <ClInclude Include="TestContainers.h" />
     <ClInclude Include="TestQDateTime.h" />
+    <ClInclude Include="TestQFile.h" />
     <ClInclude Include="TestQString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
