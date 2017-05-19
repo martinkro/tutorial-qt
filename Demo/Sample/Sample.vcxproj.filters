@@ -55,6 +55,9 @@
     <ClCompile Include="GeneratedFiles\qrc_Sample.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="Cursors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Sample.h">
@@ -70,6 +73,9 @@
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_Sample.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursors.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

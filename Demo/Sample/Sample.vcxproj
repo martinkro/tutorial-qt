@@ -68,6 +68,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cursors.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_Sample.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -108,6 +109,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cursors.h" />
     <ClInclude Include="GeneratedFiles\ui_Sample.h" />
   </ItemGroup>
   <ItemGroup>
