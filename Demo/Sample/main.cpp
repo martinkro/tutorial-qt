@@ -75,10 +75,24 @@ MyButton::MyButton(QWidget *parent)
 	connect(quitBtn, &QPushButton::clicked, qApp, &QApplication::quit);
 }
 
+int TestMainWindow(int argc, char* argv[])
+{
+	QApplication app(argc, argv);
+
+	MainWindow window;
+
+	window.resize(350, 150);
+	window.setWindowTitle("MainWindow");
+	window.show();
+
+	return app.exec();
+}
+
 int main(int argc, char *argv[])
 {
 	// return Test_simple(argc, argv);
 	// return Test_tooltip(argc, argv);
 	// return Test_icon(argc, argv);
-	return Test_Cursors(argc, argv);
+	// return Test_Cursors(argc, argv);
+	return TestMainWindow(argc, argv);
 }
