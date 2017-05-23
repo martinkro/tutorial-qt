@@ -1,8 +1,11 @@
-#include "Sample.h"
+﻿#include "Sample.h"
 #include "Cursors.h"
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QWidget>
 #include <QPushButton>
+#include <QTextCodec>
+
+#include "TestTreeWidget.h"
 
 int Test_simple(int argc, char* argv[])
 {
@@ -75,14 +78,54 @@ MyButton::MyButton(QWidget *parent)
 	connect(quitBtn, &QPushButton::clicked, qApp, &QApplication::quit);
 }
 
+void SetCodec()
+{
+	//QTextCodec *codec = QTextCodec::codecForName("GBK");//ַי¿צ1
+	//QTextCodec::setCodecForTr(codec);
+	QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
+	//QTextCodec::setCodecForCStrings(QTextCodec::codecForName("GB2312"));
+}
+
 int TestMainWindow(int argc, char* argv[])
 {
+	
 	QApplication app(argc, argv);
+	SetCodec();
 
 	MainWindow window;
 
-	window.resize(350, 150);
+	window.resize(700, 150);
 	window.setWindowTitle("MainWindow");
+	window.show();
+
+	return app.exec();
+}
+
+int TestWidgetListWidget(int argc, char* argv[])
+{
+
+	QApplication app(argc, argv);
+	SetCodec();
+
+	TestListWidget window;
+
+	window.resize(700, 150);
+	window.setWindowTitle("ListWidget");
+	window.show();
+
+	return app.exec();
+}
+
+int TestWidgetTreeWidget(int argc, char* argv[])
+{
+
+	QApplication app(argc, argv);
+	SetCodec();
+
+	TestTreeWidget window;
+
+	window.resize(700, 150);
+	window.setWindowTitle("TreeWidget");
 	window.show();
 
 	return app.exec();
@@ -94,5 +137,8 @@ int main(int argc, char *argv[])
 	// return Test_tooltip(argc, argv);
 	// return Test_icon(argc, argv);
 	// return Test_Cursors(argc, argv);
-	return TestMainWindow(argc, argv);
+	QString message = "输入目录：";
+	// return TestMainWindow(argc, argv);
+	// return TestWidgetListWidget(argc, argv);
+	return TestWidgetTreeWidget(argc, argv);
 }
