@@ -43,4 +43,6 @@ Makefile*
 
 # QtCtreator CMake
 CMakeLists.txt.user*
+bin/
+intermediate/
 
