@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/traymen/bg_safe.png</file>
+        <file>image/traymen/bg_unsafe.png</file>
+        <file>image/traymen/button_exit.png</file>
+        <file>image/traymen/button_feedback.png</file>
+        <file>image/traymen/button_setting.png</file>
+        <file>image/traymen/ico_enter_safe_center.png</file>
+        <file>image/traymen/ico_open_protect.png</file>
+        <file>image/traymen/ico_protect_not_opened.png</file>
+        <file>image/traymen/ico_protect_opened.png</file>
+        <file>image/traymen/arrow.png</file>
+        <file>image/traymen/ico_360safe.png</file>
+        <file>image/traymen/ico_clean.png</file>
+        <file>image/traymen/ico_download_mgr.png</file>
+        <file>image/traymen/ico_examine.png</file>
+        <file>image/traymen/ico_game_mode.png</file>
+        <file>image/traymen/ico_jiasuqiu.png</file>
+        <file>image/traymen/ico_netpay_mode.png</file>
+        <file>image/traymen/ico_safecheck.png</file>
+        <file>image/traymen/ico_safenotify.png</file>
+        <file>image/traymen/ico_softmgr.png</file>
+        <file>image/traymen/ico_speed.png</file>
+        <file>image/traymen/ico_switchmode.png</file>
+        <file>image/traymen/ico_update.png</file>
+        <file>image/traymen/ico_update_item.png</file>
+    </qresource>
+</RCC>
