@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{6a67bbfc-7e0e-4a39-b899-bc9bcbe73420}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{22d81ae8-02d5-4c0d-9ce1-e299d0d6eb1a}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{002e5c57-015a-4623-b82d-c929b1253d73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\clean">
+      <UniqueIdentifier>{55a425cd-860d-4b00-95bd-3fc017cc5b24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{8cba2729-acd4-461c-ad30-06b1b3f7d6fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main">
+      <UniqueIdentifier>{63f53c75-17e2-445e-9cb8-9e84af8e0e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\safe">
+      <UniqueIdentifier>{839c66df-9ba6-47ba-bea5-63edb1619b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test">
+      <UniqueIdentifier>{eabc2600-b983-46c7-bdb4-c41becc26fa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\youhua">
+      <UniqueIdentifier>{9d1aace5-00be-40cc-8556-ad0843287628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\clean\common">
+      <UniqueIdentifier>{fd9b8de0-6f8c-4e64-90c1-a4a39099f3bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\top">
+      <UniqueIdentifier>{04a1d266-a81e-4971-b0c3-5115806d102f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\bottom">
+      <UniqueIdentifier>{197347ce-1933-46eb-8912-72f962eaddec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main\common">
+      <UniqueIdentifier>{014c6e65-4d03-48df-8fe8-7e2cdbea8bfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\safe\common">
+      <UniqueIdentifier>{94b00690-1e01-4a26-bdf4-db7cab17c721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\youhua\common">
+      <UniqueIdentifier>{935f3065-2ba4-4bda-9da0-80ee6f34796d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GJ10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GJ10.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GJ10.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_GJ10.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_gjmainwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_gjmainwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="gjmainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\animbuttongroupwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_animbuttongroupwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_animbuttongroupwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\animbuttonwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_animbuttonwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_animbuttonwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\basestylewidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basestylewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basestylewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\dynamicbutton.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_dynamicbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_dynamicbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\dynamicscaledwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_dynamicscaledwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_dynamicscaledwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\dynamicwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_dynamicwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_dynamicwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\numanimwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_numanimwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_numanimwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\numbersanimwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_numbersanimwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_numbersanimwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\safebuttonwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_safebuttonwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_safebuttonwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\speedoutbutton.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_speedoutbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_speedoutbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\speedoutbuttonwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_speedoutbuttonwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_speedoutbuttonwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\stackstatuswidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_stackstatuswidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_stackstatuswidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\staticbutton.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_staticbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_staticbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\statictextbutton.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_statictextbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_statictextbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\sysbuttongroup.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sysbuttongroup.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sysbuttongroup.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\threebutton.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_threebutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_threebutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\toptabwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_toptabwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_toptabwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\wenlibackwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_wenlibackwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_wenlibackwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commom\wenliwidget.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_wenliwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_wenliwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\clean\cleanwidget.cpp">
+      <Filter>src\clean</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cleanwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cleanwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\clean\common\cleandynamicbuttonwidget.cpp">
+      <Filter>src\clean\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cleandynamicbuttonwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cleandynamicbuttonwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\clean\common\cleanscanbottom.cpp">
+      <Filter>src\clean\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cleanscanbottom.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cleanscanbottom.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\mainbottomwidget.cpp">
+      <Filter>src\main</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainbottomwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainbottomwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\maintopwidget.cpp">
+      <Filter>src\main</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_maintopwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_maintopwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\mainwindow.cpp">
+      <Filter>src\main</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\top\mainscorewidget.cpp">
+      <Filter>src\main\top</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainscorewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainscorewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\top\topbottomwidget.cpp">
+      <Filter>src\main\top</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_topbottomwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_topbottomwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\top\userwidget.cpp">
+      <Filter>src\main\top</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_userwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_userwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\common\backgroundbutton.cpp">
+      <Filter>src\main\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_backgroundbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_backgroundbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\common\buttonlabel.cpp">
+      <Filter>src\main\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_buttonlabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_buttonlabel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\common\opacitywidget.cpp">
+      <Filter>src\main\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_opacitywidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_opacitywidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\common\scorewidget.cpp">
+      <Filter>src\main\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scorewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scorewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\common\shadowwidget.cpp">
+      <Filter>src\main\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_shadowwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_shadowwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\common\videowidget.cpp">
+      <Filter>src\main\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_videowidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_videowidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\bottom\mainbottomfirstwidget.cpp">
+      <Filter>src\main\bottom</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainbottomfirstwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainbottomfirstwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main\bottom\mainexaminewidget.cpp">
+      <Filter>src\main\bottom</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainexaminewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainexaminewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\safe\common\safescanbottom.cpp">
+      <Filter>src\safe\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_safescanbottom.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_safescanbottom.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\safe\common\scanbuttonwidget.cpp">
+      <Filter>src\safe\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scanbuttonwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scanbuttonwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\safe\safebottomwidget.cpp">
+      <Filter>src\safe</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_safebottomwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_safebottomwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\safe\safetopwidget.cpp">
+      <Filter>src\safe</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_safetopwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_safetopwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\safe\safewidget.cpp">
+      <Filter>src\safe</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_safewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_safewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\mainwidget.cpp">
+      <Filter>src\test</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\youhua\common\youhuabutton.cpp">
+      <Filter>src\youhua\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_youhuabutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_youhuabutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\youhua\common\youhuascanbottom.cpp">
+      <Filter>src\youhua\common</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_youhuascanbottom.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_youhuascanbottom.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\youhua\youhuawidget.cpp">
+      <Filter>src\youhua</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_youhuawidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_youhuawidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GJ10.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GJ10.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GJ10.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="gjmainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\animbuttongroupwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\animbuttonwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\basestylewidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\dynamicbutton.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\dynamicscaledwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\dynamicwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\numanimwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\numbersanimwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\safebuttonwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\speedoutbutton.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\speedoutbuttonwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\stackstatuswidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\staticbutton.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\statictextbutton.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\sysbuttongroup.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\threebutton.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\toptabwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\wenlibackwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\commom\wenliwidget.h">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\clean\cleanwidget.h">
+      <Filter>src\clean</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\clean\common\cleandynamicbuttonwidget.h">
+      <Filter>src\clean\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\clean\common\cleanscanbottom.h">
+      <Filter>src\clean\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\mainbottomwidget.h">
+      <Filter>src\main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\maintopwidget.h">
+      <Filter>src\main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\mainwindow.h">
+      <Filter>src\main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\top\mainscorewidget.h">
+      <Filter>src\main\top</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\top\topbottomwidget.h">
+      <Filter>src\main\top</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\top\userwidget.h">
+      <Filter>src\main\top</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\common\backgroundbutton.h">
+      <Filter>src\main\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\common\buttonlabel.h">
+      <Filter>src\main\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\common\opacitywidget.h">
+      <Filter>src\main\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\common\scorewidget.h">
+      <Filter>src\main\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\common\shadowwidget.h">
+      <Filter>src\main\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\common\videowidget.h">
+      <Filter>src\main\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\bottom\mainbottomfirstwidget.h">
+      <Filter>src\main\bottom</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\main\bottom\mainexaminewidget.h">
+      <Filter>src\main\bottom</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\safe\common\safescanbottom.h">
+      <Filter>src\safe\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\safe\common\scanbuttonwidget.h">
+      <Filter>src\safe\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\safe\safebottomwidget.h">
+      <Filter>src\safe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\safe\safetopwidget.h">
+      <Filter>src\safe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\safe\safewidget.h">
+      <Filter>src\safe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\test\mainwidget.h">
+      <Filter>src\test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\youhua\common\youhuabutton.h">
+      <Filter>src\youhua\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\youhua\common\youhuascanbottom.h">
+      <Filter>src\youhua\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\youhua\youhuawidget.h">
+      <Filter>src\youhua</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_GJ10.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commom\common.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\commom\myhelper.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
