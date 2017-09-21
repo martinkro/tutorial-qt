@@ -11,6 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Control", "Control\Control.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Layout", "Layout\Layout.vcxproj", "{02B2EF77-0554-4347-BCAD-4FC255DB35D1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QHttpDownload", "QHttpDownload\QHttpDownload.vcxproj", "{3C7085B0-01B1-4B04-B846-01E3520491FE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HttpDownload", "HttpDownload\HttpDownload.vcxproj", "{CA0932AD-A2FD-41DF-9553-3CA7F9C2AFD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,6 +37,14 @@ Global
 		{02B2EF77-0554-4347-BCAD-4FC255DB35D1}.Debug|x64.Build.0 = Debug|x64
 		{02B2EF77-0554-4347-BCAD-4FC255DB35D1}.Release|x64.ActiveCfg = Release|x64
 		{02B2EF77-0554-4347-BCAD-4FC255DB35D1}.Release|x64.Build.0 = Release|x64
+		{3C7085B0-01B1-4B04-B846-01E3520491FE}.Debug|x64.ActiveCfg = Debug|x64
+		{3C7085B0-01B1-4B04-B846-01E3520491FE}.Debug|x64.Build.0 = Debug|x64
+		{3C7085B0-01B1-4B04-B846-01E3520491FE}.Release|x64.ActiveCfg = Release|x64
+		{3C7085B0-01B1-4B04-B846-01E3520491FE}.Release|x64.Build.0 = Release|x64
+		{CA0932AD-A2FD-41DF-9553-3CA7F9C2AFD7}.Debug|x64.ActiveCfg = Debug|x64
+		{CA0932AD-A2FD-41DF-9553-3CA7F9C2AFD7}.Debug|x64.Build.0 = Debug|x64
+		{CA0932AD-A2FD-41DF-9553-3CA7F9C2AFD7}.Release|x64.ActiveCfg = Release|x64
+		{CA0932AD-A2FD-41DF-9553-3CA7F9C2AFD7}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

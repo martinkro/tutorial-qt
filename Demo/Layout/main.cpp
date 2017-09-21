@@ -500,9 +500,9 @@ int main(int argc, char *argv[])
 	// return TestWidgetsStatusBar(argc, argv);
 	// return TestWidgetsCheckBox(argc, argv);
 	// return TestWidgetsListView(argc, argv);
-	// return TestWidgetsProgressBar(argc, argv);
+	 return TestWidgetsProgressBar(argc, argv);
 	// return TestWidgetsSplitter(argc, argv);
-	// return TestWidgetsTableWidget(argc, argv);
+	//return TestWidgetsTableWidget(argc, argv);
 
 	// return TestPaintingLines(argc, argv);
 	// return TestPaintingColours(argc, argv);
@@ -516,5 +516,5 @@ int main(int argc, char *argv[])
 
 	// return TestWidgetsCustomBurning(argc, argv);
 	// return TestGameSnake(argc, argv);
-	return TestGameBreakout(argc, argv);
+	//return TestGameBreakout(argc, argv);
 }
