@@ -1,4 +1,4 @@
-#ifndef YOUHUABUTTON_H
+﻿#ifndef YOUHUABUTTON_H
 #define YOUHUABUTTON_H
 
 #include <QWidget>

@@ -1,4 +1,4 @@
-#include "cleanwidget.h"
+﻿#include "cleanwidget.h"
 #include <QVBoxLayout>
 #include "common/cleanscanbottom.h"
 #include "../commom/wenlibackwidget.h"

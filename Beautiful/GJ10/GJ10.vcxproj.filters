@@ -77,6 +77,9 @@
     <Filter Include="src\youhua\common">
       <UniqueIdentifier>{935f3065-2ba4-4bda-9da0-80ee6f34796d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\resource">
+      <UniqueIdentifier>{445688ff-5a24-46a1-99fb-a6a13de0b9ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -508,6 +511,9 @@
     <ClCompile Include="GeneratedFiles\Release\moc_youhuawidget.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_360.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="GJ10.h">
@@ -657,6 +663,9 @@
     <CustomBuild Include="src\youhua\youhuawidget.h">
       <Filter>src\youhua</Filter>
     </CustomBuild>
+    <CustomBuild Include="resource\360.qrc">
+      <Filter>Resource Files\resource</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_GJ10.h">
@@ -668,5 +677,426 @@
     <ClInclude Include="src\commom\myhelper.h">
       <Filter>src\common</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\default_theme\MainFrame\Image\clean.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\enter_anim.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\group_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\group_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\select_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\select_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\cookies_anim.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\cookies_anim_gray.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\plugin_anim.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\plugin_anim_gray.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\soft_anim.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\soft_anim_gray.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\trace_anim.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\trace_anim_gray.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\trash_anim.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\trash_anim_gray.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_cookies_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_cookies_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_plugin_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_plugin_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_reg_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_reg_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_soft_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_soft_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_trace_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_trace_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_trash_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\clean_trash_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\registry_anim.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\registry_anim_gray.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\notselect_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\notselect_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\scan_button_quick.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\scan_button_quick_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\cat_gray_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\cat_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\checkbox.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\disk_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\disk_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\net_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\net_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\start_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\start_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\sys_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\sys_uncheck.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\cat_checkbox.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\tab_ignore.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\tab_opt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\tab_boottime.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\tab_start.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\safeid_new_theme\image\priv_btn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\AboutLogo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\background_mainwnd.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\btn_examine_now.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\btn_scan_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\btn_view_detail.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\examine_score.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\Menu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\playvideo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\Skin.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\sys_button_close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\sys_button_min.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\score_bkg_green.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\score_bkg_red.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\score_bkg_yellow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\question.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\exclamation.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\wenli.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\guangyun_yellow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\guangyun_orange.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\guangyun_green.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\return.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\fen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\btn_fix_all.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\btn_fix_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\btn_reexamine.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\Update\update_btn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\guardline.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\payinsure_risky_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\payinsure_risky_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\payinsure_risky_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\payinsure_safe_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\payinsure_safe_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\payinsure_safe_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\security_risky_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\security_risky_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\security_risky_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\security_safe_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\security_safe_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\360Protect\Image\security_safe_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\safeid_new_theme\image\def_head.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\safeid_new_theme\image\head_bkg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\safe_check.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\youhua.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\ProtectArea_theme\Image\routerdefender.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\advtools\360JiShi_10_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\advtools\AdvanceTools_360SoftManger_10_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\advtools\AdvanceTools_360MobileMgr_10_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\advtools\AdvanceTools_NetSpeed_10_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\AdvTool\Images\all_tool_bk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\advtool_more.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\gray.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\AdvTool\Images\my_tool_bk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\MainFrame\Image\Logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\video\close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\video\end.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\video\start.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\default_theme\font\tijian_score\9.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\scan_button_custom.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\scan_button_custom_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\scan_button_full_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\scan_button_full.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\system_fix.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\system_patch.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\start_btn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\stop_scan.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\logo_danger.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\logo_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\logo_safe.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\logo_warning.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\SafeCheck_theme\Images\btn_black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\top_scan.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\OKClean_theme\Image\btn_top_scan.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\btn_start_scan.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\no_ignore.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\360SpeedupOpt_theme\image\shouqi.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\qss\default.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\qss\skin.qss">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

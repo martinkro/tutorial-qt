@@ -1,4 +1,4 @@
-#include "shadowwidget.h"
+﻿#include "shadowwidget.h"
 #include <QPainter>
 #include <QMouseEvent>
 #include <qmath.h>

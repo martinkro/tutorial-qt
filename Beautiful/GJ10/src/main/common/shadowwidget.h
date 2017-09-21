@@ -1,4 +1,4 @@
-#ifndef SHADOWWIDGET_H
+﻿#ifndef SHADOWWIDGET_H
 #define SHADOWWIDGET_H
 
 #include <QWidget>

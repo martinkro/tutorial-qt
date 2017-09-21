@@ -1,4 +1,4 @@
-#ifndef SCANBUTTONWIDGET_H
+﻿#ifndef SCANBUTTONWIDGET_H
 #define SCANBUTTONWIDGET_H
 
 #include <QWidget>

@@ -1,4 +1,4 @@
-#include "mainbottomfirstwidget.h"
+﻿#include "mainbottomfirstwidget.h"
 #include "../../commom/staticbutton.h"
 #include "../common/backgroundbutton.h"
 #include "../common/buttonlabel.h"

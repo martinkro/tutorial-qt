@@ -1,4 +1,4 @@
-#include "safebuttonwidget.h"
+﻿#include "safebuttonwidget.h"
 #include <QPainter>
 #include <QMouseEvent>
 

@@ -1,4 +1,4 @@
-#ifndef VIDEOWIDGET_H
+﻿#ifndef VIDEOWIDGET_H
 #define VIDEOWIDGET_H
 
 #include <QWidget>
