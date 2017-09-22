@@ -1,0 +1,173 @@
+QTableView {
+	selection-background-color: rgb(220,230,220);
+	alternate-background-color: rgb(231, 233, 250);
+}
+
+QGroupBox::title {
+	color: rgb(41, 119, 191);
+	padding: 3px;
+}
+
+QToolTip {
+	background: white;
+	border: 1px solid gray;
+	color: black;
+}
+
+QMenu{
+    background:white;
+	border:1px solid lightgray;
+}
+
+QMenu::item{
+	padding:0px 20px 0px 20px;
+	margin-left: 5px;
+	height:25px;
+}
+
+QMenu::item:selected:enabled{
+    background: lightgray;
+	color: white;
+}
+
+QMenu::separator{
+    height:1px;
+    background: lightgray;
+	margin:2px 0px 2px 0px;
+}
+
+QMenu::item:selected:!enabled{
+    background:transparent;
+}
+
+QPushButton#TrayButton {
+	border: none;
+	background: transparent;
+}
+
+QPushButton#TrayButton:hover {
+	background: rgb(233, 237, 252);
+	color: rgb(42, 120, 192);
+}
+
+QLineEdit {
+    border: 1px solid rgb(41, 119, 191);
+    border-radius: 2px;
+    padding: 0 5px;
+    background: white;
+    selection-background-color: blue;
+}
+
+QPushButton {
+	border-radius: 2px;
+	border: 1px solid rgb(41, 119, 191);
+	background:transparent;
+	color: rgb(41, 119, 191);
+}
+
+QPushButton:hover {
+	background: rgb(41, 119, 191);
+	color: white;
+}
+
+QTabWidget::pane{
+	border:none;
+}
+
+QTabBar::tab{
+	background:rgb(44, 122, 191);
+	color:white;
+	min-width:100px;
+	min-height:25px;
+	padding: 0px;
+}
+
+QTabBar::tab:selected{
+	border-color: white;
+	background:white;
+	color: rgb(41, 119, 191);
+}
+
+QLabel#WhiteLabel {
+	color: white;
+}
+
+QComboBox {
+	border: 1px solid rgb(41, 119, 191);
+	background: transparent;
+}
+
+QComboBox QAbstractItemView::item {
+	height: 25px;
+}
+
+QComboBox::down-arrow {
+	image: url(:/menu/arrow);
+}
+
+QComboBox::drop-down {
+	width: 20px;
+	border: none;
+}
+
+QHeaderView::section {
+	background-color: rgb(245, 250, 252);
+	color: white;
+	padding-left: 4px;
+	border: none;
+	min-height: 25px;
+}
+
+QScrollBar:horizontal {
+	background: transparent;
+	height: 7px;
+}
+
+QScrollBar::handle:horizontal {
+	background: rgb(43,122,193);
+	border-radius: 2px;
+}
+
+QScrollBar::add-line:horizontal {
+	border: nonde;
+	background: transparent;
+}
+
+QScrollBar::sub-line:horizontal {
+	border: none;
+	background: transparent;
+}
+
+QScrollBar:vertical {
+	background: transparent;
+	width: 7px;
+}
+
+QScrollBar::handle:vertical {
+	background: rgb(43, 122, 193);
+	border-radius: 2px;
+}
+
+QScrollBar::add-line:vertical {
+	border: none;
+	background: transparent;
+}
+
+QScrollBar::sub-line:vertical {
+	border: none;
+	background: transparent;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::add-page:vertical {
+	border: none;
+	background: transparent;
+}
+
+QScrollBar::sub-page:horizontal, QScrollBar::sub-page:vertical {
+	border: none;
+	background: transparent;
+}
+
+QTreeView::item {
+
+}

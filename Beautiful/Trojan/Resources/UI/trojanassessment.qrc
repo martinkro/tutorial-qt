@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/Qss">
+        <file alias="stylesheet">style.qss</file>
+    </qresource>
+    <qresource prefix="/ToolButtons">
+        <file alias="fileTab">images/ToolButtons/gongNeng.png</file>
+        <file alias="memoryTab">images/ToolButtons/jiaSu.png</file>
+        <file alias="networkTab">images/ToolButtons/louDong.png</file>
+        <file alias="registryTab">images/ToolButtons/muMa.png</file>
+        <file alias="processTab">images/ToolButtons/ruanJian.png</file>
+        <file alias="IETab">images/ToolButtons/tiJian.png</file>
+        <file alias="assessmentTab">images/ToolButtons/xiTong.png</file>
+    </qresource>
+    <qresource prefix="/SysButtons">
+        <file alias="close">images/SysButtons/close.png</file>
+        <file alias="close_hover">images/SysButtons/close_hover.png</file>
+        <file alias="close_pressed">images/SysButtons/close_pressed.png</file>
+        <file alias="menu">images/SysButtons/menu.png</file>
+        <file alias="menu_hover">images/SysButtons/menu_hover.png</file>
+        <file alias="menu_pressed">images/SysButtons/menu_pressed.png</file>
+        <file alias="min">images/SysButtons/min.png</file>
+        <file alias="min_hover">images/SysButtons/min_hover.png</file>
+        <file alias="min_pressed">images/SysButtons/min_pressed.png</file>
+    </qresource>
+    <qresource prefix="/background">
+        <file alias="logo">images/Misc/logo.png</file>
+        <file alias="little_background">images/Misc/5.png</file>
+        <file alias="title_background">images/Misc/5_big.png</file>
+    </qresource>
+    <qresource prefix="/menu">
+        <file alias="about">images/Misc/about.png</file>
+        <file alias="cloud">images/Misc/cloud.png</file>
+        <file alias="help">images/Misc/help.png</file>
+        <file alias="home">images/Misc/home.png</file>
+        <file alias="open">images/Misc/open.png</file>
+        <file alias="quit">images/Misc/quit.png</file>
+        <file alias="settings">images/Misc/setting.png</file>
+        <file alias="update">images/Misc/update.png</file>
+        <file alias="arrow">images/Misc/arrowDown.png</file>
+        <file alias="disk">images/Misc/disk.ico</file>
+        <file alias="autorun">images/Misc/run.png</file>
+        <file alias="notification">images/Misc/notification.png</file>
+        <file alias="restore">images/Misc/restore.png</file>
+    </qresource>
+</RCC>

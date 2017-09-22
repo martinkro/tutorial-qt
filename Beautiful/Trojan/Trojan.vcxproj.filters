@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{94dfb7e9-7553-49d1-908a-aa1c5432dff2}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{3f1548d8-118e-43f2-94d6-4436ddeb6fe2}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a918cddb-7a87-4f76-8ea9-2e1a5f8124f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms">
+      <UniqueIdentifier>{65301f87-3216-45f4-8858-bc017fcc2ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\3rdParty">
+      <UniqueIdentifier>{6fe19df9-0144-444b-b3a1-8d86cdd5f119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{1a9875ff-8bdb-492e-a34c-69c3c9d781d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\3rdParty\ChartDirector">
+      <UniqueIdentifier>{a8d99d78-d3f7-47ca-a8c7-bdaea10e0999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\3rdParty\Manometer">
+      <UniqueIdentifier>{85eebf62-4083-4f0e-b348-8156c5030a8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\AboutDialog">
+      <UniqueIdentifier>{9eb47fe8-09b9-47c4-ab6b-0c4707156b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\AssessmentTab">
+      <UniqueIdentifier>{04b76568-f24c-48bc-a612-024599c521ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\CacheTab">
+      <UniqueIdentifier>{a0443370-19b7-44d5-b07f-15d8a15e29d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\FileMonitorTab">
+      <UniqueIdentifier>{21de6cdd-5905-41d7-a691-a9ca28ae3017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\IETab">
+      <UniqueIdentifier>{f50fff09-27fd-43be-b46e-7817e590757a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\MainForm">
+      <UniqueIdentifier>{72649326-8485-402d-b74d-4c77d4b0e7a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\MemoryTab">
+      <UniqueIdentifier>{896ae003-48b6-494d-be84-b2d270cebcd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\NetworkTab">
+      <UniqueIdentifier>{5dbeb09b-a22b-4f25-835e-532eea202f06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\ProcessTab">
+      <UniqueIdentifier>{818f081f-66ba-4bcc-834d-f95e070b27f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\RegistryTab">
+      <UniqueIdentifier>{fef98986-3912-425d-b5f4-8a7782ef37c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\forms\TitleWidget">
+      <UniqueIdentifier>{66f6e6b6-281d-42ec-9272-78b6833eebd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\CustomControl">
+      <UniqueIdentifier>{95e1711d-ee75-4b12-bdff-cf05b250c20c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\BusinessLayer">
+      <UniqueIdentifier>{ff38243b-d2c0-440b-bb8f-97afc66c9cba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trojan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_trojan.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_trojan.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_trojan.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_trojanassessment.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdParty\ChartDirector\qchartviewer.cpp">
+      <Filter>src\3rdParty\ChartDirector</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qchartviewer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qchartviewer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdParty\ChartDirector\realtimechart.cpp">
+      <Filter>src\3rdParty\ChartDirector</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_realtimechart.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_realtimechart.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdParty\Manometer\abstractmeter.cpp">
+      <Filter>src\3rdParty\Manometer</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_abstractmeter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_abstractmeter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdParty\Manometer\functions.cpp">
+      <Filter>src\3rdParty\Manometer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdParty\Manometer\manometer.cpp">
+      <Filter>src\3rdParty\Manometer</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_manometer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_manometer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\3rdParty\Manometer\widgetwithbackground.cpp">
+      <Filter>src\3rdParty\Manometer</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widgetwithbackground.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widgetwithbackground.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\AboutDialog\about.cpp">
+      <Filter>src\forms\AboutDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_about.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_about.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\AssessmentTab\securitycenterpage.cpp">
+      <Filter>src\forms\AssessmentTab</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_securitycenterpage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_securitycenterpage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\CacheTab\cacheentrydetail.cpp">
+      <Filter>src\forms\CacheTab</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_cacheentrydetail.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_cacheentrydetail.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\FileMonitorTab\filemonitorpage.cpp">
+      <Filter>src\forms\FileMonitorTab</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_filemonitorpage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_filemonitorpage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\IETab\iepage.cpp">
+      <Filter>src\forms\IETab</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_iepage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_iepage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\MainForm\trojanassessment.cpp">
+      <Filter>src\forms\MainForm</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_trojanassessment.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_trojanassessment.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\MemoryTab\memorypage.cpp">
+      <Filter>src\forms\MemoryTab</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_memorypage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_memorypage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\NetworkTab\networkpage.cpp">
+      <Filter>src\forms\NetworkTab</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_networkpage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_networkpage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\TitleWidget\titlewidget.cpp">
+      <Filter>src\forms\TitleWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_titlewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_titlewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\RegistryTab\registerpage.cpp">
+      <Filter>src\forms\RegistryTab</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_registerpage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_registerpage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\forms\ProcessTab\processpage.cpp">
+      <Filter>src\forms\ProcessTab</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_processpage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_processpage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\CustomControl\customitemmodel.cpp">
+      <Filter>src\base\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_customitemmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_customitemmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\CustomControl\custompushbutton.cpp">
+      <Filter>src\base\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_custompushbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_custompushbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\CustomControl\customtoolbutton.cpp">
+      <Filter>src\base\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_customtoolbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_customtoolbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\CustomControl\nofocusdelegate.cpp">
+      <Filter>src\base\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nofocusdelegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nofocusdelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\CustomControl\shadowwindow.cpp">
+      <Filter>src\base\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_shadowwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_shadowwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\CustomControl\systemtray.cpp">
+      <Filter>src\base\CustomControl</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_systemtray.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_systemtray.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\BusinessLayer\BasicInformation.cpp">
+      <Filter>src\base\BusinessLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\BusinessLayer\DynamicMemory.cpp">
+      <Filter>src\base\BusinessLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\BusinessLayer\WindowsServices.cpp">
+      <Filter>src\base\BusinessLayer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="trojan.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="trojan.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="trojan.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Resources\UI\trojanassessment.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\3rdParty\ChartDirector\qchartviewer.h">
+      <Filter>src\3rdParty\ChartDirector</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\3rdParty\ChartDirector\realtimechart.h">
+      <Filter>src\3rdParty\ChartDirector</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\3rdParty\Manometer\abstractmeter.h">
+      <Filter>src\3rdParty\Manometer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\3rdParty\Manometer\manometer.h">
+      <Filter>src\3rdParty\Manometer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\3rdParty\Manometer\widgetwithbackground.h">
+      <Filter>src\3rdParty\Manometer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\AboutDialog\about.h">
+      <Filter>src\forms\AboutDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\AssessmentTab\securitycenterpage.h">
+      <Filter>src\forms\AssessmentTab</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\CacheTab\cacheentrydetail.h">
+      <Filter>src\forms\CacheTab</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\FileMonitorTab\filemonitorpage.h">
+      <Filter>src\forms\FileMonitorTab</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\IETab\iepage.h">
+      <Filter>src\forms\IETab</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\MainForm\trojanassessment.h">
+      <Filter>src\forms\MainForm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\MemoryTab\memorypage.h">
+      <Filter>src\forms\MemoryTab</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\NetworkTab\networkpage.h">
+      <Filter>src\forms\NetworkTab</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\TitleWidget\titlewidget.h">
+      <Filter>src\forms\TitleWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\RegistryTab\registerpage.h">
+      <Filter>src\forms\RegistryTab</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\forms\ProcessTab\processpage.h">
+      <Filter>src\forms\ProcessTab</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\base\CustomControl\customitemmodel.h">
+      <Filter>src\base\CustomControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\base\CustomControl\custompushbutton.h">
+      <Filter>src\base\CustomControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\base\CustomControl\customtoolbutton.h">
+      <Filter>src\base\CustomControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\base\CustomControl\nofocusdelegate.h">
+      <Filter>src\base\CustomControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\base\CustomControl\shadowwindow.h">
+      <Filter>src\base\CustomControl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\base\CustomControl\systemtray.h">
+      <Filter>src\base\CustomControl</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_trojan.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdParty\ChartDirector\bchartdir.h">
+      <Filter>src\3rdParty\ChartDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdParty\ChartDirector\chartdir.h">
+      <Filter>src\3rdParty\ChartDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdParty\ChartDirector\FinanceChart.h">
+      <Filter>src\3rdParty\ChartDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdParty\ChartDirector\memblock.h">
+      <Filter>src\3rdParty\ChartDirector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\3rdParty\Manometer\functions.h">
+      <Filter>src\3rdParty\Manometer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\BusinessLayer\BasicInformation.h">
+      <Filter>src\base\BusinessLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\BusinessLayer\DynamicMemory.h">
+      <Filter>src\base\BusinessLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\base\BusinessLayer\WindowsServices.h">
+      <Filter>src\base\BusinessLayer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI\style.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\UI\images\ToolButtons\gongNeng.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\ToolButtons\jiaSu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\ToolButtons\louDong.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\ToolButtons\muMa.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\ToolButtons\ruanJian.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\ToolButtons\tiJian.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\ToolButtons\xiTong.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\close_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\close_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\menu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\menu_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\menu_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\min.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\min_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\SysButtons\min_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\5_big.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\about.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\cloud.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\help.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\home.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\open.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\quit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\setting.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\update.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\arrowDown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\disk.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\run.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\notification.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\UI\images\Misc\restore.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
