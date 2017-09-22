@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GJ64", "GJ64\GJ64.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GJ10", "GJ10\GJ10.vcxproj", "{9A8F08A9-4B79-41BE-B8CB-BA1F68CC2EE2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Process", "Process\Process.vcxproj", "{C0579720-8DE9-4F37-91FA-94813381F161}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -27,6 +29,10 @@ Global
 		{9A8F08A9-4B79-41BE-B8CB-BA1F68CC2EE2}.Debug|x86.Build.0 = Debug|Win32
 		{9A8F08A9-4B79-41BE-B8CB-BA1F68CC2EE2}.Release|x86.ActiveCfg = Release|Win32
 		{9A8F08A9-4B79-41BE-B8CB-BA1F68CC2EE2}.Release|x86.Build.0 = Release|Win32
+		{C0579720-8DE9-4F37-91FA-94813381F161}.Debug|x86.ActiveCfg = Debug|Win32
+		{C0579720-8DE9-4F37-91FA-94813381F161}.Debug|x86.Build.0 = Debug|Win32
+		{C0579720-8DE9-4F37-91FA-94813381F161}.Release|x86.ActiveCfg = Release|Win32
+		{C0579720-8DE9-4F37-91FA-94813381F161}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
