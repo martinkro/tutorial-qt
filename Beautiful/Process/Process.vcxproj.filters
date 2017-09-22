@@ -38,6 +38,9 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b9efe060-9cb2-45a6-8a65-55408b9f73fd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -55,6 +58,93 @@
     <ClCompile Include="GeneratedFiles\qrc_process.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_qapplist.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\applicationview.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_applicationview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_applicationview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\custommodel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_custommodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_custommodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\custompushbutton.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_custompushbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_custompushbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modulestableview.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_modulestableview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_modulestableview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nofocusframedelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nofocusframedelegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nofocusframedelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\processview.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_processview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_processview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qapplist.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qapplist.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qapplist.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RetrieveHelper.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shadoweffectwidget.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_shadoweffectwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_shadoweffectwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="src\titlebar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_titlebar.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_titlebar.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="process.h">
@@ -66,10 +156,74 @@
     <CustomBuild Include="process.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="Resources\qapplist.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\applicationview.h">
+      <Filter>src</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\custommodel.h">
+      <Filter>src</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\custompushbutton.h">
+      <Filter>src</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\modulestableview.h">
+      <Filter>src</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\nofocusframedelegate.h">
+      <Filter>src</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\processview.h">
+      <Filter>src</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\qapplist.h">
+      <Filter>src</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\shadoweffectwidget.h">
+      <Filter>src</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\titlebar.h">
+      <Filter>src</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_process.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\RetrieveHelper.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\images\logo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\images\13.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\images\buttons\close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\images\buttons\close_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\images\buttons\close_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\images\buttons\min.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\images\buttons\min_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\images\buttons\min_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appstyle.qss">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="logo">images/logo.ico</file>
+        <file alias="uistyle">appstyle.qss</file>
+        <file alias="background">images/13.png</file>
+    </qresource>
+    <qresource prefix="/buttons">
+        <file alias="close">images/buttons/close.png</file>
+        <file alias="close_hover">images/buttons/close_hover.png</file>
+        <file alias="close_pressed">images/buttons/close_pressed.png</file>
+        <file alias="min">images/buttons/min.png</file>
+        <file alias="min_hover">images/buttons/min_hover.png</file>
+        <file alias="min_pressed">images/buttons/min_pressed.png</file>
+    </qresource>
+</RCC>
