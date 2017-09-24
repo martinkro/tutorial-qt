@@ -405,6 +405,9 @@
     <CustomBuild Include="src\base\CustomControl\systemtray.h">
       <Filter>src\base\CustomControl</Filter>
     </CustomBuild>
+    <CustomBuild Include="Resources\UI\cacheentrydetail.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_trojan.h">
@@ -433,6 +436,9 @@
     </ClInclude>
     <ClInclude Include="src\base\BusinessLayer\WindowsServices.h">
       <Filter>src\base\BusinessLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_cacheentrydetail.h">
+      <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

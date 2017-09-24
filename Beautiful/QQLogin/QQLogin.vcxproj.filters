@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{4d9a4a68-c2bf-426b-8a3b-2265c8d569a1}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{af4456c9-d09c-4f45-bca6-5a24ee3fa140}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="LoginDialog">
+      <UniqueIdentifier>{09801268-5f7f-4cd7-b0a2-8abe992b9a4f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="qqlogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qqlogin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qqlogin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_qqlogin.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\addqqwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_addqqwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_addqqwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\backgroundfactory.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_backgroundfactory.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_backgroundfactory.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\backgroundwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_backgroundwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_backgroundwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\flashwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_flashwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_flashwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\headwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_headwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_headwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\imagewidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_imagewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_imagewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\logindialog.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_logindialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_logindialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\loginwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_loginwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_loginwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\multiaccountloginwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_multiaccountloginwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_multiaccountloginwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\picturescrollwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_picturescrollwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_picturescrollwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\pseudoflashwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_pseudoflashwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_pseudoflashwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\pushbutton.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_pushbutton.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_pushbutton.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\safeloginwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_safeloginwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_safeloginwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\systemtray.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_systemtray.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_systemtray.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog\toolwidget.cpp">
+      <Filter>LoginDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_toolwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_toolwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_logindialog.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="qqlogin.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qqlogin.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qqlogin.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\addqqwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\backgroundfactory.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\backgroundwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\flashwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\headwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\imagewidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\logindialog.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\loginwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\multiaccountloginwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\picturescrollwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\pseudoflashwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\pushbutton.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\safeloginwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\systemtray.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LoginDialog\toolwidget.h">
+      <Filter>LoginDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="logindialog.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_qqlogin.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="qq.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Status\QQ\Ico\32\GG\offline.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Background\texture.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Background\afternoon.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Background\morning.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Background\night.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Background\noon.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Background\8_21.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\button_login_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\button_login_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\button_login_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\corner_right_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\corner_right_normal_breath.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\corner_right_normal_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\switch_multi_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\switch_multi_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\switch_multi_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\switch_single_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\switch_single_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\switch_single_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\keyboard.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\mima.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\mima_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\mima_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\zhuce.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\zhuce_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\zhuce_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\btn_set_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\btn_set_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\btn_set_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\close_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\close_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\minimize.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\minimize_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Button\minimize_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Head\default_head.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Head\head1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Head\head2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\Head\loginning_head_animation5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Status\FLAG\Big\imonline.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Status\FLAG\Big\Qme.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Status\FLAG\Big\away.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Status\FLAG\Big\busy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Status\FLAG\Big\imoffline.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Status\FLAG\Big\invisible.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Status\FLAG\Big\mute.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\ComboBox\arrow_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\CheckBox\checkbox_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\CheckBox\checkbox_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\CheckBox\checkbox_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\CheckBox\checkbox_selected_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\CheckBox\checkbox_selected_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\LoginUI\CheckBox\checkbox_selected_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Safe\client_trust.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Safe\client_trust_small.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Safe\safe_bkg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\QRLogin\qr.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\QRLogin\qr_failed.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Menu\menu_bg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QQ_en.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="QQ_zh.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Qss\logindialog.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\LoginUI\Background\afternoon.swf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\LoginUI\Background\morning.swf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\LoginUI\Background\night.swf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\LoginUI\Background\noon.swf">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

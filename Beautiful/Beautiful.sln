@@ -13,6 +13,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Process", "Process\Process.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trojan", "Trojan\Trojan.vcxproj", "{606A7A65-32A6-4C79-840F-FF718449E3A2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QQLogin", "QQLogin\QQLogin.vcxproj", "{7DA11A29-8B41-421E-9B56-4BC3C5F80861}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YY", "YY\YY.vcxproj", "{30AF84F6-C00D-428E-8F92-D3962F87BFE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -39,6 +43,14 @@ Global
 		{606A7A65-32A6-4C79-840F-FF718449E3A2}.Debug|x86.Build.0 = Debug|Win32
 		{606A7A65-32A6-4C79-840F-FF718449E3A2}.Release|x86.ActiveCfg = Release|Win32
 		{606A7A65-32A6-4C79-840F-FF718449E3A2}.Release|x86.Build.0 = Release|Win32
+		{7DA11A29-8B41-421E-9B56-4BC3C5F80861}.Debug|x86.ActiveCfg = Debug|Win32
+		{7DA11A29-8B41-421E-9B56-4BC3C5F80861}.Debug|x86.Build.0 = Debug|Win32
+		{7DA11A29-8B41-421E-9B56-4BC3C5F80861}.Release|x86.ActiveCfg = Release|Win32
+		{7DA11A29-8B41-421E-9B56-4BC3C5F80861}.Release|x86.Build.0 = Release|Win32
+		{30AF84F6-C00D-428E-8F92-D3962F87BFE4}.Debug|x86.ActiveCfg = Debug|Win32
+		{30AF84F6-C00D-428E-8F92-D3962F87BFE4}.Debug|x86.Build.0 = Debug|Win32
+		{30AF84F6-C00D-428E-8F92-D3962F87BFE4}.Release|x86.ActiveCfg = Release|Win32
+		{30AF84F6-C00D-428E-8F92-D3962F87BFE4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
