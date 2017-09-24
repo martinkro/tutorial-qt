@@ -1,0 +1,1666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>softkeyboard</class>
+ <widget class="QWidget" name="softkeyboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>111</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>360</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget_2{
+border:5px solid gray;
+border-color: rgb(70, 67, 114);border-radius: 1px;
+}</string>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>358</width>
+      <height>109</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#widget{
+	border:1px solid gray;
+	border-color: rgb(63, 194, 240);
+	background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.506, y2:1, stop:0 rgba(30, 154, 225, 255), stop:1 rgba(23, 116, 178, 255));
+border-radius: 1px;
+}</string>
+    </property>
+    <widget class="QPushButton" name="LoginPanel_softkeyboardclosebutton">
+     <property name="geometry">
+      <rect>
+       <x>346</x>
+       <y>5</y>
+       <width>7</width>
+       <height>7</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#LoginPanel_softkeyboardclosebutton{
+	border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboardclosebutton_normalBackground.png);
+}
+
+QPushButton#LoginPanel_softkeyboardclosebutton:hover{
+	border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboardclosebutton_pushedBackground.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_1">
+     <property name="geometry">
+      <rect>
+       <x>34</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_1{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;
+}
+QPushButton#key_1:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_1:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_2{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_2:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_2:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_3">
+     <property name="geometry">
+      <rect>
+       <x>86</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_3{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_3:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_3:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_4">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_4{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_4:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_4:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_5">
+     <property name="geometry">
+      <rect>
+       <x>138</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_5{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_5:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_5:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>5</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_6">
+     <property name="geometry">
+      <rect>
+       <x>164</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_6{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_6:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_6:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>6</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_7">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_7{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_7:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_7:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>7</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_8">
+     <property name="geometry">
+      <rect>
+       <x>216</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_8{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_8:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_8:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>8</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_9">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_9{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_9:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_9:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>9</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_0">
+     <property name="geometry">
+      <rect>
+       <x>268</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_0{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:7px;
+padding-left:-10px;}
+QPushButton#key_0:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_0:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_del">
+     <property name="geometry">
+      <rect>
+       <x>294</x>
+       <y>3</y>
+       <width>48</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_del{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);}
+QPushButton#key_del:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_del:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>←</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_point">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>3</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_point{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+}
+QPushButton#key_point:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_point:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>`</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_shift">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>29</y>
+       <width>38</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_shift{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);}
+QPushButton#key_shift:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_shift:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}
+QPushButton#key_shift:checked{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>Shift</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_q">
+     <property name="geometry">
+      <rect>
+       <x>41</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_q{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_q:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_q:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>q</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_w">
+     <property name="geometry">
+      <rect>
+       <x>66</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_w{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_w:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_w:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>w</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_e">
+     <property name="geometry">
+      <rect>
+       <x>91</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_e{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_e:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_e:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>e</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_r">
+     <property name="geometry">
+      <rect>
+       <x>116</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_r{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_r:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_r:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>r</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_t">
+     <property name="geometry">
+      <rect>
+       <x>141</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_t{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_t:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_t:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>t</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_y">
+     <property name="geometry">
+      <rect>
+       <x>166</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_y{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_y:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_y:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>y</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_u">
+     <property name="geometry">
+      <rect>
+       <x>191</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_u{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_u:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_u:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>u</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_i">
+     <property name="geometry">
+      <rect>
+       <x>216</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_i{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_i:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_i:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>i</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_o">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_o{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_o:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_o:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>o</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_p">
+     <property name="geometry">
+      <rect>
+       <x>266</x>
+       <y>29</y>
+       <width>24</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_p{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_p:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_p:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>p</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_caps_lock">
+     <property name="geometry">
+      <rect>
+       <x>291</x>
+       <y>29</y>
+       <width>65</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_caps_lock{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:-3px;
+
+}
+QPushButton#key_caps_lock:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_caps_lock:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}
+QPushButton#key_caps_lock:checked{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>Caps Lock</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_bracket_left">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_bracket_left{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:px;
+
+}
+QPushButton#key_bracket_left:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_bracket_left:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>[</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_bracket_right">
+     <property name="geometry">
+      <rect>
+       <x>34</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_bracket_right{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:px;
+
+}
+QPushButton#key_bracket_right:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_bracket_right:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>]</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_a">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_a{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_a:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_a:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>a</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_s">
+     <property name="geometry">
+      <rect>
+       <x>86</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_s{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+}
+QPushButton#key_s:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_s:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>s</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_d">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_d{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+}
+QPushButton#key_d:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_d:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>d</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_f">
+     <property name="geometry">
+      <rect>
+       <x>138</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_f{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_f:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_f:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>f</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_g">
+     <property name="geometry">
+      <rect>
+       <x>164</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_g{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_g:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_g:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>g</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_h">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_h{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_h:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_h:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>h</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_j">
+     <property name="geometry">
+      <rect>
+       <x>216</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_j{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+}
+QPushButton#key_j:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_j:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>j</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_k">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_k{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+}
+QPushButton#key_k:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_k:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>k</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_l">
+     <property name="geometry">
+      <rect>
+       <x>268</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_l{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_l:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_l:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>l</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_semicolon">
+     <property name="geometry">
+      <rect>
+       <x>294</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Meiryo UI</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_semicolon{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_semicolon:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_semicolon:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>;</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_quotes">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>55</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Meiryo</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_quotes{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+padding-top:10px;
+
+}
+QPushButton#key_quotes:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_quotes:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>'</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_equ">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_equ{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+}
+QPushButton#key_equ:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_equ:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>=</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_sub">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_sub{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_sub:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_sub:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_m">
+     <property name="geometry">
+      <rect>
+       <x>218</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_m{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_m:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_m:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>m</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_dot">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_dot{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_dot:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_dot:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>.</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_v">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_v{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_v:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_v:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>v</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_c">
+     <property name="geometry">
+      <rect>
+       <x>114</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_c{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_c:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_c:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>c</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_z">
+     <property name="geometry">
+      <rect>
+       <x>62</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_z{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_z:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_z:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>z</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_n">
+     <property name="geometry">
+      <rect>
+       <x>192</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_n{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_n:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_n:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>n</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_x">
+     <property name="geometry">
+      <rect>
+       <x>88</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_x{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_x:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_x:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>x</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_comma">
+     <property name="geometry">
+      <rect>
+       <x>244</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_comma{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_comma:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_comma:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>,</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_slash_right">
+     <property name="geometry">
+      <rect>
+       <x>322</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_slash_right{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_slash_right:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_slash_right:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>\</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_b">
+     <property name="geometry">
+      <rect>
+       <x>166</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_b{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_b:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_b:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>b</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="key_slash_left">
+     <property name="geometry">
+      <rect>
+       <x>296</x>
+       <y>81</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#key_slash_left{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgNormal.png);
+
+
+}
+QPushButton#key_slash_left:hover{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgHover.png);}
+QPushButton#key_slash_left:pressed{
+border-image: url(:/images/keyboard/images/keyboard/LoginPanel_softkeyboard_bkgDown.png);}</string>
+     </property>
+     <property name="text">
+      <string>/</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>LoginPanel_softkeyboardclosebutton</sender>
+   <signal>clicked()</signal>
+   <receiver>softkeyboard</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>349</x>
+     <y>9</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>23</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

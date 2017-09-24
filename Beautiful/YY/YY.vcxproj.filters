@@ -38,6 +38,21 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="login">
+      <UniqueIdentifier>{d4ce0841-2ed2-4156-b488-769d24f51c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connect">
+      <UniqueIdentifier>{1bbb5db6-84fa-42b1-a734-c7a9f01093c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other">
+      <UniqueIdentifier>{39abfff0-068f-4f91-97c4-c75f9a018663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="login\loginpanel">
+      <UniqueIdentifier>{8d969447-0a2b-4336-808a-a4b6475044b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="login\softkeyboard">
+      <UniqueIdentifier>{bea063e1-2f94-4545-92f9-829ae46962e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -55,6 +70,75 @@
     <ClCompile Include="GeneratedFiles\qrc_yy.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_images.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="connect\hhnet.cpp">
+      <Filter>connect</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_hhnet.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_hhnet.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="login\login.cpp">
+      <Filter>login</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_login.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_login.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="login\loginpanel\addaccount.cpp">
+      <Filter>login\loginpanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_addaccount.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_addaccount.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="login\loginpanel\verifyimgframe.cpp">
+      <Filter>login\loginpanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_verifyimgframe.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_verifyimgframe.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="login\softkeyboard\btnclick.cpp">
+      <Filter>login\softkeyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="login\softkeyboard\softkeyboard.cpp">
+      <Filter>login\softkeyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_softkeyboard.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_softkeyboard.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="other\gloweffect.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_gloweffect.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_gloweffect.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="yy.h">
@@ -66,10 +150,297 @@
     <CustomBuild Include="yy.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="images.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="connect\hhnet.h">
+      <Filter>connect</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login\login.h">
+      <Filter>login</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login\login.ui">
+      <Filter>login</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login\loginpanel\addaccount.h">
+      <Filter>login\loginpanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login\loginpanel\addaccount.ui">
+      <Filter>login\loginpanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login\loginpanel\verifyimgframe.h">
+      <Filter>login\loginpanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login\loginpanel\verifyimgframe.ui">
+      <Filter>login\loginpanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login\softkeyboard\softkeyboard.h">
+      <Filter>login\softkeyboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="login\softkeyboard\softkeyboard.ui">
+      <Filter>login\softkeyboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="other\gloweffect.h">
+      <Filter>other</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="widget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_yy.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_login.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_addaccount.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_verifyimgframe.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_softkeyboard.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_addaccount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_softkeyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_verifyimgframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_widget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\afternoon.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\button_login_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\button_login_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\button_login_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\noon.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\switch_single_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\switch_single_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\switch_single_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\corner_right_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\corner_right_normal_breath.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\corner_right_normal_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_set_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_set_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_set_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\login_head_bkg_highlight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\login_head_bkg_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\keyboard.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\checkbox_hightlight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\checkbox_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\checkbox_tick_highlight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\checkbox_tick_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\zhuce.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\zhuce_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\zhuce_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mima.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mima_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mima_press.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\arrow_down_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\arrow_up_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\switch_multi_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\switch_multi_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\switch_multi_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_close_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_close_highlight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_close_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_mini_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_mini_highlight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\btn_mini_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\main_QQdoctortip36_attention.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\BtnBackgroundHover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\head\1_100.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\flag\away.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\flag\busy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\flag\imonline.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\flag\invisible.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\flag\mute.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\flag\Qme.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\keyboard\LoginPanel_softkeyboard_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\keyboard\LoginPanel_softkeyboard_bkgDown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\keyboard\LoginPanel_softkeyboard_bkgHover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\keyboard\LoginPanel_softkeyboard_bkgNormal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\keyboard\LoginPanel_softkeyboardclosebutton_normalBackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\keyboard\LoginPanel_softkeyboardclosebutton_pushedBackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\gif\loading.gif">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\main_bkg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\btn_Skin_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\btn_Skin_highlight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\btn_Skin_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\LV.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\QQVIP_LIGHT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\weather.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\main_search_bkg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainwindow\icon_search_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\friend.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\mail.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\paipai.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\purse.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\qzone.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\soso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\Today.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\wblog.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\mainTopToolBar\messagebox16xp.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

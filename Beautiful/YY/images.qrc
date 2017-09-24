@@ -1,0 +1,89 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/afternoon.jpg</file>
+        <file>images/button_login_down.png</file>
+        <file>images/button_login_hover.png</file>
+        <file>images/button_login_normal.png</file>
+        <file>images/noon.jpg</file>
+        <file>images/switch_single_down.png</file>
+        <file>images/switch_single_hover.png</file>
+        <file>images/switch_single_normal.png</file>
+        <file>images/corner_right_hover.png</file>
+        <file>images/corner_right_normal_breath.png</file>
+        <file>images/corner_right_normal_down.png</file>
+        <file>images/btn_set_hover.png</file>
+        <file>images/btn_set_normal.png</file>
+        <file>images/btn_set_press.png</file>
+        <file>images/login_head_bkg_highlight.png</file>
+        <file>images/login_head_bkg_normal.png</file>
+        <file>images/keyboard.png</file>
+        <file>images/checkbox_hightlight.png</file>
+        <file>images/checkbox_normal.png</file>
+        <file>images/checkbox_tick_highlight.png</file>
+        <file>images/checkbox_tick_normal.png</file>
+        <file>images/zhuce.png</file>
+        <file>images/zhuce_hover.png</file>
+        <file>images/zhuce_press.png</file>
+        <file>images/mima.png</file>
+        <file>images/mima_hover.png</file>
+        <file>images/mima_press.png</file>
+        <file>images/arrow_down_normal.png</file>
+        <file>images/arrow_up_normal.png</file>
+        <file>images/switch_multi_down.png</file>
+        <file>images/switch_multi_hover.png</file>
+        <file>images/switch_multi_normal.png</file>
+        <file>images/btn_close_down.png</file>
+        <file>images/btn_close_highlight.png</file>
+        <file>images/btn_close_normal.png</file>
+        <file>images/btn_mini_down.png</file>
+        <file>images/btn_mini_highlight.png</file>
+        <file>images/btn_mini_normal.png</file>
+        <file>images/main_QQdoctortip36_attention.png</file>
+        <file>images/BtnBackgroundHover.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>images/head/1_100.gif</file>
+        <file>images/BtnBackgroundHover.png</file>
+    </qresource>
+    <qresource prefix="/images/flag">
+        <file>images/flag/away.png</file>
+        <file>images/flag/busy.png</file>
+        <file>images/flag/imonline.png</file>
+        <file>images/flag/invisible.png</file>
+        <file>images/flag/mute.png</file>
+        <file>images/flag/Qme.png</file>
+    </qresource>
+    <qresource prefix="/images/keyboard">
+        <file>images/keyboard/LoginPanel_softkeyboard_background.png</file>
+        <file>images/keyboard/LoginPanel_softkeyboard_bkgDown.png</file>
+        <file>images/keyboard/LoginPanel_softkeyboard_bkgHover.png</file>
+        <file>images/keyboard/LoginPanel_softkeyboard_bkgNormal.png</file>
+        <file>images/keyboard/LoginPanel_softkeyboardclosebutton_normalBackground.png</file>
+        <file>images/keyboard/LoginPanel_softkeyboardclosebutton_pushedBackground.png</file>
+    </qresource>
+    <qresource prefix="/images/gif">
+        <file>images/gif/loading.gif</file>
+    </qresource>
+    <qresource prefix="/images/mainwindow">
+        <file>images/mainwindow/main_bkg.png</file>
+        <file>images/mainwindow/btn_Skin_down.png</file>
+        <file>images/mainwindow/btn_Skin_highlight.png</file>
+        <file>images/mainwindow/btn_Skin_normal.png</file>
+        <file>images/mainwindow/LV.png</file>
+        <file>images/mainwindow/QQVIP_LIGHT.png</file>
+        <file>images/mainwindow/weather.png</file>
+        <file>images/mainwindow/main_search_bkg.png</file>
+        <file>images/mainwindow/icon_search_normal.png</file>
+    </qresource>
+    <qresource prefix="/images/mainTopToolBar">
+        <file>images/mainTopToolBar/friend.png</file>
+        <file>images/mainTopToolBar/mail.png</file>
+        <file>images/mainTopToolBar/paipai.png</file>
+        <file>images/mainTopToolBar/purse.png</file>
+        <file>images/mainTopToolBar/qzone.png</file>
+        <file>images/mainTopToolBar/soso.png</file>
+        <file>images/mainTopToolBar/Today.png</file>
+        <file>images/mainTopToolBar/wblog.png</file>
+        <file>images/mainTopToolBar/messagebox16xp.png</file>
+    </qresource>
+</RCC>

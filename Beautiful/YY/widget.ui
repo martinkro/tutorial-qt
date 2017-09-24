@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QFrame" name="main_bkg_frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>280</width>
+     <height>680</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#main_bkg_frame{
+border-radius: 4px;
+
+	background-color: rgb(59, 59, 59);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="main_frame">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>278</width>
+      <height>678</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#main_frame{
+border-radius: 3px;
+	background-color: rgb(200, 200, 255);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="QWidget" name="main_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>276</width>
+       <height>676</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#main_widget{
+border-radius: 3px;
+	border-image: url(:/images/mainwindow/images/mainwindow/main_bkg.png);
+}</string>
+     </property>
+     <widget class="QLabel" name="title">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-7</y>
+        <width>184</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#title{padding-left:0px;
+padding-top:0px;}</string>
+      </property>
+      <property name="text">
+       <string>HH2013 by:海寒</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_skin">
+      <property name="geometry">
+       <rect>
+        <x>184</x>
+        <y>-2</y>
+        <width>28</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>更改外观</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_skin:hover{
+	background-image: url(:/images/mainwindow/images/mainwindow/btn_Skin_highlight.png);
+
+}
+
+QPushButton#btn_skin:pressed{
+	background-image: url(:/images/mainwindow/images/mainwindow/btn_Skin_down.png);
+
+}
+
+QPushButton#btn_skin{
+	background-image: url(:/images/mainwindow/images/mainwindow/btn_Skin_normal.png);
+border-top-right-radius: 0px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_close">
+      <property name="geometry">
+       <rect>
+        <x>239</x>
+        <y>-2</y>
+        <width>39</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>关闭</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_close:hover{
+background-image:  url(:/images/btn_close_highlight.png);
+}
+
+QPushButton#btn_close:pressed{
+background-image:  url(:/images/btn_close_down.png);
+}
+
+QPushButton#btn_close{
+background-image: url(:/images/btn_close_normal.png);
+border-top-right-radius: 10px;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_mini">
+      <property name="geometry">
+       <rect>
+        <x>211</x>
+        <y>-2</y>
+        <width>28</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>最小化</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_mini:hover{
+background-image:  url(:/images/btn_mini_highlight.png);
+}
+
+QPushButton#btn_mini:pressed{
+background-image:  url(:/images/btn_mini_down.png);
+}
+
+QPushButton#btn_mini{
+background-image: url(:/images/btn_mini_normal.png);
+border-top-right-radius: 0px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>25</y>
+        <width>65</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label{
+border:5px solid gray;
+
+	border-top-color: qlineargradient(spread:pad, x1:0.506, y1:1, x2:0.510909, y2:0, stop:0 rgba(255, 255, 255, 255), stop:0.522727 rgba(136, 136, 136, 255), stop:0.5625 rgba(132, 179, 211, 0));
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0.506, x2:1, y2:0.489, stop:0 rgba(255, 255, 255, 255), stop:0.522727 rgba(136, 136, 136, 255), stop:0.5625 rgba(132, 179, 211, 0));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.534, y1:0, x2:0.534, y2:1, stop:0 rgba(255, 255, 255, 255), stop:0.522727 rgba(136, 136, 136, 255), stop:0.5625 rgba(132, 179, 211, 0));
+	border-left-color: qlineargradient(spread:pad, x1:1, y1:0.58, x2:0, y2:0.58, stop:0 rgba(255, 255, 255, 255), stop:0.522727 rgba(136, 136, 136, 255), stop:0.5625 rgba(132, 179, 211, 0));
+	image: url(:/images/images/head/1_100.gif);
+}
+
+
+QLabel#label::hover{
+	border:5px solid gray;
+	
+	border-top-color: qlineargradient(spread:pad, x1:0.477, y1:0, x2:0.483, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.210227 rgba(0, 153, 255, 200), stop:0.789773 rgba(80, 185, 255, 255), stop:0.863636 rgba(255, 255, 255, 255));
+	border-right-color: qlineargradient(spread:pad, x1:1, y1:0.551136, x2:0, y2:0.545, stop:0 rgba(255, 255, 255, 0), stop:0.210227 rgba(0, 153, 255, 200), stop:0.789773 rgba(80, 185, 255, 255), stop:0.863636 rgba(255, 255, 255, 255));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.528, y1:1, x2:0.522727, y2:0, stop:0 rgba(255, 255, 255, 0), stop:0.210227 rgba(0, 153, 255, 200), stop:0.789773 rgba(80, 185, 255, 255), stop:0.863636 rgba(255, 255, 255, 255));
+	border-left-color: qlineargradient(spread:pad, x1:0, y1:0.590909, x2:1, y2:0.58, stop:0 rgba(255, 255, 255, 0), stop:0.210227 rgba(0, 153, 255, 200), stop:0.789773 rgba(80, 185, 255, 255), stop:0.863636 rgba(255, 255, 255, 255));
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="status">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>24</y>
+        <width>35</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/flag/images/flag/imonline.png</normaloff>:/images/flag/images/flag/imonline.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="popupMode">
+       <enum>QToolButton::MenuButtonPopup</enum>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonIconOnly</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+      <property name="arrowType">
+       <enum>Qt::NoArrow</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nickname">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>24</y>
+        <width>60</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>HH</string>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>30</y>
+        <width>20</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>images/mainwindow/LV.png</normaloff>images/mainwindow/LV.png</iconset>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>30</y>
+        <width>30</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>images/mainwindow/QQVIP_LIGHT.png</normaloff>images/mainwindow/QQVIP_LIGHT.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>10</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>25</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/mainwindow/images/mainwindow/weather.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_3">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>43</y>
+        <width>140</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>编辑个性签名         </string>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_4">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>68</y>
+        <width>23</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/mainTopToolBar/images/mainTopToolBar/qzone.png</normaloff>:/images/mainTopToolBar/images/mainTopToolBar/qzone.png</iconset>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_5">
+      <property name="geometry">
+       <rect>
+        <x>93</x>
+        <y>68</y>
+        <width>23</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/mainTopToolBar/images/mainTopToolBar/wblog.png</normaloff>:/images/mainTopToolBar/images/mainTopToolBar/wblog.png</iconset>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_6">
+      <property name="geometry">
+       <rect>
+        <x>113</x>
+        <y>68</y>
+        <width>23</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/mainTopToolBar/images/mainTopToolBar/mail.png</normaloff>:/images/mainTopToolBar/images/mainTopToolBar/mail.png</iconset>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_7">
+      <property name="geometry">
+       <rect>
+        <x>133</x>
+        <y>68</y>
+        <width>23</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/mainTopToolBar/images/mainTopToolBar/friend.png</normaloff>:/images/mainTopToolBar/images/mainTopToolBar/friend.png</iconset>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_8">
+      <property name="geometry">
+       <rect>
+        <x>153</x>
+        <y>68</y>
+        <width>23</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/mainTopToolBar/images/mainTopToolBar/paipai.png</normaloff>:/images/mainTopToolBar/images/mainTopToolBar/paipai.png</iconset>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_9">
+      <property name="geometry">
+       <rect>
+        <x>173</x>
+        <y>68</y>
+        <width>23</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/mainTopToolBar/images/mainTopToolBar/purse.png</normaloff>:/images/mainTopToolBar/images/mainTopToolBar/purse.png</iconset>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="toolButton_10">
+      <property name="geometry">
+       <rect>
+        <x>193</x>
+        <y>68</y>
+        <width>23</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/mainTopToolBar/images/mainTopToolBar/soso.png</normaloff>:/images/mainTopToolBar/images/mainTopToolBar/soso.png</iconset>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>95</y>
+        <width>276</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="main_search">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>276</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>华文细黑</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit#main_search{
+border-radius: 3px;
+	border:1px solid gray;
+	background-color: rgba(255, 255, 255, 70);
+	
+	border-top-color: rgb(56, 139, 187);
+	border-bottom-color: rgb(174, 182, 255);
+	border-right-color: rgba(255, 255, 255, 0);
+border-left-color: rgba(255, 255, 255, 0);
+padding-right:30px;
+
+}</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string>搜索：联系人、讨论组、群、企业</string>
+       </property>
+      </widget>
+      <widget class="QToolButton" name="toolButton_12">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>30</y>
+         <width>41</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="popupMode">
+        <enum>QToolButton::MenuButtonPopup</enum>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+       <property name="arrowType">
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>252</x>
+         <y>4</y>
+         <width>22</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/images/mainwindow/images/mainwindow/icon_search_normal.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QToolButton" name="toolButton_11">
+      <property name="geometry">
+       <rect>
+        <x>252</x>
+        <y>70</y>
+        <width>23</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/images/mainTopToolBar/images/mainTopToolBar/messagebox16xp.png</normaloff>:/images/mainTopToolBar/images/mainTopToolBar/messagebox16xp.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>14</width>
+        <height>14</height>
+       </size>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btn_close</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>9</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mini</sender>
+   <signal>clicked()</signal>
+   <receiver>main_widget</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>6</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VerifyImgFrame</class>
+ <widget class="QFrame" name="VerifyImgFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>378</width>
+    <height>260</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>378</width>
+     <height>260</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>378</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame{
+background-color: rgba(255, 255, 255, 220);
+border-top-left-radius: 0px;border-top-right-radius: 0px;
+border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>15</y>
+        <width>261</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>为了您的帐号安全，本次登陆需输验证码。</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>43</y>
+        <width>261</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#lineEdit::hover{   
+	border:2px solid gray;
+	
+	border-top-color: qlineargradient(spread:pad, x1:0.534, y1:1, x2:0.545, y2:0, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0.506, x2:1, y2:0.511364, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.5, y2:1, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-left-color: qlineargradient(spread:pad, x1:1, y1:0.579545, x2:0, y2:0.574, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+} </string>
+      </property>
+      <property name="placeholderText">
+       <string>以下字符不区分大小写</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_image">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>15</y>
+        <width>36</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/main_QQdoctortip36_attention.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="verifyImg">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>120</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>117</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>看不清，换一张</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>150</y>
+        <width>161</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>需要验证的原因可能是：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>42</x>
+        <y>175</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>·您本次登陆地与常用登陆地不符，</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>42</x>
+        <y>190</y>
+        <width>201</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>·您的网络有危及QQ用户安全的行为，</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ok">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>220</y>
+        <width>70</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#ok{border-radius: 4px;
+border:1px solid gray;
+border-color: rgb(153, 153, 153);
+background-color: rgb(255, 255, 255);}
+QPushButton#ok::hover{border-radius: 4px;
+border:1px solid gray;
+border-color: rgb(153, 153, 153);
+	background-color: rgba(170, 255, 255, 150);
+}</string>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cancel">
+      <property name="geometry">
+       <rect>
+        <x>285</x>
+        <y>220</y>
+        <width>70</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#cancel{border-radius: 4px;
+border:1px solid gray;
+border-color: rgb(153, 153, 153);
+background-color: rgb(255, 255, 255);}
+QPushButton#cancel::hover{border-radius: 4px;
+border:1px solid gray;
+border-color: rgb(153, 153, 153);
+	background-color: rgba(170, 255, 255, 150);
+}</string>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>378</width>
+       <height>210</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame_2{
+	background-color: qlineargradient(spread:pad, x1:0.466182, y1:0.688, x2:0.511, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 220));
+border-radius: 0px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_image_2">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>15</y>
+        <width>36</width>
+        <height>36</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/images/main_QQdoctortip36_attention.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>53</x>
+        <y>15</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>您输入的密码不正确，原因可能是:
+忘记密码;未区分字母大小写;未开启小键盘。</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>53</x>
+        <y>70</y>
+        <width>235</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>如果您的密码遗失或遗忘,可访问HH安全中心</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>288</x>
+        <y>70</y>
+        <width>54</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>找回密码</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>53</x>
+        <y>130</y>
+        <width>301</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>提示：某些木马病毒也会导致密码验证错误，查找更多原
+因和解决方案请</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>138</x>
+        <y>150</y>
+        <width>54</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string>点击这里</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>210</y>
+       <width>378</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame_3{border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.506, y2:1, stop:0 rgba(203, 212, 229, 255), stop:0.369318 rgba(233, 237, 245, 255), stop:0.545455 rgba(240, 241, 247, 255), stop:1 rgba(224, 227, 241, 255));}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>15</y>
+        <width>70</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton{border-radius: 4px;
+border:1px solid gray;
+border-color: rgb(153, 153, 153);
+background-color: rgb(255, 255, 255);}
+QPushButton#pushButton::hover{border-radius: 4px;
+border:1px solid gray;
+border-color: rgb(153, 153, 153);
+	background-color: rgba(170, 255, 255, 150);
+}</string>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

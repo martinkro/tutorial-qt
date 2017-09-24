@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QDialog" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>383</width>
+    <height>298</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#Login{border-radius: 5px;}
+</string>
+  </property>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>382</width>
+     <height>296</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame_2{border-radius: 8px;
+border:1px solid gray;
+border-color: rgba(240, 240, 240, 0);
+background-color: rgba(127, 127, 127, 150);
+}
+
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>380</width>
+      <height>294</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame{background-color: rgb(63, 63, 63);border-radius: 7px;}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>378</width>
+       <height>292</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget{background-image: url(:/images/afternoon.jpg);
+border-radius: 5px;
+border:1px solid gray;
+border-color: rgba(255, 255, 255, 150);}</string>
+     </property>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>242</y>
+        <width>378</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_3{border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
+background-color: qlineargradient(spread:pad, x1:0.505682, y1:0, x2:0.506, y2:1, stop:0 rgba(203, 212, 229, 255), stop:0.369318 rgba(233, 237, 245, 255), stop:0.545455 rgba(240, 241, 247, 255), stop:1 rgba(224, 227, 241, 255));}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="button_login">
+       <property name="geometry">
+        <rect>
+         <x>111</x>
+         <y>7</y>
+         <width>162</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>幼圆</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::StrongFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#button_login:hover{
+border-image: url(:/images/button_login_hover.png);}
+
+QPushButton#button_login:pressed{
+border-image: url(:/images/button_login_down.png);}
+
+QPushButton#button_login{
+border-image: url(:/images/button_login_normal.png);}</string>
+       </property>
+       <property name="text">
+        <string>登     录</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="switch_single">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>14</y>
+         <width>25</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#switch_single:hover{
+border-image: url(:/images/switch_single_hover.png);}
+
+QPushButton#switch_single:pressed{
+border-image: url(:/images/switch_single_down.png);}
+
+QPushButton#switch_single{
+border-image: url(:/images/switch_single_normal.png);}
+
+QPushButton#switch_single:hover:checked{
+border-image: url(:/images/switch_multi_hover.png);}
+
+QPushButton#switch_single:pressed:checked{
+border-image: url(:/images/switch_multi_down.png);}
+
+QPushButton#switch_single:checked{
+border-image: url(:/images/switch_multi_normal.png);}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="corner_right">
+       <property name="geometry">
+        <rect>
+         <x>334</x>
+         <y>7</y>
+         <width>38</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#corner_right:hover{
+border-image: url(:/images/corner_right_hover.png);}
+
+QPushButton#corner_right:pressed{
+border-image: url(:/images/corner_right_normal_down.png);}
+
+QPushButton#corner_right{
+border-image: url(:/images/corner_right_normal_breath.png);}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>378</width>
+        <height>142</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_4{
+	background-color: qlineargradient(spread:pad, x1:0.523, y1:0, x2:0.511, y2:0.653682, stop:0 rgba(255, 255, 255, 0), stop:0.465909 rgba(255, 255, 255, 148), stop:1 rgba(255, 255, 255, 225));}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLineEdit" name="pwd">
+       <property name="geometry">
+        <rect>
+         <x>111</x>
+         <y>78</y>
+         <width>189</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Meiryo</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit#pwd::hover{   
+	border:2px solid gray;
+	
+	border-top-color: qlineargradient(spread:pad, x1:0.534, y1:1, x2:0.545, y2:0, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0.506, x2:1, y2:0.511364, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.5, y2:1, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-left-color: qlineargradient(spread:pad, x1:1, y1:0.579545, x2:0, y2:0.574, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+}  
+
+QLineEdit#pwd{   
+	border-radius: 1px;
+	border:2px solid gray;
+	border-top-color: qlineargradient(spread:pad, x1:0.471273, y1:0.71, x2:0.483, y2:0, stop:0 rgba(191, 191, 191, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-right-color: qlineargradient(spread:pad, x1:0.301, y1:0.510682, x2:1, y2:0.522, stop:0 rgba(191, 191, 191, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.523, y1:0.294455, x2:0.528, y2:1, stop:0 rgba(191, 191, 191, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-left-color: qlineargradient(spread:pad, x1:0.682091, y1:0.544, x2:0, y2:0.557, stop:0 rgba(191, 191, 191, 255), stop:0.982955 rgba(143, 192, 255, 0));
+padding-left:3px;
+padding-right: 25px;
+	font: 9pt &quot;Meiryo&quot;;
+}  
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>密码</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="keyboard">
+       <property name="geometry">
+        <rect>
+         <x>277</x>
+         <y>82</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#keyboard{border-image: url(:/images/keyboard.png);}
+QPushButton#keyboard::pressed{
+background-image: url(:/images/keyboard.png);}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="rem_pwd">
+       <property name="geometry">
+        <rect>
+         <x>111</x>
+         <y>110</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox#rem_pwd::indicator{width:15px;
+height:15px;
+border-image: url(:/images/checkbox_normal.png);}
+
+QCheckBox#rem_pwd::indicator:hover:unchecked{border-image: url(:/images/checkbox_hightlight.png);}
+
+QCheckBox#rem_pwd::indicator:checked{
+	border-image: url(:/images/checkbox_tick_normal.png);
+}
+QCheckBox#rem_pwd::indicator:hover:checked{
+	border-image: url(:/images/checkbox_tick_highlight.png);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>记住密码</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="auto_login">
+       <property name="geometry">
+        <rect>
+         <x>192</x>
+         <y>110</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QCheckBox#auto_login::indicator{width:15px;
+height:15px;
+border-image: url(:/images/checkbox_normal.png);}
+
+QCheckBox#auto_login::indicator:hover:unchecked{border-image: url(:/images/checkbox_hightlight.png);}
+
+QCheckBox#auto_login::indicator:checked{
+	border-image: url(:/images/checkbox_tick_normal.png);
+}
+QCheckBox#auto_login::indicator:hover:checked{
+	border-image: url(:/images/checkbox_tick_highlight.png);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>自动登陆</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="zhuce">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>50</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#zhuce{border-image: url(:/images/zhuce.png);}
+QPushButton#zhuce:hover{border-image: url(:/images/zhuce_hover.png);}
+QPushButton#zhuce:pressed{border-image: url(:/images/zhuce_press.png);}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="mima">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>83</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#mima{border-image: url(:/images/mima.png);}
+QPushButton#mima:hover{border-image: url(:/images/mima_hover.png);}
+QPushButton#mima:pressed{border-image: url(:/images/mima_press.png);}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="id">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>44</y>
+         <width>191</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox#id::hover{   
+	border:2px solid gray;
+	
+	border-top-color: qlineargradient(spread:pad, x1:0.534, y1:1, x2:0.545, y2:0, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0.506, x2:1, y2:0.511364, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.5, y2:1, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-left-color: qlineargradient(spread:pad, x1:1, y1:0.579545, x2:0, y2:0.574, stop:0 rgba(36, 132, 238, 255), stop:0.982955 rgba(143, 192, 255, 0));
+}  
+
+QComboBox#id{   
+
+	border-radius: 1px;
+	border:2px solid gray;
+	
+	border-top-color: qlineargradient(spread:pad, x1:0.471273, y1:0.71, x2:0.483, y2:0, stop:0 rgba(191, 191, 191, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-right-color: qlineargradient(spread:pad, x1:0.301, y1:0.510682, x2:1, y2:0.522, stop:0 rgba(191, 191, 191, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-bottom-color: qlineargradient(spread:pad, x1:0.523, y1:0.294455, x2:0.528, y2:1, stop:0 rgba(191, 191, 191, 255), stop:0.982955 rgba(143, 192, 255, 0));
+	border-left-color: qlineargradient(spread:pad, x1:0.682091, y1:0.544, x2:0, y2:0.557, stop:0 rgba(191, 191, 191, 255), stop:0.982955 rgba(143, 192, 255, 0));
+padding-left:3px;
+	
+	font: 10pt &quot;Meiryo UI&quot;;
+}  
+
+QComboBox#id::drop-down{width:21px;
+	background-color: qlineargradient(spread:pad, x1:0.534, y1:0, x2:0.545, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(229, 229, 229, 255));
+border-left:1px solid gray;
+border-color: rgb(216, 216, 216);
+}
+
+QComboBox#id::drop-down::hover{width:21px;
+	background-color: rgb(235, 255, 252);
+border-left:1px solid gray;
+border-color: rgb(216, 216, 216);
+}
+
+
+QComboBox#id::down-arrow{
+width:10px;
+height:8px;
+	border-image: url(:/images/arrow_down_normal.png);
+}
+
+QComboBox#id::down-arrow:on {
+border-image: url(:/images/arrow_up_normal.png);
+}</string>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QFrame" name="login_head">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>43</y>
+         <width>82</width>
+         <height>82</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="login_head_bkg">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>82</width>
+          <height>82</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#login_head_bkg{border-image: url(:/images/login_head_bkg_normal.png);}
+QLabel#login_head_bkg::hover{border-image: url(:/images/login_head_bkg_highlight.png);}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="head">
+        <property name="geometry">
+         <rect>
+          <x>3</x>
+          <y>3</y>
+          <width>75</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/images/images/head/1_100.gif);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="flag">
+        <property name="geometry">
+         <rect>
+          <x>65</x>
+          <y>65</y>
+          <width>13</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#flag{
+background-image: url(:/images/flag/images/flag/imonline.png);}
+
+QPushButton#flag:hover{
+border:1px solid gray;
+border-color: rgb(231, 231, 231);
+	background-color: qlineargradient(spread:pad, x1:0.534, y1:0, x2:0.545, y2:1, stop:0 rgba(255, 255, 255, 225), stop:1 rgba(141, 141, 141, 213));
+
+}
+
+
+QPushButton#flag:checked{border:1px solid gray;
+border-color: rgb(231, 231, 231);
+	background-color: qlineargradient(spread:pad, x1:0.534, y1:0, x2:0.545, y2:1, stop:0 rgba(255, 255, 255, 225), stop:1 rgba(141, 141, 141, 213));
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btn_set">
+      <property name="geometry">
+       <rect>
+        <x>285</x>
+        <y>-1</y>
+        <width>28</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>设置</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_set:hover{
+background-image:  url(:/images/btn_set_hover.png);
+}
+
+QPushButton#btn_set:pressed{
+background-image:  url(:/images/btn_set_press.png);
+}
+
+QPushButton#btn_set{
+background-image: url(:/images/btn_set_normal.png);
+border-top-right-radius: 0px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_close">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>-1</y>
+        <width>39</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>关闭</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_close:hover{
+background-image:  url(:/images/btn_close_highlight.png);
+}
+
+QPushButton#btn_close:pressed{
+background-image:  url(:/images/btn_close_down.png);
+}
+
+QPushButton#btn_close{
+background-image: url(:/images/btn_close_normal.png);
+border-top-right-radius: 10px;}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_mini">
+      <property name="geometry">
+       <rect>
+        <x>312</x>
+        <y>-1</y>
+        <width>28</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>最小化</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btn_mini:hover{
+background-image:  url(:/images/btn_mini_highlight.png);
+}
+
+QPushButton#btn_mini:pressed{
+background-image:  url(:/images/btn_mini_down.png);
+}
+
+QPushButton#btn_mini{
+background-image: url(:/images/btn_mini_normal.png);
+border-top-right-radius: 0px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_close</sender>
+   <signal>clicked()</signal>
+   <receiver>Login</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mini</sender>
+   <signal>clicked()</signal>
+   <receiver>Login</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>407</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
