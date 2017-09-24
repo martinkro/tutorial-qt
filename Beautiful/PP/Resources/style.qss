@@ -1,0 +1,18 @@
+QPushButton {
+	border-radius: 2px;
+	border: 1px solid rgb(41, 119, 191);
+	background:transparent;
+	color: rgb(41, 119, 191);
+}
+
+QPushButton:hover {
+	background: rgb(41, 119, 191);
+	color: white;
+}
+
+
+QLabel#LabelTitle {
+	color: white;
+}
+
+

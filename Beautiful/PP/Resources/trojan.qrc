@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/qss">
+        <file alias="trojan">style.qss</file>
+    </qresource>
+    <qresource prefix="/background">
+        <file alias="logo">images/background/logo.png</file>
+        <file alias="little_background">images/background/background.png</file>
+        <file alias="title_background">images/background/background_big.png</file>
+    </qresource>
+    <qresource prefix="/misc">
+        <file alias="cloud">images/misc/cloud.png</file>
+    </qresource>
+    <qresource prefix="/sysbuttons">
+        <file alias="close">images/sysbuttons/close.png</file>
+        <file alias="close_hover">images/sysbuttons/close_hover.png</file>
+        <file alias="close_pressed">images/sysbuttons/close_pressed.png</file>
+        <file alias="settings">images/sysbuttons/menu.png</file>
+        <file alias="settings_hover">images/sysbuttons/menu_hover.png</file>
+        <file alias="settings_pressed">images/sysbuttons/menu_pressed.png</file>
+        <file alias="min">images/sysbuttons/min.png</file>
+        <file alias="min_hover">images/sysbuttons/min_hover.png</file>
+        <file alias="min_pressed">images/sysbuttons/min_pressed.png</file>
+    </qresource>
+    <qresource prefix="/tabbuttons">
+        <file alias="protector">images/tabbuttons/protector.png</file>
+        <file alias="channel">images/tabbuttons/channel.png</file>
+        <file alias="signature">images/tabbuttons/signature.png</file>
+        <file alias="history">images/tabbuttons/history.png</file>
+    </qresource>
+</RCC>
