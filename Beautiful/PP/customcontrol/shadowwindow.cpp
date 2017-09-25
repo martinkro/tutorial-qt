@@ -3,7 +3,7 @@
 ShadowWindow::ShadowWindow(QWidget *parent)
 	: QDialog(parent)
 {
-	setWindowFlags(Qt::FramelessWindowHint);
+	//setWindowFlags(Qt::FramelessWindowHint);
 	setAttribute(Qt::WA_TranslucentBackground);
 	m_isPressed = false;
 }

@@ -5,6 +5,8 @@
 #include "titlebar.h"
 #include "protectorpage.h"
 #include "channelpage.h"
+#include "signaturepage.h"
+#include "historypage.h"
 #include <QSTackedWidget>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -37,9 +39,12 @@ private:
 	QVBoxLayout* m_layoutMain;
 	QHBoxLayout* m_layoutBottom;
 	TitleBar* m_titleBar;
+
 	QStackedWidget* m_center;
 	ProtectorPage* m_pageProtector;
 	ChannelPage* m_pageChannel;
+	SignaturePage* m_pageSignature;
+	HistoryPage* m_pageHistory;
 };
 
 

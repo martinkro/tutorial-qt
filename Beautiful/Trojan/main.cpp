@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
 	app.setApplicationVersion(QStringLiteral("1.0-alpha"));
 
 	// add qt style sheet
-	QFile file(":/Qss/stylesheet");
-	file.open(QFile::ReadOnly);
-	qApp->setStyleSheet(file.readAll());
-	file.close();
+	//QFile file(":/Qss/stylesheet");
+	//file.open(QFile::ReadOnly);
+	//qApp->setStyleSheet(file.readAll());
+	//file.close();
 	
 	//Trojan w;
 	//w.show();

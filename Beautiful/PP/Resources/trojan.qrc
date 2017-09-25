@@ -5,7 +5,7 @@
     <qresource prefix="/background">
         <file alias="logo">images/background/logo.png</file>
         <file alias="little_background">images/background/background.png</file>
-        <file alias="title_background">images/background/background_big.png</file>
+        <file alias="title_background">images/background/01.png</file>
     </qresource>
     <qresource prefix="/misc">
         <file alias="cloud">images/misc/cloud.png</file>

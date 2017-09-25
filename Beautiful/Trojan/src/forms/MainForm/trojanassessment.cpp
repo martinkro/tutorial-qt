@@ -10,23 +10,44 @@ TrojanAssessment::TrojanAssessment(QWidget *parent)
 	/* set the width and height of the window fixed. */
 	setFixedSize(900, 600);
 	// create tree widget and stacked widget
-	treeWidget = new QTreeWidget(this);
-	treeWidget->setFrameShape(QFrame::NoFrame);
-	stackedWidget = new QStackedWidget(this);
-	stackedWidget->resize(680, 500);
-	stackedWidget->setFrameShape(QFrame::NoFrame);
-	initStackedWidget();
-	initTreeWidget();
-	
-	splitter = new QSplitter(Qt::Horizontal, this);
-	splitter->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-	splitter->setHandleWidth(1);
-	splitter->addWidget(treeWidget);
-	splitter->addWidget(stackedWidget);
-	splitter->handle(1)->setDisabled(true);
+
+	QPalette plt;
+	plt.setBrush(QPalette::Window, QBrush(Qt::white));
+
+	//treeWidget = new QTreeWidget;
+	//treeWidget->setFrameShape(QFrame::NoFrame);
+	//treeWidget->setPalette(plt);
+	//treeWidget->setAutoFillBackground(true);
+	//initTreeWidget();
+
+	//stackedWidget = new QStackedWidget(this);
+	//stackedWidget->setPalette(plt);
+	//stackedWidget->setAutoFillBackground(true);
+	//stackedWidget->resize(680, 500);
+	//stackedWidget->setFrameShape(QFrame::NoFrame);
+	//initStackedWidget();
+
+	//QLabel* left = new QLabel("LEFT");
+	//left->setPalette(plt);
+	//left->setAutoFillBackground(true);
+
+	//QLabel* right = new QLabel("right");
+	//right->setPalette(plt);
+	//right->setAutoFillBackground(true);
+
+	//splitter = new QSplitter(Qt::Horizontal, this);
+	//splitter->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+	//splitter->setHandleWidth(1);
+	////splitter->addWidget(treeWidget);
+	////splitter->addWidget(stackedWidget);
+	//splitter->addWidget(left);
+	//splitter->addWidget(right);
+	//
+	//splitter->handle(1)->setDisabled(true);
 
 	// create title widget and status bar
 	titleWidget = new TitleWidget(this);
+
 	icon_label = new QLabel(this);
 	icon_label->setPixmap(QPixmap(":/menu/cloud"));
 	icon_label->setFixedSize(QPixmap(":/menu/cloud").size());
@@ -42,16 +63,11 @@ TrojanAssessment::TrojanAssessment(QWidget *parent)
 	login_dt = QDateTime::currentDateTime();
 	restoreSettings();
 
-	QPalette plt;
-	plt.setBrush(QPalette::Window, QBrush(Qt::white));
-	treeWidget->setPalette(plt);
-	treeWidget->setAutoFillBackground(true);
-	stackedWidget->setPalette(plt);
-	stackedWidget->setAutoFillBackground(true);
+	
 
 	// settings for main layout
 	m_mainLayout->addWidget(titleWidget);
-	m_mainLayout->addWidget(splitter);
+	//m_mainLayout->addWidget(splitter);
 	m_mainLayout->addLayout(m_bottomLayout);
 	m_mainLayout->setSpacing(0);
 	m_mainLayout->setContentsMargins(5, 5, 5, 5);
@@ -59,14 +75,15 @@ TrojanAssessment::TrojanAssessment(QWidget *parent)
 
 	m_systemTray = new SystemTray(this);
 	m_systemTray->show();
+
 	/* take responding actions when the user clicked any items in the tree widget */
-	connect(treeWidget, SIGNAL(currentItemChanged(QTreeWidgetItem*, QTreeWidgetItem*)), SLOT(changePage(QTreeWidgetItem*, QTreeWidgetItem*)));
-	connect(treeWidget, SIGNAL(toolButtonChangePage(QTreeWidgetItem*, QTreeWidgetItem*)), SLOT(changePage(QTreeWidgetItem*, QTreeWidgetItem*)));
-	connect(this, SIGNAL(toolButtonChangePage(QTreeWidgetItem*, QTreeWidgetItem*)), SLOT(changePage(QTreeWidgetItem*, QTreeWidgetItem*)));
-	connect(titleWidget, SIGNAL(ShowMinimizedBtnClicked()), SLOT(showMinimized()));
+	//connect(treeWidget, SIGNAL(currentItemChanged(QTreeWidgetItem*, QTreeWidgetItem*)), SLOT(changePage(QTreeWidgetItem*, QTreeWidgetItem*)));
+	//connect(treeWidget, SIGNAL(toolButtonChangePage(QTreeWidgetItem*, QTreeWidgetItem*)), SLOT(changePage(QTreeWidgetItem*, QTreeWidgetItem*)));
+	//connect(this, SIGNAL(toolButtonChangePage(QTreeWidgetItem*, QTreeWidgetItem*)), SLOT(changePage(QTreeWidgetItem*, QTreeWidgetItem*)));
+	//connect(titleWidget, SIGNAL(ShowMinimizedBtnClicked()), SLOT(showMinimized()));
 	connect(titleWidget, SIGNAL(CloseWindowBtnClicked()), SLOT(close()));
-	connect(titleWidget, SIGNAL(SettingsBtnClicked()), this, SLOT(onShowSettingsMenu()));
-	connect(titleWidget, SIGNAL(ToolBtnClicked(int)), this, SLOT(onToolBtnClicked(int)));
+	//connect(titleWidget, SIGNAL(SettingsBtnClicked()), this, SLOT(onShowSettingsMenu()));
+	//connect(titleWidget, SIGNAL(ToolBtnClicked(int)), this, SLOT(onToolBtnClicked(int)));
 }
 
 void TrojanAssessment::initTreeWidget()
@@ -361,7 +378,7 @@ void TrojanAssessment::paintEvent(QPaintEvent* event)
 {
 	// First, we pass the paint event to parent widget to draw window shadow.
 	// Then, we do our specific painting stuff.
-	ShadowWindow::paintEvent(event);
+	//ShadowWindow::paintEvent(event);
 	// draw the background using the specified image.
 	QPainter painter(this);
 	painter.setPen(Qt::NoPen);
