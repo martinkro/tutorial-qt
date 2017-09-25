@@ -18,7 +18,7 @@ LoginWidget::LoginWidget(QWidget *parent) :
 
 void LoginWidget::setConnect()
 {
-    connect(multiAccountLoginButton, &PushButton::clicked, this, &LoginWidget::multiAccount_clicked);
+    // connect(multiAccountLoginButton, &PushButton::clicked, this, &LoginWidget::multiAccount_clicked);
     connect(loginButton, &PushButton::clicked, this, &LoginWidget::login_clicked);
     connect(qrCodeLoginButton, &PushButton::clicked, this, &LoginWidget::qrCode_clicked);
 }

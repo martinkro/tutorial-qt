@@ -1,5 +1,6 @@
 #include "pp.h"
 #include "mainwindow.h"
+#include "loginwindow.h"
 #include "customcontrol/shadowwindow.h"
 #include <QtWidgets/QApplication>
 #include <QStyleFactory>
@@ -25,7 +26,8 @@ int main(int argc, char *argv[])
 	//w.show();
 
 	// ShadowWindow w;
-	MainWindow w;
+	// MainWindow w;
+	LoginWindow w;
 	w.show();
 
 	return a.exec();

@@ -14,8 +14,8 @@ LoginDialog::LoginDialog(QWidget *parent) :
     this->setFixedSize(380, 292);
     this->setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::SubWindow);
 
-    BackgroundFactory factory(BackgroundFactory::Flash);
-    backGroundWidget = factory.createBackground(this);
+    //BackgroundFactory factory(BackgroundFactory::Flash);
+    //backGroundWidget = factory.createBackground(this);
 
     systemTray = new SystemTray(this, ":/trayicon/offline");
 

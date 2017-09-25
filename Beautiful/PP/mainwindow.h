@@ -1,7 +1,7 @@
 #ifndef MAIN_WINDOW_H
 #define MAIN_WINDOW_H
 
-#include "customcontrol/shadowwindow.h"
+#include "customcontrol/xbasewindow.h"
 #include "titlebar.h"
 #include "protectorpage.h"
 #include "channelpage.h"
@@ -12,7 +12,7 @@
 #include <QHBoxLayout>
 #include <QPaintEvent>
 
-class MainWindow:public ShadowWindow
+class MainWindow:public XBaseWindow
 {
     Q_OBJECT
 public:

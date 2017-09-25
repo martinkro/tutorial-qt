@@ -12,19 +12,19 @@ int main(int argc, char *argv[])
 	//QQLogin w;
 	//w.show();
 
-	QTranslator translator;
-	translator.load(":/qm/QQ_zh");
-	a.installTranslator(&translator);
+	//QTranslator translator;
+	//translator.load(":/qm/QQ_zh");
+	//a.installTranslator(&translator);
 
 	QFile qss(":/qss/logindialog.qss");
 	qss.open(QFile::ReadOnly);
 
 	LoginDialog w;
 
-	QFont font(QObject::tr("Times"));
-	w.setFont(font);
+	//QFont font(QObject::tr("Times"));
+	//w.setFont(font);
 
-	w.setStyleSheet(qss.readAll());
+	//w.setStyleSheet(qss.readAll());
 	w.show();
 
 	qss.close();

@@ -8,7 +8,7 @@
 const int MAIN_WIDTH = 900;
 const int MAIN_HEIGHT = 600;
 MainWindow::MainWindow(QWidget* parent)
-    :ShadowWindow(parent)
+    :XBaseWindow(parent)
 {
 	initUI();
 	initConnect();
