@@ -10,6 +10,7 @@ class PushButton:public QPushButton
 	Q_OBJECT
 public:
 	explicit PushButton(QWidget *parent = Q_NULLPTR);
+	explicit PushButton(const QString& text, QWidget* parent = Q_NULLPTR);
 	virtual ~PushButton(){}
 	enum BUTTON_STATUS{NORMAL, PRESSED, HOVER};
 

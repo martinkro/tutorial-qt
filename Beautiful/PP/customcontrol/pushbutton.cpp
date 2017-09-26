@@ -7,9 +7,15 @@ PushButton::PushButton(QWidget *parent)
 
 }
 
+PushButton::PushButton(const QString& text, QWidget *parent)
+	: QPushButton(text,parent)
+{
+
+}
+
 void PushButton::paintEvent(QPaintEvent *event)
 {
-	QPainter painter(this);
+	
 	QString pixmapPath;
 	switch (m_status)
 	{
@@ -27,8 +33,12 @@ void PushButton::paintEvent(QPaintEvent *event)
 		break;
 	}
 	// draw the button background
-	painter.drawPixmap(rect(), QPixmap(pixmapPath));  
-
+	QPixmap pixmap(pixmapPath);
+	QPainter painter(this);
+	painter.save();
+	painter.drawPixmap(rect(), QPixmap(pixmapPath));
+	painter.drawText(this->rect(), Qt::AlignCenter, this->text());
+	painter.restore();
 }
 
 void PushButton::mousePressEvent(QMouseEvent *event)

@@ -1,12 +1,11 @@
 #include "mainwindow.h"
+#include "config.h"
 #include <QIcon>
 #include <QLabel>
 #include <QPixmap>
 #include <QDateTime>
 #include <QSplitter>
 
-const int MAIN_WIDTH = 900;
-const int MAIN_HEIGHT = 600;
 MainWindow::MainWindow(QWidget* parent)
     :XBaseWindow(parent)
 {
@@ -26,7 +25,7 @@ void MainWindow::closeEvent(QCloseEvent* event)
 void MainWindow::initUI()
 {
 	setWindowIcon(QIcon(tr(":/background/logo")));
-	setFixedSize(MAIN_WIDTH, MAIN_HEIGHT);
+	setFixedSize(MAIN_WINDOW_WIDTH, MAIN_WINDOW_HEIGHT);
 
 	m_layoutMain = new QVBoxLayout;
 

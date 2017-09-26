@@ -10,6 +10,55 @@
     </message>
 </context>
 <context>
+    <name>HistoryPage</name>
+    <message>
+        <location filename="historypage.cpp" line="7"/>
+        <source>LABEL HISTORY</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LoginQRCode</name>
+    <message>
+        <location filename="loginqrcode.cpp" line="19"/>
+        <source>Scan QRCode with phone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="loginqrcode.cpp" line="28"/>
+        <source>Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LoginTitleBar</name>
+    <message>
+        <location filename="logintitlebar.cpp" line="22"/>
+        <source>PP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="logintitlebar.cpp" line="30"/>
+        <source>:/sysbuttons/min</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="logintitlebar.cpp" line="31"/>
+        <source>Minimize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="logintitlebar.cpp" line="34"/>
+        <source>:/sysbuttons/close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="logintitlebar.cpp" line="35"/>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MainWindow</name>
     <message>
         <location filename="mainwindow.cpp" line="27"/>
@@ -17,13 +66,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="67"/>
+        <location filename="mainwindow.cpp" line="87"/>
         <source>yyyy-M-d h:m</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="68"/>
-        <source>[Last run]: &lt;b&gt;&lt;font color=blue&gt;%1&lt;/font&gt;&lt;/b&gt;</source>
+        <location filename="mainwindow.cpp" line="88"/>
+        <source>Last run: &lt;b&gt;&lt;font color=white&gt;%1&lt;/font&gt;&lt;/b&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -46,13 +95,21 @@
 <context>
     <name>PushButton</name>
     <message>
-        <location filename="customcontrol/pushbutton.cpp" line="20"/>
+        <location filename="customcontrol/pushbutton.cpp" line="26"/>
         <source>%1_hover</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="customcontrol/pushbutton.cpp" line="23"/>
+        <location filename="customcontrol/pushbutton.cpp" line="29"/>
         <source>%1_pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SignaturePage</name>
+    <message>
+        <location filename="signaturepage.cpp" line="7"/>
+        <source>LABEL SIGNATURE</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

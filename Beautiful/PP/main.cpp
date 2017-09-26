@@ -5,6 +5,7 @@
 #include <QtWidgets/QApplication>
 #include <QStyleFactory>
 #include <QTranslator>
+#include <QDialog>
 
 int main(int argc, char *argv[])
 {
@@ -15,20 +16,23 @@ int main(int argc, char *argv[])
 	a.installTranslator(&translator_zh);
 
 	// add qt style sheet
-	QFile file(":/qss/trojan");
-	file.open(QFile::ReadOnly);
-	qApp->setStyleSheet(file.readAll());
-	file.close();
+	//QFile file(":/qss/trojan");
+	//file.open(QFile::ReadOnly);
+	//qApp->setStyleSheet(file.readAll());
+	//file.close();
 
-	//a.setStyleSheet("border-style:solid;border-width:1px;");
 
-	//PP w;
-	//w.show();
+	MainWindow mainWin;
+	LoginWindow* loginWin = new LoginWindow;
+	int ret = loginWin->exec();
+	if (ret == QDialog::Accepted)
+	{
+		delete loginWin;
+		
+		mainWin.show();
+		return a.exec();
+	}
 
-	// ShadowWindow w;
-	// MainWindow w;
-	LoginWindow w;
-	w.show();
-
-	return a.exec();
+	return 0;
+	
 }

@@ -27,4 +27,28 @@
         <file alias="signature">images/tabbuttons/signature.png</file>
         <file alias="history">images/tabbuttons/history.png</file>
     </qresource>
+    <qresource prefix="/login/qrcode">
+        <file alias="background">images/login/qrcode/background.png</file>
+        <file alias="qr_default">images/login/qrcode/qr.jpg</file>
+        <file alias="qr_failed">images/login/qrcode/qr_failed.jpg</file>
+    </qresource>
+    <qresource prefix="/login/button">
+        <file alias="login">images/login/button/login_normal.png</file>
+        <file alias="login_pressed">images/login/button/login_down.png</file>
+        <file alias="login_hover">images/login/button/login_hover.png</file>
+        <file alias="qrcode">images/login/button/qrcode_normal.png</file>
+        <file alias="qrcode_pressed">images/login/button/qrcode_down.png</file>
+        <file alias="qrcode_hover">images/login/button/qrcode_hover.png</file>
+    </qresource>
+    <qresource prefix="/login/loading">
+        <file alias="load_1">images/login/load/1.png</file>
+        <file alias="load_2">images/login/load/2.png</file>
+        <file alias="load_3">images/login/load/3.png</file>
+        <file alias="load_4">images/login/load/4.png</file>
+        <file alias="load_5">images/login/load/5.png</file>
+        <file alias="load_6">images/login/load/6.png</file>
+        <file alias="load_7">images/login/load/7.png</file>
+        <file alias="load_8">images/login/load/8.png</file>
+        
+    </qresource>
 </RCC>

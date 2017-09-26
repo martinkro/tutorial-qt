@@ -1,0 +1,10 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define MAIN_WINDOW_WIDTH  900
+#define MAIN_WINDOW_HEIGHT 600
+
+#define LOGIN_WINDOW_WIDTH  380
+#define LOGIN_WINDOW_HEIGHT 292
+
+#endif
