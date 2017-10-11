@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+   <head> 
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	 <title> QQConnect JSDK - redirectURI </title>
+	 <style type="text/css">
+		html, body{font-size:14px; line-height:180%;}
+	 </style>
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="1105318912" charset="utf-8" data-callback="true"></script>
+   </head> 
+   <body> 
+   
+	<div>
+		<h3>数据传输中，请稍后...</h3>
+	</div>
+    <script type="text/javascript">
+        if(QC.Login.check()){//如果已登录
+            QC.Login.getMe(function(openId, accessToken){
+		alert(["当前登录用户的", "openId为："+openId, "accessToken为："+accessToken].join("\n"));
+	});
+	//这里可以调用自己的保存接口
+	//...
+    }
+    </script>
+    
+    <script type="text/javascript">
+//从页面收集OpenAPI必要的参数。get_user_info不需要输入参数，因此paras中没有参数
+var paras = {};
+
+//用JS SDK调用OpenAPI
+QC.api("get_user_info", paras)
+	//指定接口访问成功的接收函数，s为成功返回Response对象
+	.success(function(s){
+		//成功回调，通过s.data获取OpenAPI的返回数据
+		alert("获取用户信息成功！当前用户昵称为："+s.data.nickname);
+	})
+	//指定接口访问失败的接收函数，f为失败返回Response对象
+	.error(function(f){
+		//失败回调
+		alert("获取用户信息失败！");
+	})
+	//指定接口完成请求后的接收函数，c为完成请求返回Response对象
+	.complete(function(c){
+		//完成请求回调
+		alert("获取用户信息完成！");
+	});
+</script>
+
+   </body> 
+</html>
+
+
+

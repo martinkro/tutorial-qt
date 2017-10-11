@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="WebDemo">
+    </qresource>
+    <qresource prefix="/">
+        <file>login.html</file>
+        <file>qc_callback.html</file>
+        <file>login3.html</file>
+        <file>login2.html</file>
+        <file>login1.html</file>
+    </qresource>
+</RCC>

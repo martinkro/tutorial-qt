@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="1105318912" charset="utf-8"></script>
+</head>
+<body>
+<script type="text/javascript">
+	QC.Login.showPopup({
+   appId:"1105318912"
+});
+</script>
+
+<script type="text/javascript">
+if(QC.Login.check()){//如果已登录
+	QC.Login.getMe(function(openId, accessToken){
+		alert(["当前登录用户的", "openId为："+openId, "accessToken为："+accessToken].join("\n"));
+	});
+	//这里可以调用自己的保存接口
+	//...
+}
+</script>
+</body>
+</html>

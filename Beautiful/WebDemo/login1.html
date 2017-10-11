@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="1105318912" charset="utf-8"></script>
+    <script type="text/javascript">
+    </script>
+    </head>
+<body>
+<h1>Login</h1>
+<span id="qqLoginBtn"></span>
+<script type="text/javascript">
+if(QC.Login.check()){//如果已登录
+    console.log("login success");
+	QC.Login.getMe(function(openId, accessToken){
+		// alert(["当前登录用户的", "openId为："+openId, "accessToken为："+accessToken].join("\n"));
+        console.log("openid:" + openId);
+        console.log("accessToken:" + accessToken);
+	});
+    
+    var dom = document.getElementById("qqLoginBtn");
+    _logoutTemplate = '<span><a href="javascript:QC.Login.signOut();window.location.reload();" style="color:#f60;">==点此登出==</a></span>';
+    dom.innerHTML = _logoutTemplate;
+}
+else
+{
+    var x = QC.Login.showPopup({appId:"1105318912"});
+    var timer = setInterval(function() { 
+    if(x.closed) {
+        clearInterval(timer);
+        window.location.reload();
+    }
+}, 1000);
+}
+</script>
+
+</body>
+</html>
