@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="TestSplitter">
+    </qresource>
+    <qresource prefix="/qss">
+        <file alias="main">TestSplitter.qss</file>
+    </qresource>
+</RCC>

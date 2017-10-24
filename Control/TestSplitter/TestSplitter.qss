@@ -1,0 +1,40 @@
+QLabel#a{
+    color:red;
+    background-color:blue;
+    padding:10px;
+    margin:10px;
+    border:1px dashed red;
+    font-size:100px;
+    qproperty-alignment: AlignHCenter;
+}
+
+QLabel#b{
+    color:red;
+    background-color:blue;
+    padding:10px;
+    margin:10px;
+    border:1px dashed red;
+    font-size:100px;
+    font-style:italic;
+    font-weiget:bold;
+    font-family:"Times New Roman";
+    qproperty-alignment: AlignVCenter;
+}
+
+QSplitter::handle{
+     background-color:black;
+}
+
+QSplitter::handle:vertical{
+    height:1px;
+     background-color:black;
+}
+
+QSplitter::handle:horizontal{
+    width:1px;
+    background-color:black;
+}
+
+QSplitter{
+	border:1px dashed red;
+}
