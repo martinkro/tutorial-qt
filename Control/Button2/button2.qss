@@ -75,3 +75,7 @@ QToolButton#toolbar2{
 QToolButton#toolbar3{
     qproperty-icon:url("icon/toolbar/settings_48px.png");
 }
+
+Button2{
+    qproperty-size:800px 800px;
+}

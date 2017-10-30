@@ -1,0 +1,34 @@
+# How to build
+
+Qt 5.7.0 32bit msvc2015
+git checkout v4.0.3
+mkdir qtcreator-build
+cd qtcreator-build
+qmake -r ..\qtcreator-4.0.3\qtcreator.pro
+jom
+
+# Navgation
+FancyTabWidget.cpp
+
+IMode
+
+实际上，Qt Creator 主程序仅仅是一个插件加载器。Qt Creator 所提供的所有功能都是通过插件实现的。
+QtCreator 最主要的一个插件叫做“core”。如果没有这个插件，Qt Creator 就真的什么都不是了（甚至连个插件加载器都不是了）。
+
+“core” 的关键组件是ActionManager。ActionManager 的作用是注册菜单、菜单项以及键盘快捷键。
+所以，如果我们想要添加新的菜单或菜单项，我们就需要使用ActionManager。我们会在下文详细介绍这个内容。
+
+Binary and Source Compatibility
+
+属性  QSS
+Q_OBJECT
+
+The Q_OBJECT macro at the beginning of the class definition is necessary for all classes that define signals or slots
+
+# 内省
+obj.setObjectName("instanceName"); 
+QString name1 = obj.objectName();   // return instanceName
+QString name2 = obj.metaObject()->className();
+
+
+http://www.kuqin.com/qtdocument/geometry.html

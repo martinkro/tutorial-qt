@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Button", "Button\Button.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Button2", "Button2\Button2.vcxproj", "{EC889832-73FD-43E5-B827-8A11114A116B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Progress", "Progress\Progress.vcxproj", "{4A8F9933-8D50-4369-A150-6D3C2C95E0AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -27,6 +29,10 @@ Global
 		{EC889832-73FD-43E5-B827-8A11114A116B}.Debug|x86.Build.0 = Debug|Win32
 		{EC889832-73FD-43E5-B827-8A11114A116B}.Release|x86.ActiveCfg = Release|Win32
 		{EC889832-73FD-43E5-B827-8A11114A116B}.Release|x86.Build.0 = Release|Win32
+		{4A8F9933-8D50-4369-A150-6D3C2C95E0AA}.Debug|x86.ActiveCfg = Debug|Win32
+		{4A8F9933-8D50-4369-A150-6D3C2C95E0AA}.Debug|x86.Build.0 = Debug|Win32
+		{4A8F9933-8D50-4369-A150-6D3C2C95E0AA}.Release|x86.ActiveCfg = Release|Win32
+		{4A8F9933-8D50-4369-A150-6D3C2C95E0AA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
