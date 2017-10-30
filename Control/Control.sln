@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestSplitter", "TestSplitter\TestSplitter.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Button", "Button\Button.vcxproj", "{FE6E9CB2-0CEE-4C2C-A3A1-0BF5DBD34545}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Button2", "Button2\Button2.vcxproj", "{EC889832-73FD-43E5-B827-8A11114A116B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +19,14 @@ Global
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x86.Build.0 = Debug|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.ActiveCfg = Release|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.Build.0 = Release|Win32
+		{FE6E9CB2-0CEE-4C2C-A3A1-0BF5DBD34545}.Debug|x86.ActiveCfg = Debug|Win32
+		{FE6E9CB2-0CEE-4C2C-A3A1-0BF5DBD34545}.Debug|x86.Build.0 = Debug|Win32
+		{FE6E9CB2-0CEE-4C2C-A3A1-0BF5DBD34545}.Release|x86.ActiveCfg = Release|Win32
+		{FE6E9CB2-0CEE-4C2C-A3A1-0BF5DBD34545}.Release|x86.Build.0 = Release|Win32
+		{EC889832-73FD-43E5-B827-8A11114A116B}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC889832-73FD-43E5-B827-8A11114A116B}.Debug|x86.Build.0 = Debug|Win32
+		{EC889832-73FD-43E5-B827-8A11114A116B}.Release|x86.ActiveCfg = Release|Win32
+		{EC889832-73FD-43E5-B827-8A11114A116B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

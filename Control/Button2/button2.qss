@@ -1,0 +1,77 @@
+*{
+    border-color:black;
+    border-width:1px;
+    border-style:dotted;
+}
+
+
+QPushButton{
+    color:red;
+    background-color:white;
+}
+
+QPushButton:hover,QPushButton:focus:hover{
+    background-color:pink;
+}
+
+QPushButton:pressed,QPushButton:focus:pressed{
+    background-color:black;
+}
+
+QPushButton:focus{
+    background-color:green;
+}
+
+
+
+MainToolBar#main_toolbar QToolButton{
+    border:none;
+    background-color: #518FF6;
+    font-size:16px;
+    font-style:normal;
+    font-weiget:bold;
+    font-family:"ºÚÌå";
+    icon-size: 48px, 48px;
+    height:100px;
+    width:75px;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+
+QToolButton{
+    border:none;
+    background-color: #518FF6;
+    font-size:16px;
+    font-style:normal;
+    font-weiget:bold;
+    font-family:"ºÚÌå";
+    icon-size: 48px, 48px;
+    height:100px;
+    width:75px;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+}
+
+QToolButton:hover,QToolButton:focus:hover{
+    background-color:pink;
+}
+
+QToolButton:pressed,QToolButton:focus:pressed{
+    background-color:black;
+}
+
+QToolButton:checked{
+    background-color:red;
+}
+
+QToolButton#toolbar1{
+    qproperty-icon:url("icon/toolbar/protector_48px.png");
+}
+
+QToolButton#toolbar2{
+    qproperty-icon:url("icon/toolbar/signature_48px.png");
+}
+
+QToolButton#toolbar3{
+    qproperty-icon:url("icon/toolbar/settings_48px.png");
+}
