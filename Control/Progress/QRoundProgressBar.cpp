@@ -183,27 +183,29 @@ void QRoundProgressBar::paintEvent(QPaintEvent* /*event*/)
     rebuildDataBrushIfNeeded();
 
     // background
-    drawBackground(p, rect());
+    drawBackground(p, rect());  // 1 填充整个背景
+
+
 	double innerRadius(0);
 	QRectF innerRect;
-	calculateInnerRect(baseRect, outerRadius, innerRect, innerRadius);
+	calculateInnerRect(baseRect, outerRadius, innerRect, innerRadius);  // 2 计算内环的矩形
 	double arcStep = 360.0 / (m_max - m_min) * m_value;
 
     // base circle
-    drawBase(p, baseRect, innerRect);
+    drawBase(p, baseRect, innerRect);   // 3 画外圆 和内圆
 
     // data circle
     //double arcStep = 360.0 / (m_max - m_min) * m_value;
-    drawValue(p, baseRect, m_value, arcStep, innerRect, innerRadius);
+    drawValue(p, baseRect, m_value, arcStep, innerRect, innerRadius);  // 4 绘制进度
 
     // center circle
     //double innerRadius(0);
     //QRectF innerRect;
     //calculateInnerRect(baseRect, outerRadius, innerRect, innerRadius);
-    drawInnerBackground(p, innerRect);
+    drawInnerBackground(p, innerRect);  // 5 无用
 
     // text
-    drawText(p, innerRect, innerRadius, m_value);
+    drawText(p, innerRect, innerRadius, m_value); // 6 文本
 
     // finally draw the bar
     p.end();
@@ -317,7 +319,7 @@ void QRoundProgressBar::calculateInnerRect(const QRectF &/*baseRect*/, double ou
     }
     else    // for Pie and Donut styles
     {
-        innerRadius = outerRadius * 0.75;
+        innerRadius = outerRadius * m_innerOuterRate;
     }
 
     double delta = (outerRadius - innerRadius) / 2;
@@ -326,11 +328,11 @@ void QRoundProgressBar::calculateInnerRect(const QRectF &/*baseRect*/, double ou
 
 void QRoundProgressBar::drawInnerBackground(QPainter &p, const QRectF &innerRect)
 {
-    if (m_barStyle == StyleDonut)
-    {
-        p.setBrush(palette().alternateBase());
-        p.drawEllipse(innerRect);
-    }
+    //if (m_barStyle == StyleDonut)
+    //{
+    //    p.setBrush(palette().alternateBase());
+    //    p.drawEllipse(innerRect);
+    //}
 }
 
 void QRoundProgressBar::drawText(QPainter &p, const QRectF &innerRect, double innerRadius, double value)
