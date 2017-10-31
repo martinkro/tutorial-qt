@@ -1,0 +1,13 @@
+*{
+    border-color:black;
+    border-width:1px;
+    border-style:dotted;
+}
+
+XProgressIndicator{
+    qproperty-color:green;
+    qproperty-displayedWhenStopped:true;
+    background-color:white;
+    qproperty-minimumSize: 100px 100px; 
+    qproperty-maximumSize: 100px 100px;
+}

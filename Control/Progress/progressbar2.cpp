@@ -1,6 +1,7 @@
 #include "progressbar2.h"
 #include <QPainter>
 
+
 ProgressBar2::ProgressBar2(QWidget *parent)
 	: QWidget(parent)
 {
