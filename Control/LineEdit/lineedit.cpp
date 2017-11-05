@@ -93,5 +93,5 @@ LineEdit::LineEdit(QWidget *parent)
 
 void LineEdit::onEmailChoosed(const QString& text){
 	email->clear();
-email->setText(text);
+	email->setText(text);
 }

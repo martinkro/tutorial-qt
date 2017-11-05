@@ -1,0 +1,43 @@
+*{
+    border-color:black;
+    border-width:1px;
+    border-style:dotted;
+}
+
+XProgressIndicator{
+    qproperty-color:green;
+    qproperty-displayedWhenStopped:true;
+    background-color:white;
+    qproperty-minimumSize: 100px 100px; 
+    qproperty-maximumSize: 100px 100px;
+}
+
+QLineEdit{
+    border: 1px solid rgb(41, 57, 85);
+    border-radius: 3px;
+    background: white;
+    selection-background-color: green; 
+    font-size: 14px ;
+
+}
+
+QLineEdit[echoMode="2"] { 
+    lineedit-password-character: 35; 
+    font-size:10px;
+} 
+
+XSplitLine{
+    border:none;
+    background-color:gray;
+    qproperty-minimumWidth:1px;
+    qproperty-maximumWidth:1px;
+    
+}
+
+QFrame#splitv{
+    background-color:gray;
+    gproperty-frameShape:5;
+    qproperty-frameShadow:16;
+    qproperty- lineWidth:1px;
+}
+
