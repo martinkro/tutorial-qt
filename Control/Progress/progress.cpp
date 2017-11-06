@@ -4,6 +4,7 @@
 #include <QSlider>
 #include <QPushButton>
 #include <QGridLayout>
+#include <QProgressBar>
 
 #include "xprogressindicator.h"
 #include "xstoragedisplay.h"
@@ -19,6 +20,7 @@ Progress::Progress(QWidget *parent)
 	backgroundPalette.setBrush(QPalette::Window, QBrush(img));
 	setPalette(backgroundPalette);
 
+	// QProgressBar* bar = new QProgressBar;
 	// test
 	m_progressbar1 = new ProgressBar1;
 	m_progressbar2 = new ProgressBar2;

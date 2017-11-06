@@ -1,31 +1,15 @@
 #include "xsplitline.h"
 
-XSplitLine::XSplitLine(QWidget* parent)
+XSplitLine::XSplitLine(QWidget* parent,QFrame::Shape shape, int thick)
     :QFrame(parent)
 {
-
-    setHorizontalVertical(0);
+	setFrameShadow(QFrame::Plain);
+	setFrameShape(shape);
+	if (shape == QFrame::HLine) {
+		setFixedHeight(thick);
+	}
+	else if (shape == QFrame::VLine) {
+		setFixedWidth(thick);
+	}
 }
 
-int XSplitLine::setHorizontalVertical(int i)
-{
-    if (i == 0)
-    {
-        setFrameShape(QFrame::HLine); 
-        setFrameShadow(QFrame::Plain);
-		
-       // setSizeRect(30,30,100,20);
-    }
-    else if (i == 1)
-    {
-        setFrameShape(QFrame::VLine); 
-		setFrameShadow(QFrame::Plain);
-        //setSizeRect(30,30,20,100);
-    }
-	return i;
-}
-
-void XSplitLine::setSizeRect( int x, int y, int w, int h)
-{
-    setGeometry(QRect(x,y,w,h));
-}

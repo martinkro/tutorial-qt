@@ -3,12 +3,10 @@
 
 #include <QFrame>
 class XSplitLine:public QFrame{
-    Q_OBJECT
+	Q_OBJECT
 public:
-    XSplitLine(QWidget* parent = Q_NULLPTR);
-public slots:
-    int setHorizontalVertical( int i=0 );
-    void setSizeRect( int x=0, int y=0, int w=100, int h=30);
+    XSplitLine(QWidget* parent = Q_NULLPTR, QFrame::Shape shape=QFrame::HLine,int thick=1);
+
 };
 
 #endif

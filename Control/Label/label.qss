@@ -26,18 +26,23 @@ QLineEdit[echoMode="2"] {
     font-size:10px;
 } 
 
-XSplitLine{
+XSplitLine#splitH1{
     border:none;
     background-color:gray;
-    qproperty-minimumWidth:1px;
-    qproperty-maximumWidth:1px;
-    
+
 }
 
-QFrame#splitv{
-    background-color:gray;
-    gproperty-frameShape:5;
-    qproperty-frameShadow:16;
-    qproperty- lineWidth:1px;
+XSplitLine#splitH2{
+    border:none;
+    background-color:white;
+
 }
+
+XSplitLine#splitv{
+    border:none;
+    background-color:black;
+
+}
+
+
 

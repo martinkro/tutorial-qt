@@ -52,3 +52,16 @@ QPalette::Midlight
 QPalette::Dark    
 QPalette::Mid     
 QPalette::Shadow
+
+## QWidget 样式不起作用
+void myclass::paintEvent(QPaintEvent *pe)
+{                                                                                                                                        
+  QStyleOption o;                                                                                                                                                                  
+  o.initFrom(this);                                                                                                                                                                
+  QPainter p(this);                                                                                                                                                                
+  style()->drawPrimitive(
+    QStyle::PE_Widget, &o, &p, this);                                                                                                                         
+};
+
+QFrame与QWidget的区别
+QFrame是基本控件的基类，QWidget是QFrame基类，关系如下：
