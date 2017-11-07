@@ -55,6 +55,24 @@
     <ClCompile Include="GeneratedFiles\qrc_mv.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_spinboxdelegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_spinboxdelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="spinboxdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_currencymodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_currencymodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="currencymodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="mv.h">
@@ -65,6 +83,12 @@
     </CustomBuild>
     <CustomBuild Include="mv.qrc">
       <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="spinboxdelegate.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="currencymodel.h">
+      <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

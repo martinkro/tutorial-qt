@@ -11,5 +11,12 @@ public:
 	MV(QWidget *parent = Q_NULLPTR);
 
 private:
+	void testQStringListModel();
+	void testQFileSystemModel();
+	void testSpinBoxDelegate();
+	void testQTableView();
+	void testQProgressBar();
+
+private:
 	Ui::MVClass ui;
 };
