@@ -1,0 +1,8 @@
+# Model View
+
+QListView QTableView QTreeView
+
+## Delegates
+the individual items are drawn by a delegate
+ QAbstractItemDelegate  <-- QItemDelegate
+                        <-- QStyledItemDelegate

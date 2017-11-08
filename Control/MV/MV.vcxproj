@@ -97,6 +97,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Model\GameChannelInfo.cpp" />
+    <ClCompile Include="Model\GameData.cpp" />
+    <ClCompile Include="Model\GameListModel.cpp" />
+    <ClCompile Include="Model\GamePackInfo.cpp" />
     <ClCompile Include="mv.cpp" />
     <ClCompile Include="spinboxdelegate.cpp" />
   </ItemGroup>
@@ -125,6 +129,10 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Model\GameChannelInfo.h" />
+    <ClInclude Include="Model\GameData.h" />
+    <ClInclude Include="Model\GameListModel.h" />
+    <ClInclude Include="Model\GamePackInfo.h" />
     <CustomBuild Include="currencymodel.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing currencymodel.h...</Message>

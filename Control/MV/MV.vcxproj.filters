@@ -38,6 +38,12 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Model">
+      <UniqueIdentifier>{14f4197c-959a-437f-adfc-92a6978ec638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{f251c893-df2b-4252-97b1-b906afa57d9a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -73,6 +79,18 @@
     <ClCompile Include="currencymodel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Model\GameChannelInfo.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\GamePackInfo.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\GameData.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\GameListModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="mv.h">
@@ -94,6 +112,18 @@
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_mv.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GameChannelInfo.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GamePackInfo.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GameData.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\GameListModel.h">
+      <Filter>Model</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
