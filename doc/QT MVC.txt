@@ -1,8 +1,65 @@
 # Model View
 
+http://www.qtcentre.org/threads/26916-inserting-custom-Widget-to-listview?p=155774#post155774
+https://falsinsoft.blogspot.com/2014/06/qt-get-click-event-from-button-inside.html
+http://www.cnblogs.com/ribavnu/p/4810412.html
+https://stackoverflow.com/questions/9668983/qtreeview-vs-setindexwidget
+http://www.qtcn.org/bbs/simple/?t12936.html
+
+Qt中显示复杂列表
+http://blog.csdn.net/silangquan/article/details/41440467
 QListView QTableView QTreeView
 
 ## Delegates
 the individual items are drawn by a delegate
  QAbstractItemDelegate  <-- QItemDelegate
                         <-- QStyledItemDelegate
+                        
+
+Qt’s Model/View architecture
+views, models, and delegates
+
+The model provides access to the data that will be displayed by the view, and is also responsible for updating any changes made to the data
+using a delegate you can customize the editing further
+
+Item based Programming vs Model based Programming
+
+model based views
+ QAbstractItemView
+     QListView 
+     QTableView 
+     QTreeView
+QObject     
+   QAbstractItemModel 
+     QStandardItemModel     适应多个视图    provides a classic item-based approach to working with the model
+     QFileSystemModel
+     QAbstractListModel    仅仅用于列表视图  QListView
+     QAbstractTableModel   Only for QTableView
+     
+ QAbstractItemDelegate
+  QItemDelegate
+  QStyledItemDelegate
+  
+http://doc.qt.io/qt-5/QItemEditorFactory.html#standard-editing-widgets
+
+setItemDelegateForColumn
+
+void WidgetDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option,
+                            const QModelIndex &index) const
+ {
+     if (index.column() == 1) {
+         int progress = index.data().toInt();
+
+         QStyleOptionProgressBar progressBarOption;
+         progressBarOption.rect = option.rect;
+         progressBarOption.minimum = 0;
+         progressBarOption.maximum = 100;
+         progressBarOption.progress = progress;
+         progressBarOption.text = QString::number(progress) + "%";
+         progressBarOption.textVisible = true;
+
+         QApplication::style()->drawControl(QStyle::CE_ProgressBar,
+                                            &progressBarOption, painter);
+     } else
+         QStyledItemDelegate::paint(painter, option, index);
+}

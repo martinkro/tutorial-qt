@@ -1,5 +1,6 @@
 #include "spinboxdelegate.h"
 #include <QSpinBox>
+#include <QtWidgets/QApplication>
 
 SpinBoxDelegate::SpinBoxDelegate(QObject *parent)
 	: QStyledItemDelegate(parent)
@@ -8,6 +9,27 @@ SpinBoxDelegate::SpinBoxDelegate(QObject *parent)
 
 SpinBoxDelegate::~SpinBoxDelegate()
 {
+}
+
+void SpinBoxDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option,
+	const QModelIndex &index) const
+{
+	if (index.column() == 0) {
+		int progress = index.data().toInt();
+		QStyleOptionProgressBar progressBarOption;
+		progressBarOption.rect = option.rect;
+		progressBarOption.minimum = 0;
+		progressBarOption.maximum = 100;
+		progressBarOption.progress = progress;
+		progressBarOption.text = QString::number(progress) + "%";
+		progressBarOption.textVisible = true;
+		progressBarOption.textAlignment = Qt::AlignCenter;
+		QApplication::style()->drawControl(QStyle::CE_ProgressBar,
+			&progressBarOption, painter);
+	}
+	else {
+		QStyledItemDelegate::paint(painter, option, index);
+	}
 }
 
 QWidget *SpinBoxDelegate::createEditor(QWidget *parent,

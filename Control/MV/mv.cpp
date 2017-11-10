@@ -6,6 +6,7 @@
 #include <QVBoxLayout>
 #include <QMessageBox>
 #include <QLineEdit>
+#include <QSlider>
 #include <QInputDialog>
 #include <QFileSystemModel>
 #include <QTreeView>
@@ -13,6 +14,12 @@
 #include <QTableView>
 #include <QProgressBar>
 #include "spinboxdelegate.h"
+#include "ProgressBarDelegate.h"
+
+#include "gamelistitemview.h"
+
+#include <QListWidget>
+#include <QVBoxLayout>
 
 MV::MV(QWidget *parent)
 	: QWidget(parent)
@@ -22,12 +29,60 @@ MV::MV(QWidget *parent)
 	//testQStringListModel();
 	//testQFileSystemModel();
 	//testSpinBoxDelegate();
+	testProgressBarDelegate();
 	//testQTableView();
-	testQProgressBar();
+	//testQProgressBar();
+	//testQListViewWidget();
 
-	resize(900, 600);
+	resize(200, 600);
 }
 
+void MV::testQListViewWidget()
+{
+	QListWidget* list = new QListWidget(this);
+	QListWidgetItem *item = new QListWidgetItem();
+	item->setSizeHint(QSize(0, 65));
+	GameListItemView* myitem = new GameListItemView;
+	list->addItem(item);
+	list->setItemWidget(item, myitem);
+	QHBoxLayout* main = new QHBoxLayout;
+	main->addWidget(list);
+	setLayout(main);
+}
+
+void MV::testProgressBarDelegate()
+
+{
+	QListView* listView = new QListView(this);
+	ProgressBarDelegate* pbDelegate = new ProgressBarDelegate(0);
+	QStandardItemModel* model = new QStandardItemModel(11, 1, listView);
+	model->setData(model->index(0, 0, QModelIndex()), 50);
+	model->setData(model->index(1, 0, QModelIndex()), 50);
+	model->setData(model->index(2, 0, QModelIndex()), 50);
+	model->setData(model->index(3, 0, QModelIndex()), 50);
+	model->setData(model->index(4, 0, QModelIndex()), 50);
+	model->setData(model->index(5, 0, QModelIndex()), 50);
+	model->setData(model->index(6, 0, QModelIndex()), 50);
+	model->setData(model->index(7, 0, QModelIndex()), 50);
+	model->setData(model->index(8, 0, QModelIndex()), 50);
+	model->setData(model->index(9, 0, QModelIndex()), 50);
+	model->setData(model->index(10, 0, QModelIndex()), 50);
+	listView->setModel(model);
+	listView->setItemDelegateForColumn(0, pbDelegate);
+
+	QSlider* slider = new QSlider(Qt::Horizontal, this);
+	connect(slider, &QSlider::valueChanged, [=](int value) {
+		model->setData(model->index(0, 0, QModelIndex()), value);
+	});
+	slider->setRange(0, 100);
+	slider->setValue(50);
+
+	QVBoxLayout* v = new QVBoxLayout;
+	v->addWidget(listView);
+	v->addWidget(slider);
+	setLayout(v);
+	
+}
 void MV::testQProgressBar()
 {
 	QProgressBar* x = new QProgressBar(this);

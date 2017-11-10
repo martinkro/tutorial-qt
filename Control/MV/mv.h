@@ -16,6 +16,8 @@ private:
 	void testSpinBoxDelegate();
 	void testQTableView();
 	void testQProgressBar();
+	void testProgressBarDelegate();
+	void testQListViewWidget();
 
 private:
 	Ui::MVClass ui;
