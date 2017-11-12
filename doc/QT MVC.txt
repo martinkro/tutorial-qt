@@ -1,5 +1,8 @@
 # Model View
 
+connect (tableWidget, SIGNAL(cellClicked(int,int)), this, SLOT(editSlot(int, int)));
+
+
 http://www.qtcentre.org/threads/26916-inserting-custom-Widget-to-listview?p=155774#post155774
 https://falsinsoft.blogspot.com/2014/06/qt-get-click-event-from-button-inside.html
 http://www.cnblogs.com/ribavnu/p/4810412.html

@@ -34,7 +34,7 @@ MV::MV(QWidget *parent)
 	//testQProgressBar();
 	//testQListViewWidget();
 
-	resize(200, 600);
+	resize(300, 600);
 }
 
 void MV::testQListViewWidget()

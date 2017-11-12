@@ -7,6 +7,10 @@
 #include <QPushButton>
 #include "gamelistitemview.h"
 
+const int GAME_ICON_SIZE = 48;
+const int GAME_LIST_PADDING = 2;
+const int GAME_LIST_TEXT_LEFT_PADDING = 6;
+
 ProgressBarDelegate::ProgressBarDelegate( int column, QWidget* p )
 	: QStyledItemDelegate( p )
 	, m_column( column )
@@ -45,22 +49,102 @@ void ProgressBarDelegate::paint( QPainter *painter, const QStyleOptionViewItem &
 	}
 	else if (index.column() == 0 && index.row() == 1)
 	{
+		QRect rect = option.rect;
 		//QListView* x = qobject_cast<QListView*>(parent());
+		if (option.state & QStyle::State_Selected)
+		{
+			painter->fillRect(option.rect, option.palette.window());
+		}
+
+		QRect dst = rect;
+		dst.setLeft(rect.left() + GAME_LIST_PADDING * 2 + GAME_ICON_SIZE + GAME_LIST_TEXT_LEFT_PADDING);
+		dst.setTop(rect.top() + GAME_LIST_PADDING);
+		dst.setBottom(dst.top() + GAME_ICON_SIZE/2);
+
+		QFont fontTitle = painter->font();
+		fontTitle.setBold(true);
+		fontTitle.setPointSize(14);
+		
+		QPen titlePen = painter->pen();
+		titlePen.setColor(Qt::red);   // text color
+		// titlePen.setBrush(Qt::blue);
+
+	   
+		painter->save();
+		painter->setFont(fontTitle);
+		painter->setPen(titlePen);
+		painter->drawText(dst, Qt::AlignLeft | Qt::AlignVCenter, "Name");
+		painter->restore();
+
+		dst = rect;
+		dst.setLeft(rect.left() + GAME_LIST_PADDING * 2 + GAME_ICON_SIZE + GAME_LIST_TEXT_LEFT_PADDING);
+		dst.setTop(rect.top() + GAME_LIST_PADDING + GAME_ICON_SIZE/2);
+		dst.setBottom(dst.top() + GAME_ICON_SIZE / 2);
+		painter->drawText(dst, Qt::AlignLeft | Qt::AlignVCenter, "123456987");
+
+		dst = rect;
+		dst.setRight(rect.left() + GAME_LIST_PADDING*2 + GAME_ICON_SIZE);
+		QRect area(0, 0,GAME_ICON_SIZE,GAME_ICON_SIZE);
+		area.moveCenter(dst.center());
+		QPixmap pixmap("sgame.png");
+		painter->drawPixmap(area, pixmap);
+
+		
+		return;
+	}
+	else if (index.column() == 0 && index.row() == 5)
+	{
+		if (option.state & QStyle::State_Selected)
+		{
+			painter->fillRect(option.rect, option.palette.highlight());
+		}
+
+		QRect rect = option.rect;
+		int x = rect.x() + 2;
+		int y = rect.y() + 2;
+		QBrush brush;
+		QPixmap pixmap("sgame.png");
+		brush.setTexture(pixmap);
+		painter->fillRect(x, y, 48, 48, brush);
+		return;
+	}
+	else if (index.column() == 0 && index.row() == 6)
+	{
+		if (option.state & QStyle::State_Selected)
+		{
+			QColor background = option.palette.color(QPalette::Active, QPalette::Highlight);
+			//QBrush brush(QPalette::Active, option.palette.highlight());
+			painter->fillRect(option.rect, background);
+		}
+		else if (option.state & QStyle::State_MouseOver)
+		{
+			painter->fillRect(option.rect, option.palette.dark());
+		}
+
+		QRect rect = option.rect;
+		int x = rect.x() + 2;
+		int y = rect.y() + 2;
+		QBrush brush;
+		QPixmap pixmap("sgame.png");
+		brush.setTexture(pixmap);
+		painter->fillRect(x, y, 48, 48, brush);
 		return;
 	}
 	else if (index.column() == 0 && index.row() == 2)
 	{
 		QStyleOptionButton opt;
+		// opt.initFrom(this);
 		opt.rect = option.rect;
-		opt.rect.adjust(4, 4, -8, -8);
+		//opt.rect.adjust(2, 2, -4, -4);
 		//opt.features = QStyleOptionButton::DefaultButton;
 		//QWidget::State s = (State)(index.data(Qt::UserRole).toInt());
 		//if (s == QWidget::Hovered)
 		//	opt.state |= QStyle::State_MouseOver;
 		//if (s == Pressed)
 		//	opt.state |= QStyle::State_Sunken;
-		opt.state |= QStyle::State_Enabled;
-		opt.text = "View Button";
+		opt.state = option.state;
+		opt.palette = option.palette;
+		opt.text = "QPushButton";
 		QApplication::style()->drawControl(QStyle::CE_PushButton, &opt, painter);
 		return;
 	}
@@ -90,13 +174,19 @@ QSize ProgressBarDelegate::sizeHint(const QStyleOptionViewItem &option,
 	if (index.column() == 0 && index.row() == 4)
 	{
 		QSize size = option.rect.size();
-		size.setHeight(65);
+		size.setHeight(80);
 		return size;
 	}
-	else if (index.column() == 0 && index.row() == 1)
+	else if (index.column() == 0 && (index.row() == 1 || index.row()==5 || index.row()==6))
 	{
 		QSize size = option.rect.size();
-		size.setHeight(20);
+		size.setHeight(GAME_ICON_SIZE + GAME_LIST_PADDING * 2);
+		return size;
+	}
+	else if (index.column() == 0 && index.row() == 3)
+	{
+		QSize size = option.rect.size();
+		size.setHeight(30);
 		return size;
 	}
 	else if (index.column() == 0 && index.row() == 2)
