@@ -17,6 +17,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Label", "Label\Label.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MV", "MV\MV.vcxproj", "{5C44D77D-9A0A-4BD8-97CF-FDC81F22B799}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Console", "Console\Console.vcxproj", "{22A2B1B8-EAE9-4A60-83BE-2B1BF3D4093F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scroll", "Scroll\Scroll.vcxproj", "{C9BF6294-271E-43BB-AEBC-CCAEEDFB3F93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -51,6 +55,14 @@ Global
 		{5C44D77D-9A0A-4BD8-97CF-FDC81F22B799}.Debug|x86.Build.0 = Debug|Win32
 		{5C44D77D-9A0A-4BD8-97CF-FDC81F22B799}.Release|x86.ActiveCfg = Release|Win32
 		{5C44D77D-9A0A-4BD8-97CF-FDC81F22B799}.Release|x86.Build.0 = Release|Win32
+		{22A2B1B8-EAE9-4A60-83BE-2B1BF3D4093F}.Debug|x86.ActiveCfg = Debug|Win32
+		{22A2B1B8-EAE9-4A60-83BE-2B1BF3D4093F}.Debug|x86.Build.0 = Debug|Win32
+		{22A2B1B8-EAE9-4A60-83BE-2B1BF3D4093F}.Release|x86.ActiveCfg = Release|Win32
+		{22A2B1B8-EAE9-4A60-83BE-2B1BF3D4093F}.Release|x86.Build.0 = Release|Win32
+		{C9BF6294-271E-43BB-AEBC-CCAEEDFB3F93}.Debug|x86.ActiveCfg = Debug|Win32
+		{C9BF6294-271E-43BB-AEBC-CCAEEDFB3F93}.Debug|x86.Build.0 = Debug|Win32
+		{C9BF6294-271E-43BB-AEBC-CCAEEDFB3F93}.Release|x86.ActiveCfg = Release|Win32
+		{C9BF6294-271E-43BB-AEBC-CCAEEDFB3F93}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
