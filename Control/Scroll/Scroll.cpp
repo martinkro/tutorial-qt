@@ -61,9 +61,13 @@ Scroll::Scroll(QWidget *parent)
 	
 	//table->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 	QStandardItemModel* modelTable = new QStandardItemModel(6, 2, table);
+	
+	modelTable->setData(modelTable->index(0,0), "libunity.so", Qt::DisplayRole);
+	modelTable->setData(modelTable->index(0, 0), Qt::Checked, Qt::CheckStateRole);
 	table->setModel(modelTable);
 	table->verticalHeader()->setVisible(false);
-	table->horizontalHeader()->setStretchLastSection(true);
+	table->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
+	table->horizontalHeader()->setSectionResizeMode(1, QHeaderView::Stretch);
 	// 实时计算高度
 	verticalResizeTableViewToContents(table);
 	v->addWidget(table);
@@ -94,10 +98,18 @@ Scroll::Scroll(QWidget *parent)
 	//tx->setModel(model);
 	//scroll->setWidget(tx);
 
+	
+	
+	QPushButton* btn = new QPushButton(tr("QPushButton"));
+	QPushButton* btn2 = new QPushButton(tr("QPushButton"));
+	QHBoxLayout* layoutButton = new QHBoxLayout;
+	layoutButton->addWidget(btn);
+	layoutButton->addWidget(btn2);
+
+
 	QVBoxLayout* main = new QVBoxLayout;
 	main->addWidget(scroll);
-	QPushButton* btn = new QPushButton(tr("QPushButton"));
-	main->addWidget(btn);
+	main->addLayout(layoutButton);
 	setLayout(main);
 	//scroll->setWidget(this);
 	
