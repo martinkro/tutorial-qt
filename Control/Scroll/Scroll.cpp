@@ -8,6 +8,8 @@
 #include <QTableView>
 #include <QStandardItemModel>
 #include <QScrollBar>
+#include <ctime>
+#include <QDateTime>
 
 void verticalResizeTableViewToContents(QTableView *tableView)
 {
@@ -106,10 +108,44 @@ Scroll::Scroll(QWidget *parent)
 	layoutButton->addWidget(btn);
 	layoutButton->addWidget(btn2);
 
+	
+	QLabel* labelSignatureYes = new QLabel(tr("<p><img align='center' src=\"ok_24px.png\" /><font size='24px'>Signature Config:YES</font></p>"));
+	labelSignatureYes->setTextFormat(Qt::RichText);
+	// labelSignatureYes->setAlignment(Qt::AlignVCenter|Qt::AlignHCenter);
+
+	QLabel* labelTest = new QLabel;
+	labelTest->setObjectName("test");
+	labelTest->setText(tr("Test QLabel"));
+	//labelTest->setPixmap(QPixmap("ok_24px.png"));
+
+	QWidget* wLabel = new QWidget;
+	QLabel* icon = new QLabel;
+	icon->setPixmap(QPixmap("ok_24px.png"));
+	QLabel* text = new QLabel(tr("Signature Config:YES"));
+	QHBoxLayout* layoutLabel = new QHBoxLayout;
+
+	QLabel* labelTime = new QLabel;
+
+	QPushButton* btnConfig = new QPushButton(tr("Go to config"));
+	btnConfig->setObjectName("config");
+	layoutLabel->addWidget(icon);
+	layoutLabel->addWidget(text);
+	layoutLabel->addWidget(btnConfig);
+	layoutLabel->addWidget(labelTime);
+	layoutLabel->addStretch();
+	wLabel->setLayout(layoutLabel);
+
+	std::time_t x = std::time(nullptr);
+	QDateTime date = QDateTime::fromTime_t(x);
+	QString strTime = date.toString("MM-dd hh:mm");
+	labelTime->setText(strTime);
 
 	QVBoxLayout* main = new QVBoxLayout;
 	main->addWidget(scroll);
 	main->addLayout(layoutButton);
+	main->addWidget(labelSignatureYes);
+	main->addWidget(labelTest);
+	main->addWidget(wLabel);
 	setLayout(main);
 	//scroll->setWidget(this);
 	

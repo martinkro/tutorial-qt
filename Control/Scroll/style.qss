@@ -1,0 +1,20 @@
+*{
+    border-color:black;
+    border-width:1px;
+    border-style:dotted;
+}
+
+QLabel#test{
+    background-image:url(ok_24px.png);
+    background-repeat:no-repeat;
+    background-position:left;
+}
+
+QPushButton#config{
+    border:none;
+    height:24px;
+    background-color:blue;
+    color:white;
+    text-align:center;
+    text-decoration:underline;
+}
