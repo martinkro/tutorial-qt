@@ -5,6 +5,9 @@
 #include <QVBoxLayout>
 #include <QFileSystemModel>
 #include <QDir>
+#include <QLabel>
+#include <string>
+#include <QMainWindow>
 
 // http://doc.qt.io/qt-5/qtwidgets-itemviews-fetchmore-example.html
 // http://blog.sina.com.cn/s/blog_a6fb6cc90102v7q8.html
@@ -24,8 +27,15 @@ XTreeView::XTreeView(QWidget *parent)
 	tree->setModel(modelFile);
 	tree->setRootIndex(modelFile->index(QDir::currentPath()));
 
+	QLabel* labelU = new QLabel;
+	char16_t a[] = { 'T',0x6210, '\0' };
+	std::u16string o = a;
+	QString text = QString::fromStdU16String(o);
+	labelU->setText(text);
+
 	QVBoxLayout* main = new QVBoxLayout;
 	main->addWidget(tree);
+	main->addWidget(labelU);
 
 	setLayout(main);
 }

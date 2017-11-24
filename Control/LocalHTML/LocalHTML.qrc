@@ -1,0 +1,55 @@
+<RCC>
+    <qresource prefix="LocalHTML">
+    </qresource>
+    <qresource prefix="/">
+        <file>html/css/layout.css</file>
+        <file>html/images/arrow_mtp.png</file>
+        <file>html/images/arrow_right.png</file>
+        <file>html/images/data_list_tutorial1.png</file>
+        <file>html/images/data_list_tutorial2.png</file>
+        <file>html/images/data_tutorial1.png</file>
+        <file>html/images/data_tutorial2.png</file>
+        <file>html/images/data_tutorial3.png</file>
+        <file>html/images/data_tutorial4.png</file>
+        <file>html/images/data_tutorial5.png</file>
+        <file>html/images/data_tutorial6.png</file>
+        <file>html/images/MTP_code.jpg</file>
+        <file>html/images/public_test1.png</file>
+        <file>html/images/safe_plan1.png</file>
+        <file>html/images/safe_sign1.png</file>
+        <file>html/images/safe_tutorial1.png</file>
+        <file>html/images/safe_tutorial2.png</file>
+        <file>html/images/safe_tutorial3.png</file>
+        <file>html/images/safe_tutorial4.png</file>
+        <file>html/images/safe_tutorial5.png</file>
+        <file>html/images/safe_tutorial6.png</file>
+        <file>html/images/sdk_plan1.png</file>
+        <file>html/images/sdk_plan2.png</file>
+        <file>html/images/sdk_test01.png</file>
+        <file>html/images/sdk_test02.png</file>
+        <file>html/images/sdk_test03.png</file>
+        <file>html/images/sdk_test04.png</file>
+        <file>html/images/sdk_tutorial1.png</file>
+        <file>html/images/sdk_tutorial2.png</file>
+        <file>html/images/sdk_tutorial3.png</file>
+        <file>html/images/sdk_tutorial4.png</file>
+        <file>html/images/sdk_tutorial5.png</file>
+        <file>html/index.shtml</file>
+        <file>html/js/backspace.js</file>
+        <file>html/js/jquery.min.js</file>
+        <file>html/login.html</file>
+        <file>html/view/data_list_tutorial.shtml</file>
+        <file>html/view/data_tutorial.shtml</file>
+        <file>html/view/public_protocol.shtml</file>
+        <file>html/view/public_test.shtml</file>
+        <file>html/view/safe_autosign.shtml</file>
+        <file>html/view/safe_errcode.shtml</file>
+        <file>html/view/safe_plan.shtml</file>
+        <file>html/view/safe_tutorial.shtml</file>
+        <file>html/view/sdk_area.shtml</file>
+        <file>html/view/sdk_effect.shtml</file>
+        <file>html/view/sdk_faq.shtml</file>
+        <file>html/view/sdk_plan.shtml</file>
+        <file>html/view/sdk_tutorial.shtml</file>
+    </qresource>
+</RCC>
