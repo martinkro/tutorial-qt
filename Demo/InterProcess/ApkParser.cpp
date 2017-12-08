@@ -3,5 +3,5 @@
 ApkParser::ApkParser(QObject* parent)
 	:QObject(parent)
 {
-
+	
 }

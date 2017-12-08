@@ -1,3 +1,5 @@
+
+
 # Model View
 
 connect (tableWidget, SIGNAL(cellClicked(int,int)), this, SLOT(editSlot(int, int)));

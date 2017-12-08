@@ -5,6 +5,7 @@
 XCommand::XCommand(QObject* parent)
 	:QObject(parent)
 {
+	//ShellExecute
 	output.clear();
 }
 

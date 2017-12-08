@@ -10,6 +10,9 @@ class InterProcess : public QWidget
 public:
 	InterProcess(QWidget *parent = Q_NULLPTR);
 
+public slots:
+	void wrapperDone(const QString&);
+
 private:
 	//Ui::InterProcessClass ui;
 };

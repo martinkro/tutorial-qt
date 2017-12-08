@@ -2,12 +2,13 @@
 #define APK_PARSER_H
 
 #include <QObject>
-
+#include "XCommand.h"
 class ApkParser:public QObject
 {
     Q_OBJECT
 public:
     ApkParser(QObject* parent = Q_NULLPTR);
+	virtual ~ApkParser();
 	void startParse(const QString& apkPath);
 
 	const QString& getAppName()const { return appName; }
@@ -18,12 +19,22 @@ public:
 signals:
 	void parseFinished(int exitCode);
 
+private:
+	void parseOutput(const QString& data);
+	void parseError(const QString& data);
+
+	void initialize();
+
 public:
 	QString apkPath;
 	qint64	appSize;
 	QString appName;
 	QString appVersion;
 	QString packageName;
+
+
+	QString programPath;
+	XCommand* cmd;
 };
 
 

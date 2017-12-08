@@ -12,6 +12,8 @@
 #include <QDir>
 #include <QProcess>
 
+#include "MyLibraryWrapper.h"
+
 InterProcess::InterProcess(QWidget *parent)
 	: QWidget(parent)
 {
@@ -30,9 +32,28 @@ InterProcess::InterProcess(QWidget *parent)
 
 	QTextEdit* teInfo = new QTextEdit;
 
+	QPushButton* btnTestMyLibrary = new QPushButton(tr("Test My Library"));
+
 	QVBoxLayout* layoutMain = new QVBoxLayout;
 	layoutMain->addWidget(winApk);
 	layoutMain->addWidget(teInfo);
+	layoutMain->addWidget(btnTestMyLibrary);
+
+	
+
+	MyLibraryWrapper *wrapper = new MyLibraryWrapper();
+	// This is the magic that tells the wrapper to
+	// notify us when it's done. We use a QueuedConnection
+	// to make sure Qt delivers the signal in a thread
+	// safe manner
+	connect(wrapper, SIGNAL(done(const QString& )),
+		this, SLOT(wrapperDone(const QString&)),
+		Qt::QueuedConnection);
+
+	connect(btnTestMyLibrary, &QPushButton::clicked, [=]() {
+		btnTestMyLibrary->setEnabled(false);
+		wrapper->start();
+	});
 
 	QAction* actionFileBrowser = editApkPath->addAction(QIcon("icon/folder_open_48px.png"), QLineEdit::TrailingPosition);
 	actionFileBrowser->setToolTip(tr("File Open"));
@@ -97,4 +118,9 @@ InterProcess::InterProcess(QWidget *parent)
 	resize(800, 600);
 
 
+}
+
+void InterProcess::wrapperDone(const QString& message)
+{
+	qDebug() << message;
 }

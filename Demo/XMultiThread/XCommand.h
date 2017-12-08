@@ -8,19 +8,25 @@ class XCommand:public QObject{
     Q_OBJECT
 public:
     XCommand(QObject* parent = Q_NULLPTR);
+	virtual ~XCommand();
     void exec(const QString& program,const QStringList& arguments);
 
 	const QString& getOutput()const { return output; }
+	const QString& getError()const { return error; }
+
+	bool isRunning();
 
 signals:
-	void errorOccurred(int errorCode);
-	void finished(int exitCode);
+	void proc_errorOccurred(int errorCode);
+	void proc_finished(int exitCode);
 public slots :
-	void processFinished(int exitCode);
-	void processFinished(int exitCode, QProcess::ExitStatus exitStatus);
+	void onProcessFinished(int exitCode);
+	void onProcessFinished(int exitCode, QProcess::ExitStatus exitStatus);
 
 private:
 	QString output;
+	QString error;
+	QProcess* proc;
     
 };
 
