@@ -1,5 +1,6 @@
 #include "ApkParser.h"
 #include "XCommand.h"
+#include "XBlockCommand.h"
 #include <QFile>
 #include <QFileInfo>
 #include <QDir>
@@ -7,7 +8,8 @@
 #include <QDebug>
 
 ApkParser::ApkParser(QObject* parent)
-	:QObject(parent)
+	:QObject(parent),
+	result(ApkParser::UNKNOWN_ERROR)
 {
 	qDebug() << "ApkParser constructor";
 	QString appDir = qApp->applicationDirPath();
@@ -16,19 +18,20 @@ ApkParser::ApkParser(QObject* parent)
 	cmd = new XCommand(this);
 	connect(cmd, &XCommand::proc_errorOccurred, [=](int errorCode) {
 		qDebug() << "[APK Paser]errorCode:" << errorCode;
-		emit parseFinished(101);
+		emit parseFinished(ApkParser::EXEC_ERROR);
 	});
 	connect(cmd, &XCommand::proc_finished, [=](int exitCode) {
 		qDebug() << "[APK Paser]exitCode:" << exitCode;
 		if (exitCode == 0)
 		{
 			parseOutput(cmd->getOutput());
+			emit parseFinished(ApkParser::SUCCESS);
 		}
 		else
 		{
 			parseOutput(cmd->getError());
+			emit parseFinished(ApkParser::EXIT_CODE_ERROR);
 		}
-		emit parseFinished(exitCode);
 	});
 }
 
@@ -44,20 +47,49 @@ void ApkParser::startParse(const QString& apkPath)
 	if (!file.exists())
 	{
 		// File Not Exists
-		emit parseFinished(2);
+		emit parseFinished(ApkParser::APK_NOT_EXIST);
 	}
 
 	if (!QFileInfo(programPath).exists())
 	{
-		emit parseFinished(3);
+		emit parseFinished(ApkParser::EXEC_NOT_EXIST);
 	}
 
 	appSize = file.size();
 	this->apkPath = apkPath;
-
-	
-
 	cmd->exec(programPath, QStringList() << "dump" << "badging" << QDir::toNativeSeparators(apkPath));
+}
+
+void ApkParser::startParseBlock(const QString& apkPath)
+{
+	initialize();
+	QFile file(apkPath);
+	if (!file.exists())
+	{
+		// File Not Exists
+		emit parseFinished(ApkParser::APK_NOT_EXIST);
+	}
+
+	if (!QFileInfo(programPath).exists())
+	{
+		emit parseFinished(ApkParser::EXEC_NOT_EXIST);
+	}
+
+	appSize = file.size();
+	this->apkPath = apkPath;
+	XBlockCommand cmd;
+	cmd.exec(programPath, QStringList() << "dump" << "badging" << QDir::toNativeSeparators(apkPath));
+	if (cmd.isSuccess())
+	{
+		parseOutput(cmd.getOutput());
+		emit parseFinished(ApkParser::SUCCESS);
+		this->result = ApkParser::SUCCESS;
+	}
+	else
+	{
+		emit parseFinished(ApkParser::UNKNOWN_ERROR);
+		this->result = ApkParser::UNKNOWN_ERROR;
+	}
 }
 
 void ApkParser::parseOutput(const QString& data)

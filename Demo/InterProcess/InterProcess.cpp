@@ -32,7 +32,7 @@ InterProcess::InterProcess(QWidget *parent)
 
 	QTextEdit* teInfo = new QTextEdit;
 
-	QPushButton* btnTestMyLibrary = new QPushButton(tr("Test My Library"));
+	btnTestMyLibrary = new QPushButton(tr("Test My Library"));
 
 	QVBoxLayout* layoutMain = new QVBoxLayout;
 	layoutMain->addWidget(winApk);
@@ -49,11 +49,16 @@ InterProcess::InterProcess(QWidget *parent)
 	connect(wrapper, SIGNAL(done(const QString& )),
 		this, SLOT(wrapperDone(const QString&)),
 		Qt::QueuedConnection);
+	connect(wrapper, &MyLibraryWrapper::do_finished, this, &InterProcess::wrapperFinished);
 
 	connect(btnTestMyLibrary, &QPushButton::clicked, [=]() {
 		btnTestMyLibrary->setEnabled(false);
 		wrapper->start();
 	});
+
+	//connect(wrapper, &MyLibraryWrapper::do_finished, [=]() {
+	//	btnTestMyLibrary->setEnabled(true);
+	//});
 
 	QAction* actionFileBrowser = editApkPath->addAction(QIcon("icon/folder_open_48px.png"), QLineEdit::TrailingPosition);
 	actionFileBrowser->setToolTip(tr("File Open"));
@@ -123,4 +128,10 @@ InterProcess::InterProcess(QWidget *parent)
 void InterProcess::wrapperDone(const QString& message)
 {
 	qDebug() << message;
+}
+
+void InterProcess :: wrapperFinished()
+{
+	qDebug() << "Wrapper finished";
+	btnTestMyLibrary->setEnabled(true);
 }

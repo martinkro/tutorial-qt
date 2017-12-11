@@ -3,6 +3,7 @@
 
 #include <QThread>
 
+class QPushButton;
 class MyLibraryWrapper:public QThread
 {
     Q_OBJECT
@@ -12,8 +13,11 @@ protected:
    void run();
 signals:
    void done(const QString &results);
+   void do_finished();
 private slots:
    void doTheWork();
+
+
 };
 
 
