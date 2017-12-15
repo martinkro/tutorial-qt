@@ -1,1 +1,5 @@
 I can now emit a signal in one thread and receive it in a slot in a different thread
+
+QFileSystemModel
+
+qfileinfogatherer.cpp

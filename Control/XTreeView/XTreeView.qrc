@@ -1,4 +1,7 @@
 <RCC>
     <qresource prefix="XTreeView">
     </qresource>
+    <qresource>
+        <file>default.txt</file>
+    </qresource>
 </RCC>

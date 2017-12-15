@@ -1,4 +1,8 @@
-
+信号 槽
+事件驱动
+回调函数 实现的GUI Framework
+    优点：直观
+    缺点：类型的正确性
 
 # Model View
 
