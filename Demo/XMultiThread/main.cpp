@@ -11,6 +11,8 @@
 
 #include "PackTool.h"
 #include "TestPackTool.h"
+#include "TestObject.h"
+#include "WorkController.h"
 
 #include <QtTest/QtTest>
 #include <QElapsedTimer>
@@ -336,16 +338,40 @@ void testAllCase(const QCoreApplication& app)
 	//convertZipToTree("f:/Game/SwordGame.apk");
 }
 
+#include <iostream>
+using namespace std;
+
 int main(int argc, char *argv[])
 {
 	QCoreApplication a(argc, argv);
 	qRegisterMetaType<MApkInfo>();
-	{
-		testAllCase(a);
-	}
+
+	//{
+	//	testAllCase(a);
+	//}
+
+	qDebug() << "===Test Object[===";
+	TestObject testObject;
+	qDebug() << "===Test Object]===";
+
+	qDebug() << "===Test WorkController[===";
+	WorkController workController;
+	workController.test();
+	qDebug() << "===Test WorkController]===";
 
 	QString spaces(4, ' ');
 	qDebug() << spaces;
+
+
+
+#ifdef QT_DEBUG
+	cout << "Debug mode" << endl;
+	qDebug() << "Debug mode";
+#else
+	cout << "Release mode" << endl;
+	qDebug() << "Release mode";
+	//qErrnoWarning << "Release mode";
+#endif
 
 	//{
 	//	MultiChannelTool* t = new MultiChannelTool("f:/Game/MultiChannel", "f:/Game/MultiChannel/o");

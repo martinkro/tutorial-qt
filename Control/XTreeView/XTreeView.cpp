@@ -72,7 +72,7 @@ XTreeView::XTreeView(QWidget *parent)
 	//file.close();
 	//tree->setModel(model);
 
-	ZipFileTreeModel* model = new ZipFileTreeModel("f:/Game/cf.shell.apk", tree);
+	ZipFileTreeModel3* model = new ZipFileTreeModel3("f:/Game/cf.shell.apk", tree);
 	
 	QStringList verifyFileList;
 	verifyFileList << "lib/armeabi/libtersafe.so";
@@ -108,9 +108,15 @@ XTreeView::XTreeView(QWidget *parent)
 	layoutButton->addWidget(btnCancel);
 
 	QProgressBar* progressbarTest1 = new QProgressBar;
-	progressbarTest1->setMinimum(0);
+	progressbarTest1->setFormat("Processing");
+	progressbarTest1->setTextVisible(true);
+	progressbarTest1->setAlignment(Qt::AlignCenter);
+
+	progressbarTest1->setMinimum(1);
 	progressbarTest1->setMaximum(0);
-	progressbarTest1->setValue(0);
+	//progressbarTest1->setValue(0);
+	progressbarTest1->setStyleSheet("{text-align:center;}");
+	progressbarTest1->setRange(0, 0);
 
 	QVBoxLayout* main = new QVBoxLayout;
 	main->addWidget(tree);

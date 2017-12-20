@@ -1,3 +1,31 @@
+
+void QObject::moveToThread(QThread* targetThread)
+将改变这个对象的相关性  Thread Affinity
+这个对象不能有父对象
+事件处理在目标线程执行
+通知Qt准备好事件处理程序，让扩展的信号（signal）和槽（slot）在目标线程的作用域中调用。
+
+class MyThread:public QThread
+{
+    Q_OBJECT
+public:
+    MyThread(QObject* parent = 0):QThread(parent)
+    {
+        // 是对面向对象原则的错误应用
+        moveToThread(this);
+    }
+}
+
+正确用法：QThread中写的所有函数都应该在创建它的线程中调用，而不是QThread开启的线程
+
+QThread是被设计来作为一个操作系统线程的接口和控制点，而不是用来写入你想在线程里执行的代码的地方。
+我们（面向对象程序员）编写子类，是因为我们想扩充或者特化基类中的功能。我唯一想到的继承QThread类的合理原因，
+是添加QThread中不包含的功能，比如，也许可以提供一个内存指针来作为线程的堆栈，或者可以添加实时的接口和支持。
+用于下载文件、查询数据库，或者做任何其他操作的代码都不应该被加入到QThread的子类中；
+它应该被封装在它自己的对象中。
+
+event queue is belong to thread instead of event loop, and it's shared by all the event loops running in this thread.
+
 I can now emit a signal in one thread and receive it in a slot in a different thread
 
 QFileSystemModel
