@@ -76,6 +76,24 @@
     <ClCompile Include="GeneratedFiles\Release\moc_TransactionThread.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="XApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_XApplication.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_XApplication.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="XLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_XLogger.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_XLogger.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="MultiThread.h">
@@ -91,6 +109,12 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="TransactionThread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XApplication.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XLogger.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
