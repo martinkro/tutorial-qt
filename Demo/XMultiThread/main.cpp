@@ -16,6 +16,7 @@
 
 #include <QtTest/QtTest>
 #include <QElapsedTimer>
+#include <QProcess>
 
 // 进程间通信
 // 多线程
@@ -349,6 +350,12 @@ int main(int argc, char *argv[])
 	//{
 	//	testAllCase(a);
 	//}
+
+	QString apkPath = "C:\\Users\\sundayliu\\Desktop\\MTPClient -20171227\\download\\3843_SwordGame.unsigned.shell.apk";
+	//apkPath = '"' + apkPath + '"';
+	qDebug() << apkPath;
+	QString cmd = "explorer.exe /select," + apkPath;
+	QProcess::startDetached(cmd);
 
 	qDebug() << "===Test Object[===";
 	TestObject testObject;
