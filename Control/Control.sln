@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LocalHTML", "LocalHTML\Loca
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiThread", "MultiThread\MultiThread.vcxproj", "{7028ED43-FADC-4A7D-9583-9FB822F4E900}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RichText", "RichText\RichText.vcxproj", "{F77CD88F-BC47-43C8-BD79-C4B3741849C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -81,6 +83,10 @@ Global
 		{7028ED43-FADC-4A7D-9583-9FB822F4E900}.Debug|x86.Build.0 = Debug|Win32
 		{7028ED43-FADC-4A7D-9583-9FB822F4E900}.Release|x86.ActiveCfg = Release|Win32
 		{7028ED43-FADC-4A7D-9583-9FB822F4E900}.Release|x86.Build.0 = Release|Win32
+		{F77CD88F-BC47-43C8-BD79-C4B3741849C8}.Debug|x86.ActiveCfg = Debug|Win32
+		{F77CD88F-BC47-43C8-BD79-C4B3741849C8}.Debug|x86.Build.0 = Debug|Win32
+		{F77CD88F-BC47-43C8-BD79-C4B3741849C8}.Release|x86.ActiveCfg = Release|Win32
+		{F77CD88F-BC47-43C8-BD79-C4B3741849C8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

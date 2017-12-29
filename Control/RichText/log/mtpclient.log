@@ -1,0 +1,5 @@
+2017-12-28 20:12:46.459 DBG [0xbec]:"Microsoft YaHei"
+2017-12-28 20:12:46.479 DBG [0xbec]:"Microsoft YaHei"
+2017-12-28 20:12:46.489 CRT [0xbec]:Load translator fail
+2017-12-28 20:12:46.489 CRT [0xbec]:Install translator fail
+2017-12-28 20:13:11.463 DBG [0xbec]:XApplication destructor
