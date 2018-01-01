@@ -1,0 +1,6 @@
+QLabel
+{
+    background-color:fafcff;
+    padding-top:22px;
+    padding-left:22px;
+}

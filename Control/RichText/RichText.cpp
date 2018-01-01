@@ -37,7 +37,7 @@ RichText::RichText(QWidget *parent)
 	QString info = getHelpInfo();
 
 
-
+    textBrowser->setAlignment(Qt::AlignTop | Qt::AlignLeft);
 	textBrowser->setText(info);
 
 	QTextBrowser* major = new QTextBrowser;

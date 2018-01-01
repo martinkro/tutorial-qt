@@ -8,8 +8,7 @@
                 border: 0;
             }
             .content{
-                
-                
+                border:1px solid red;
             }
             p{
                 font-size:14px;
@@ -21,11 +20,10 @@
             {
                 line-height:140%;
             }
-            h4{
-                color:#666666;
-                font-size:12px;
+            p.title{
+                font-size:14px;
                 font-weight:bold;
-                margin:1px 1px 10px 1px;
+                color:#666666;
             }
             .number
             {
@@ -38,12 +36,17 @@
             .space{
                 height:30px;
             }
+            hr{
+                border: 0;
+                height: 1px;
+                background: #f7f7f8;
+                background-image: linear-gradient(to right, #fafcff, #f7f7f8, #fafcff);
+            }
         </style>
     </head>
     <body>
         <div class="content">
-        <div class="space" />
-        <h4><span class="number">1</span>.为什么要使用<span class="emphasize">多渠道打包</span>工具？</h4>
+        <p class="title"><span class="number">1</span>.为什么要使用<span class="emphasize">多渠道打包</span>工具？</p>
         <p>
         在游戏加固之后发行渠道之前，打成各<br>
         种渠道包时会对资源文件进行增删改等处<br>
@@ -52,7 +55,8 @@
         包处理。
         </p>
         <br>
-        <h4><span class="number">2</span>.使用多渠道打包工具的<span class="emphasize">步骤</span>？</h4>
+        <hr>
+        <p class="title"><span class="number">2</span>.使用多渠道打包工具的<span class="emphasize">步骤</span>？</p>
         
         <p class="big">&nbsp;&nbsp;<span class="emphasize">1)</span>&nbsp;先对游戏母包进行加固处理</p>
         <p class="big">&nbsp;&nbsp;<span class="emphasize">2)</span>&nbsp;用游戏母包生成所有渠道包</p>
