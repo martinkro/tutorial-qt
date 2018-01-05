@@ -10,7 +10,8 @@ class MenuItem:public QFrame
 public:
     MenuItem(const QString& text, QWidget* parent = 0);
 
-private:
+protected:
+    void paintEvent(QPaintEvent* event)override;
 
 };
 

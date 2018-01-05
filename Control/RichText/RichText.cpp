@@ -12,7 +12,8 @@
 #include <QMenu>
 #include <QAction>
 #include <QWidgetAction>
-
+#include <QCheckBox>
+#include <QToolButton>
 #include <iostream>
 using namespace std;
 class A
@@ -31,6 +32,7 @@ RichText::RichText(QWidget *parent)
 
 	QPushButton* switchButton = new QPushButton(tr("Switch"));
 	QLabel* messageLabel = new QLabel(tr("message"));
+    messageLabel->setObjectName("message");
     QPushButton* settingsButton = new QPushButton(tr("Settings"));
     PopupMenu* settingsMenu = new PopupMenu(0,10,this);
     settingsMenu->setObjectName("settings");
@@ -42,19 +44,33 @@ RichText::RichText(QWidget *parent)
 
 
     QPushButton* systemButton = new QPushButton(tr("System"));
+    //systemButton->setIcon(QIcon("icon_personal_normal.png"));
+    systemButton->setObjectName("system");
     QMenu* systemMenu = new QMenu(this);
     systemMenu->setObjectName("system");
 
-    MenuItem* homeLabel = new MenuItem(tr("Home"));
+    MenuItem* homeLabel = new MenuItem(tr("Home"),systemMenu);
     homeLabel->setObjectName("home");
     QWidgetAction* homeAction = new QWidgetAction(systemMenu);
     homeAction->setDefaultWidget(homeLabel);
-    MenuItem* aboutLabel = new MenuItem(tr("About"));
+    MenuItem* aboutLabel = new MenuItem(tr("About"), systemMenu);
     aboutLabel->setObjectName("about");
     QWidgetAction* aboutAction = new QWidgetAction(systemMenu);
     aboutAction->setDefaultWidget(aboutLabel);
+    //aboutAction->setIcon(QIcon("icon_home_normal.png"));
+
+    QWidgetAction* test1Action = new QWidgetAction(systemMenu);
+    QToolButton* test1ToolButton = new QToolButton(systemMenu);
+    test1ToolButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+    test1ToolButton->setObjectName("test1");
+    test1ToolButton->setText(tr("Home"));
+    test1ToolButton->setIcon(QIcon("icon_home_normal.png"));
+    test1Action->setDefaultWidget(test1ToolButton);
+
+    connect(test1ToolButton, &QToolButton::clicked, test1Action, &QWidgetAction::triggered);
     systemMenu->addAction(homeAction);
     systemMenu->addAction(aboutAction);
+    systemMenu->addAction(test1Action);
     systemButton->setMenu(systemMenu);
 
     QHBoxLayout* layoutR1 = new QHBoxLayout;
