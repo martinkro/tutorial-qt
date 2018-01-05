@@ -7,13 +7,19 @@
                 padding: 0;
                 border: 0;
             }
+            
             .content{
                 border:1px solid red;
+                width:298px;
+                height:400px;
+                background:transparent;
             }
             p{
                 font-size:14px;
                 color:#999999;
-                margin:0px;
+                margin:0;
+                padding:0;
+                background:transparent;
                 
             }
             p.big
@@ -39,8 +45,17 @@
             hr{
                 border: 0;
                 height: 1px;
-                background: #f7f7f8;
-                background-image: linear-gradient(to right, #fafcff, #f7f7f8, #fafcff);
+                background-color: red;
+                margin-left:21px;
+                margin-right:21px;
+            }
+            br{
+                line-height:5px;
+            }
+            p.hr
+            {
+                margin-bottom:6px;
+                margin-top:1px;
             }
         </style>
     </head>
@@ -54,8 +69,9 @@
         游戏不能运行。因此，需要进行多渠道打<br>
         包处理。
         </p>
-        <br>
-        <hr>
+        
+        <p class="hr"><img src="hr.png" /></p>
+        
         <p class="title"><span class="number">2</span>.使用多渠道打包工具的<span class="emphasize">步骤</span>？</p>
         
         <p class="big">&nbsp;&nbsp;<span class="emphasize">1)</span>&nbsp;先对游戏母包进行加固处理</p>

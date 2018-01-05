@@ -1,6 +1,141 @@
 QLabel
 {
-    background-color:fafcff;
+
+    background:qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 #f3f3f3, stop: 0.4 #fafafa, stop:1 #ffffff );
+    border-radius: 2px;
     padding-top:22px;
-    padding-left:22px;
+    padding-left:21px;
+    padding-right:21px;
+}
+
+QMenu#settings1{
+	
+	/*border: 1px solid red;*/
+	border:none;
+}
+
+QMenu#settings1::item {
+ /* sets background of menu item. set this to something non-transparent
+ if you want menu color and menu item color to be different */
+ border-width:1px;
+ border-image:url(menu_item_bg.png) 1 1 1 1 strech strech;
+ color:red;
+ height:30px;
+ padding-left:20px;
+ font-size:12px;
+ }
+ 
+QMenu#settings1::item:selected { /* when user selects item using mouse or keyboard */
+ border-image:url(menu_item_bg_hover.png) 1 1 1 1 strech strech;
+ }
+ 
+QMenu#settings1::icon{
+	margin-left:13px;
+ }
+ 
+QMenu#settings{
+
+	
+	/*border: 1px solid red;*/
+	border:none;
+	icon-size:16px;
+	/*background:transparent;*/
+	
+	/*background-color:#cccccc;*/
+}
+QMenu#settings::item{
+	border-width:1px;
+	border-image:url(menu_item_bg.png) 1 1 1 1;
+	/*border: 1px solid red;*/
+	height:29px;
+	width:63px;
+	padding-left:32px;
+	font-size:12px;
+	color:#666666;
+}
+QMenu#settings::item:selected { /* when user selects item using mouse or keyboard */
+ border-image:url(menu_item_bg_hover.png) 1 1 1 1;
+ }
+
+QMenu#settings::icon{
+	/*border: 1px solid blue;*/
+	/*border:none;*/
+	subcontrol-origin: padding;
+	subcontrol-position:left center;
+	left:12px;
+}
+
+
+QMenu#system{
+	/*border: 1px solid red;*/
+	/*background:transparent;*/
+	/*background-color:#cccccc;*/
+    border:none;
+    background:transparent;
+}
+
+QMenu#system::item{
+    border: 1px solid green;
+    background:transparent;
+}
+
+MenuItem
+{
+    qproperty-maximumSize:120px 30px;
+    qproperty-minimumSize:120px 30px;
+    padding-left:12px;
+    border-width:1px;
+	border-image:url(menu_item_bg.png) 1 1 1 1;
+    border: 1px solid green;
+}
+
+MenuItem::hover
+{
+    border-image:url(menu_item_bg_hover.png) 1 1 1 1;
+}
+
+MenuItem > QLabel#text
+{
+    /*border: 1px solid green;*/
+    padding:0px 0px 0px 4px;
+    qproperty-alignment: 'AlignVCenter| AlignLeft';
+    background:transparent;
+
+    font-size:12px;
+}
+
+
+MenuItem#home > QLabel#icon
+{
+    /*border: 1px solid blue;*/
+    
+    qproperty-maximumSize:17px 17px;
+    qproperty-minimumSize:17px 17px;
+    
+}
+
+MenuItem#home > QLabel#text
+{
+    
+    color:#4598ef;
+}
+
+MenuItem#about > QLabel#icon
+{
+    border: none;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-image:url(icon_about_normal.png);
+    qproperty-maximumSize:17px 17px;
+    qproperty-minimumSize:17px 17px;
+    
+}
+
+
+
+MenuItem#about > QLabel#text
+{
+    color:#7aca29;
+ 
 }
