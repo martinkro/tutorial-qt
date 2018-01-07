@@ -1,3 +1,5 @@
-2018-01-05 16:20:47.328 DBG [0x10044]:"Microsoft YaHei"
-2018-01-05 16:20:47.352 DBG [0x10044]:"Microsoft YaHei"
-2018-01-05 16:21:20.102 DBG [0x10044]:XApplication destructor
+2018-01-07 21:13:03.422 DBG [0x190c]:"Microsoft YaHei"
+2018-01-07 21:13:03.476 DBG [0x190c]:"Microsoft YaHei"
+2018-01-07 21:13:03.482 CRT [0x190c]:Load translator fail
+2018-01-07 21:13:03.487 CRT [0x190c]:Install translator fail
+2018-01-07 21:13:09.833 DBG [0x190c]:XApplication destructor

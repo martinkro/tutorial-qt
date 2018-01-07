@@ -1,4 +1,4 @@
-QLabel
+QLabel#unknown
 {
 
     background:qlineargradient(x1:0, y1:0, x2:1, y2:1,
@@ -82,12 +82,10 @@ QMenu#system::item{
 
 MenuItem
 {
-    qproperty-maximumSize:120px 30px;
-    qproperty-minimumSize:120px 30px;
-    padding-left:12px;
+    qproperty-maximumSize:95px 30px;
+    qproperty-minimumSize:95px 30px;
     border-width:1px;
 	border-image:url(menu_item_bg.png) 1 1 1 1;
-    border: 1px solid green;
 }
 
 MenuItem::hover
@@ -98,20 +96,21 @@ MenuItem::hover
 MenuItem > QLabel#text
 {
     /*border: 1px solid green;*/
-    padding:0px 0px 0px 4px;
-    qproperty-alignment: 'AlignVCenter| AlignLeft';
-    background:transparent;
-
     font-size:12px;
+    qproperty-alignment: 'AlignVCenter | AlignLeft';
+    margin:0px;
+    padding:0px;
+}
+
+MenuItem > QLabel#icon
+{
+    margin-left:12px;
+    margin-right:6px;
 }
 
 
 MenuItem#home > QLabel#icon
 {
-    /*border: 1px solid blue;*/
-    
-    qproperty-maximumSize:17px 17px;
-    qproperty-minimumSize:17px 17px;
     qproperty-pixmap:url(icon_home_normal.png);
     
 }
@@ -124,10 +123,7 @@ MenuItem#home > QLabel#text
 
 MenuItem#about > QLabel#icon
 {
-    border: none;
-    qproperty-maximumSize:17px 17px;
-    qproperty-minimumSize:17px 17px;
-    background-image:url(icon_about_normal.png);
+    qproperty-pixmap:url(icon_about_normal.png);
     
 }
 
@@ -159,9 +155,25 @@ QPushButton#system{
 
     qproperty-icon:url(icon_about_normal.png);
     qproperty-iconSize:17px 17px;
+    width:100px;
 }
 
 QLabel#message
 {
     qproperty-pixmap:url(icon_home_normal.png);
+}
+
+MenuItem#test1 > QLabel#icon
+{    
+    qproperty-pixmap:url(icon_home_normal.png);
+    
+    margin-right:6px;
+    border: 1px solid green;
+}
+
+MenuItem#test1 > QLabel#text
+{
+    font-size:12px;
+    border: 1px solid red;
+    qproperty-alignment: 'AlignVCenter | AlignLeft';
 }

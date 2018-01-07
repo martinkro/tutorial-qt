@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QFrame>
 
-class MenuItem:public QFrame
+class MenuItem:public QWidget
 {
     Q_OBJECT
 public:

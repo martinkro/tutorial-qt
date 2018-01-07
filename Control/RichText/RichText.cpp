@@ -73,11 +73,15 @@ RichText::RichText(QWidget *parent)
     systemMenu->addAction(test1Action);
     systemButton->setMenu(systemMenu);
 
+    MenuItem* test1MenuItem = new MenuItem(tr("Test 1"));
+    test1MenuItem->setObjectName("test1");
+
     QHBoxLayout* layoutR1 = new QHBoxLayout;
     layoutR1->addStretch();
     layoutR1->addWidget(messageLabel);
     layoutR1->addWidget(settingsButton);
-    layoutR1->addWidget(systemButton);
+    layoutR1->addWidget(systemButton,0, Qt::AlignVCenter);
+    layoutR1->addWidget(test1MenuItem,0,Qt::AlignVCenter);
     layoutR1->addStretch();
 	
 	QTextDocument* infoDocument = new QTextDocument(tr("html"));
@@ -104,7 +108,7 @@ RichText::RichText(QWidget *parent)
 
 	QVBoxLayout* main = new QVBoxLayout;
 	//main->addWidget(messageLabel, 0, Qt::AlignHCenter);
-    main->addLayout(layoutR1);
+    main->addLayout(layoutR1,0);
 	main->addLayout(layoutText, 0);
 	//main->addWidget(textEdit, 0, Qt::AlignHCenter);
 	main->addWidget(switchButton, 0, Qt::AlignHCenter);

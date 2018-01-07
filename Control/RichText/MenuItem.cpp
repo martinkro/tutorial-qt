@@ -5,9 +5,12 @@
 #include <QDebug>
 #include <QBitmap>
 #include <QCheckBox>
+#include <QPainter>
+#include <QStyleOption>
+#include <QStylePainter>
 
 MenuItem::MenuItem(const QString& text, QWidget* parent):
-    QFrame(parent)
+    QWidget(parent)
 {
     QLabel* iconLabel = new QLabel;
     iconLabel->setObjectName("icon");
@@ -19,9 +22,9 @@ MenuItem::MenuItem(const QString& text, QWidget* parent):
     //iconLabel->setWindowFlags(Qt::WindowStaysOnTopHint);
     //iconLabel->setAttribute(Qt::WA_TranslucentBackground);
 
-    QImage image;
-    image = QImage(17, 17, QImage::Format_ARGB32);
-    image.fill(qRgb(0, 100, 100));
+    //QImage image;
+    //image = QImage(17, 17, QImage::Format_ARGB32);
+    //image.fill(qRgb(0, 100, 100));
     //iconLabel->setPicture(image);
     
     //QPixmap pixmap;
@@ -34,16 +37,22 @@ MenuItem::MenuItem(const QString& text, QWidget* parent):
 
     QLabel* textLabel = new QLabel(text);
     textLabel->setObjectName("text");
+    //textLabel->setAlignment(Qt::AlignVCenter | Qt::AlignLeft);
 
     QHBoxLayout* main = new QHBoxLayout;
     main->setContentsMargins(0, 0, 0, 0);
     main->setSpacing(0);
     main->addWidget(iconLabel,0,Qt::AlignVCenter);
-    main->addWidget(textLabel, 0, Qt::AlignVCenter);
+    main->addWidget(textLabel, 1, Qt::AlignVCenter);
     setLayout(main);
 }
 
 void MenuItem::paintEvent(QPaintEvent* event)
 {
     //QWidget::paintEvent(event);
+    QStylePainter p(this);
+    QStyleOption opt;
+    opt.initFrom(this);
+    style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
+
 }
