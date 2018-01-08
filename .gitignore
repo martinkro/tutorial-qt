@@ -47,4 +47,5 @@ bin/
 intermediate/
 
 *.qm
+*.log
 

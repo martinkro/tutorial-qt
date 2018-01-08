@@ -15,6 +15,11 @@ QMenu#settings1{
 	border:none;
 }
 
+RichText
+{
+    background-color:blue;
+}
+
 QMenu#settings1::item {
  /* sets background of menu item. set this to something non-transparent
  if you want menu color and menu item color to be different */
@@ -68,10 +73,11 @@ QMenu#settings::icon{
 
 
 QMenu#system{
-	/*border: 1px solid red;*/
-	/*background:transparent;*/
+	border: none;
+	background:transparent;
 	/*background-color:#cccccc;*/
-    border:none;
+    border-radius: 1px;
+    
     
 }
 
@@ -80,12 +86,18 @@ QMenu#system::item{
     background:transparent;
 }
 
+QMenu#system::separator
+{
+    height:2px;
+    background-color:transparent;
+}
+
 MenuItem
 {
-    qproperty-maximumSize:95px 30px;
-    qproperty-minimumSize:95px 30px;
+    min-height:30px;
     border-width:1px;
 	border-image:url(menu_item_bg.png) 1 1 1 1;
+    
 }
 
 MenuItem::hover

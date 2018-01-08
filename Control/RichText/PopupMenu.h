@@ -11,6 +11,9 @@ public:
     explicit PopupMenu(int x = 0,int y = 0,QWidget *parent = Q_NULLPTR);
     void showEvent(QShowEvent* event);
 
+protected:
+    bool event(QEvent* e)override;
+
 private:
     int dx;
     int dy;

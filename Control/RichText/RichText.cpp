@@ -46,8 +46,10 @@ RichText::RichText(QWidget *parent)
     QPushButton* systemButton = new QPushButton(tr("System"));
     //systemButton->setIcon(QIcon("icon_personal_normal.png"));
     systemButton->setObjectName("system");
-    QMenu* systemMenu = new QMenu(this);
+    PopupMenu* systemMenu = new PopupMenu(0, 10, this);
     systemMenu->setObjectName("system");
+    systemMenu->setWindowFlags(systemMenu->windowFlags() | Qt::FramelessWindowHint);
+    systemMenu->setAttribute(Qt::WA_TranslucentBackground);
 
     MenuItem* homeLabel = new MenuItem(tr("Home"),systemMenu);
     homeLabel->setObjectName("home");
@@ -69,7 +71,9 @@ RichText::RichText(QWidget *parent)
 
     connect(test1ToolButton, &QToolButton::clicked, test1Action, &QWidgetAction::triggered);
     systemMenu->addAction(homeAction);
+    systemMenu->addSeparator();
     systemMenu->addAction(aboutAction);
+    systemMenu->addSeparator();
     systemMenu->addAction(test1Action);
     systemButton->setMenu(systemMenu);
 
