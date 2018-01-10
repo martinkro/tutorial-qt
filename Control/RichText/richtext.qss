@@ -15,11 +15,6 @@ QMenu#settings1{
 	border:none;
 }
 
-RichText
-{
-    background-color:blue;
-}
-
 QMenu#settings1::item {
  /* sets background of menu item. set this to something non-transparent
  if you want menu color and menu item color to be different */
@@ -189,3 +184,15 @@ MenuItem#test1 > QLabel#text
     border: 1px solid red;
     qproperty-alignment: 'AlignVCenter | AlignLeft';
 }
+
+*{
+    border:1px dotted black;
+}
+/*=== total ===*/
+RichText > QWidget#main{
+    min-width:960px;
+    min-height:600px;
+    background-image:url(images/bg_main.png);
+}
+/*=== title ===*/
+/*=== content ===*/

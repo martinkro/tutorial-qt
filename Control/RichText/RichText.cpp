@@ -15,6 +15,7 @@
 #include <QCheckBox>
 #include <QToolButton>
 #include <iostream>
+#include <QToolButton>
 using namespace std;
 class A
 {
@@ -88,7 +89,7 @@ RichText::RichText(QWidget *parent)
     layoutR1->addWidget(test1MenuItem,0,Qt::AlignVCenter);
     layoutR1->addStretch();
 	
-	QTextDocument* infoDocument = new QTextDocument(tr("html"));
+	//QTextDocument* infoDocument = new QTextDocument(tr("html"));
 	//QTextEdit* textEdit = new QTextEdit;
 	//textEdit->setDocument(infoDocument);
 
@@ -96,8 +97,6 @@ RichText::RichText(QWidget *parent)
 	//textBrowser->setDocument(infoDocument);
 	//textBrowser->setFrameStyle(QFrame::NoFrame);
 	QString info = getHelpInfo();
-
-
     textBrowser->setAlignment(Qt::AlignTop | Qt::AlignLeft);
 	textBrowser->setText(info);
 
@@ -108,23 +107,63 @@ RichText::RichText(QWidget *parent)
 	layoutText->addWidget(textBrowser);
 	layoutText->setContentsMargins(0, 0, 0, 0);
 	layoutText->setSpacing(18);
+
+    QVBoxLayout* layoutContent = new QVBoxLayout;
+    layoutContent->setContentsMargins(0, 0, 0, 0);
+    layoutContent->setSpacing(0);
+    layoutContent->addLayout(layoutR1, 0);
+    layoutContent->addLayout(layoutText, 0);
+    layoutContent->addWidget(switchButton, 0, Qt::AlignHCenter);
+    QWidget* contentWidget = new QWidget;
+    contentWidget->setObjectName("content");
+    contentWidget->setLayout(layoutContent);
 	
+    // Title
+    QToolButton* protectorToolButton = new QToolButton;
+    protectorToolButton->setObjectName("protector");
+    protectorToolButton->setProperty("xclass", "tab");
+    protectorToolButton->setText(tr("protector"));
 
+    QToolButton* signatureToolButton = new QToolButton;
+    signatureToolButton->setObjectName("signature");
+    signatureToolButton->setProperty("xclass", "tab");
+    signatureToolButton->setText(tr("signature"));
+
+    QToolButton* multichannelToolButton = new QToolButton;
+    multichannelToolButton->setObjectName("multichannel");
+    multichannelToolButton->setProperty("xclass", "tab");
+    multichannelToolButton->setText(tr("multichannel"));
+
+    QToolButton* helpToolButton = new QToolButton;
+    helpToolButton->setObjectName("help");
+    helpToolButton->setProperty("xclass", "tab");
+    helpToolButton->setText(tr("help"));
+
+    QLabel* logoLabel = new QLabel;
+    logoLabel->setObjectName("logo");
+
+    QHBoxLayout* layoutTitle = new QHBoxLayout;
+    layoutTitle->setContentsMargins(0, 0, 0, 0);
+    layoutTitle->setSpacing(0);
+    layoutTitle->addWidget(logoLabel);
+    layoutTitle->addWidget(protectorToolButton);
+    layoutTitle->addWidget(signatureToolButton);
+    layoutTitle->addWidget(multichannelToolButton);
+    layoutTitle->addWidget(helpToolButton);
+    QWidget* titleWidget = new QWidget;
+    titleWidget->setObjectName("title");
+    titleWidget->setLayout(layoutTitle);
+
+    // main
 	QVBoxLayout* main = new QVBoxLayout;
-	//main->addWidget(messageLabel, 0, Qt::AlignHCenter);
-    main->addLayout(layoutR1,0);
-	main->addLayout(layoutText, 0);
-	//main->addWidget(textEdit, 0, Qt::AlignHCenter);
-	main->addWidget(switchButton, 0, Qt::AlignHCenter);
-	QWidget* center = new QWidget;
-	center->setLayout(main);
-	main->setContentsMargins(32, 0, 32, 25);
-	setCentralWidget(center);
-
-	textBrowser->setFixedSize(298,400);
-	major->setFixedSize(580, 400);
-
-	setFixedSize(960, 600);
+    main->setContentsMargins(0, 0, 0, 0);
+    main->setSpacing(0);
+    main->addWidget(titleWidget, 0);
+    main->addWidget(contentWidget, 1);
+	QWidget* mainWidget = new QWidget;
+    mainWidget->setObjectName("main");
+    mainWidget->setLayout(main);
+	setCentralWidget(mainWidget);
 }
 
 QString RichText::getHelpInfo()
