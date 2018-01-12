@@ -30,7 +30,7 @@ XLogger::XLogger(QObject* parent):
 		appDir.mkdir(LOG_DIR_NAME);
 	}
 
-	this->logFilePath = QDir::toNativeSeparators(logDirPath + QDir::separator() + "mtpclient.log");
+	this->logFilePath = QDir::toNativeSeparators(logDirPath + QDir::separator() + "richtext.log");
 	if (QFile::exists(this->logFilePath))
 	{
 		QFile::remove(this->logFilePath);

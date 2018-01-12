@@ -193,6 +193,86 @@ RichText > QWidget#main{
     min-width:960px;
     min-height:600px;
     background-image:url(images/bg_main.png);
+    border:none;
 }
 /*=== title ===*/
+RichText > QWidget#main > QWidget#title{
+    background-image:url(images/bg_title_main.png);
+    min-height:107px;
+    border:none;
+}
+
+RichText QWidget#title > QLabel#logo
+{
+    qproperty-pixmap:url(images/logo-big.png);
+    border:none;
+}
+
+RichText QWidget#title > QWidget#toolbar{
+    border:none;
+}
+
+QToolButton[xclass="tab"]{
+    qproperty-maximumSize:108px 107px;
+    qproperty-minimumSize:108px 107px;
+    font-size:14px;
+    color:#e5e5e5;
+    qproperty-iconSize:40px 40px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border:none;
+}
+
+QToolButton[xclass="tab"]:hover{
+    background-image:url(images/toolbar_bg_hover.png);
+}
+
+QToolButton[xclass="tab"]:checked{
+    background-image:url(images/toolbar_bg_checked.png);
+}
+
+QToolButton#login{
+    qproperty-icon:url(images/icon_toolbar_protector.png);
+}
+
+QToolButton#protector{
+    qproperty-icon:url(images/icon_toolbar_signature.png);
+}
+
+QToolButton#test{
+    qproperty-icon:url(images/icon_toolbar_multichannel.png);
+}
+
 /*=== content ===*/
+RichText QStackedWidget#content{
+    border:none;
+}
+
+XBasePage{
+    border:none;
+}
+
+LoginPage > QWidget#left{
+    border-image:url(images/bg_login_left.png);
+    qproperty-maximumSize:440px 350px;
+    qproperty-minimumSize:440px 350px;
+}
+
+LoginPage > QWidget#right{
+    border-image:url(images/bg_login_right.png);
+    qproperty-maximumSize:370px 350px;
+    qproperty-minimumSize:370px 350px;
+}
+
+
+ProtectorPage > QWidget#left{
+    border-image:url(images/bg_content_left.png);
+    qproperty-maximumSize:580px 400px;
+    qproperty-minimumSize:580px 400px;
+}
+
+ProtectorPage > QWidget#right{
+    border-image:url(images/bg_content_right.png);
+    qproperty-maximumSize:299px 400px;
+    qproperty-minimumSize:299px 400px;
+}

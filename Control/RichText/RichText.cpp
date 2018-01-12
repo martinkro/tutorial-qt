@@ -1,6 +1,11 @@
 #include "RichText.h"
 #include "PopupMenu.h"
 #include "MenuItem.h"
+
+#include "LoginPage.h"
+#include "ProtectorPage.h"
+#include "TestPage.h"
+
 #include <QPushButton>
 #include <QLabel>
 #include <QTextDocument>
@@ -16,6 +21,8 @@
 #include <QToolButton>
 #include <iostream>
 #include <QToolButton>
+#include <QStackedWidget>
+#include <QDebug>
 using namespace std;
 class A
 {
@@ -29,141 +36,36 @@ public:
 RichText::RichText(QWidget *parent)
 	: QMainWindow(parent)
 {
-	//ui.setupUi(this);
 
-	QPushButton* switchButton = new QPushButton(tr("Switch"));
-	QLabel* messageLabel = new QLabel(tr("message"));
-    messageLabel->setObjectName("message");
-    QPushButton* settingsButton = new QPushButton(tr("Settings"));
-    PopupMenu* settingsMenu = new PopupMenu(0,10,this);
-    settingsMenu->setObjectName("settings");
-    QAction* item1Action = new QAction(QIcon("icon_personal_normal.png"),tr("Item 1"),settingsMenu);
-    //QAction* item2Action = new QAction(QIcon("icon_personal_normal.png"), tr("Item 2"), settingsMenu);
-    settingsMenu->addAction(item1Action);
-    //settingsMenu->addAction(item2Action);
-    settingsButton->setMenu(settingsMenu);
+    initUi();
+    
+}
 
+void RichText::initUi()
+{
+    createTitleBar();
 
-    QPushButton* systemButton = new QPushButton(tr("System"));
-    //systemButton->setIcon(QIcon("icon_personal_normal.png"));
-    systemButton->setObjectName("system");
-    PopupMenu* systemMenu = new PopupMenu(0, 10, this);
-    systemMenu->setObjectName("system");
-    systemMenu->setWindowFlags(systemMenu->windowFlags() | Qt::FramelessWindowHint);
-    systemMenu->setAttribute(Qt::WA_TranslucentBackground);
-
-    MenuItem* homeLabel = new MenuItem(tr("Home"),systemMenu);
-    homeLabel->setObjectName("home");
-    QWidgetAction* homeAction = new QWidgetAction(systemMenu);
-    homeAction->setDefaultWidget(homeLabel);
-    MenuItem* aboutLabel = new MenuItem(tr("About"), systemMenu);
-    aboutLabel->setObjectName("about");
-    QWidgetAction* aboutAction = new QWidgetAction(systemMenu);
-    aboutAction->setDefaultWidget(aboutLabel);
-    //aboutAction->setIcon(QIcon("icon_home_normal.png"));
-
-    QWidgetAction* test1Action = new QWidgetAction(systemMenu);
-    QToolButton* test1ToolButton = new QToolButton(systemMenu);
-    test1ToolButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-    test1ToolButton->setObjectName("test1");
-    test1ToolButton->setText(tr("Home"));
-    test1ToolButton->setIcon(QIcon("icon_home_normal.png"));
-    test1Action->setDefaultWidget(test1ToolButton);
-
-    connect(test1ToolButton, &QToolButton::clicked, test1Action, &QWidgetAction::triggered);
-    systemMenu->addAction(homeAction);
-    systemMenu->addSeparator();
-    systemMenu->addAction(aboutAction);
-    systemMenu->addSeparator();
-    systemMenu->addAction(test1Action);
-    systemButton->setMenu(systemMenu);
-
-    MenuItem* test1MenuItem = new MenuItem(tr("Test 1"));
-    test1MenuItem->setObjectName("test1");
-
-    QHBoxLayout* layoutR1 = new QHBoxLayout;
-    layoutR1->addStretch();
-    layoutR1->addWidget(messageLabel);
-    layoutR1->addWidget(settingsButton);
-    layoutR1->addWidget(systemButton,0, Qt::AlignVCenter);
-    layoutR1->addWidget(test1MenuItem,0,Qt::AlignVCenter);
-    layoutR1->addStretch();
-	
-	//QTextDocument* infoDocument = new QTextDocument(tr("html"));
-	//QTextEdit* textEdit = new QTextEdit;
-	//textEdit->setDocument(infoDocument);
-
-	QLabel* textBrowser = new QLabel;
-	//textBrowser->setDocument(infoDocument);
-	//textBrowser->setFrameStyle(QFrame::NoFrame);
-	QString info = getHelpInfo();
-    textBrowser->setAlignment(Qt::AlignTop | Qt::AlignLeft);
-	textBrowser->setText(info);
-
-	QTextBrowser* major = new QTextBrowser;
-	major->setFrameStyle(QFrame::NoFrame);
-	QHBoxLayout* layoutText = new QHBoxLayout;
-	layoutText->addWidget(major);
-	layoutText->addWidget(textBrowser);
-	layoutText->setContentsMargins(0, 0, 0, 0);
-	layoutText->setSpacing(18);
-
-    QVBoxLayout* layoutContent = new QVBoxLayout;
-    layoutContent->setContentsMargins(0, 0, 0, 0);
-    layoutContent->setSpacing(0);
-    layoutContent->addLayout(layoutR1, 0);
-    layoutContent->addLayout(layoutText, 0);
-    layoutContent->addWidget(switchButton, 0, Qt::AlignHCenter);
-    QWidget* contentWidget = new QWidget;
-    contentWidget->setObjectName("content");
-    contentWidget->setLayout(layoutContent);
-	
-    // Title
-    QToolButton* protectorToolButton = new QToolButton;
-    protectorToolButton->setObjectName("protector");
-    protectorToolButton->setProperty("xclass", "tab");
-    protectorToolButton->setText(tr("protector"));
-
-    QToolButton* signatureToolButton = new QToolButton;
-    signatureToolButton->setObjectName("signature");
-    signatureToolButton->setProperty("xclass", "tab");
-    signatureToolButton->setText(tr("signature"));
-
-    QToolButton* multichannelToolButton = new QToolButton;
-    multichannelToolButton->setObjectName("multichannel");
-    multichannelToolButton->setProperty("xclass", "tab");
-    multichannelToolButton->setText(tr("multichannel"));
-
-    QToolButton* helpToolButton = new QToolButton;
-    helpToolButton->setObjectName("help");
-    helpToolButton->setProperty("xclass", "tab");
-    helpToolButton->setText(tr("help"));
-
-    QLabel* logoLabel = new QLabel;
-    logoLabel->setObjectName("logo");
-
-    QHBoxLayout* layoutTitle = new QHBoxLayout;
-    layoutTitle->setContentsMargins(0, 0, 0, 0);
-    layoutTitle->setSpacing(0);
-    layoutTitle->addWidget(logoLabel);
-    layoutTitle->addWidget(protectorToolButton);
-    layoutTitle->addWidget(signatureToolButton);
-    layoutTitle->addWidget(multichannelToolButton);
-    layoutTitle->addWidget(helpToolButton);
-    QWidget* titleWidget = new QWidget;
-    titleWidget->setObjectName("title");
-    titleWidget->setLayout(layoutTitle);
+    // pages
+    contentStackedWidget = new QStackedWidget;
+    contentStackedWidget->setObjectName("content");
+    loginPage = new LoginPage;
+    protectorPage = new ProtectorPage;
+    testPage = new TestPage;
+    contentStackedWidget->addWidget(testPage);
+    contentStackedWidget->addWidget(protectorPage);
+    contentStackedWidget->addWidget(loginPage);
 
     // main
-	QVBoxLayout* main = new QVBoxLayout;
+    QVBoxLayout* main = new QVBoxLayout;
     main->setContentsMargins(0, 0, 0, 0);
     main->setSpacing(0);
     main->addWidget(titleWidget, 0);
-    main->addWidget(contentWidget, 1);
-	QWidget* mainWidget = new QWidget;
+    main->addWidget(contentStackedWidget, 1);
+
+    QWidget* mainWidget = new QWidget;
     mainWidget->setObjectName("main");
     mainWidget->setLayout(main);
-	setCentralWidget(mainWidget);
+    setCentralWidget(mainWidget);
 }
 
 QString RichText::getHelpInfo()
@@ -187,4 +89,90 @@ QString RichText::getHelpInfo()
 		info = tr("Error");
 	}
 	return info;
+}
+
+void RichText::createTitleBar()
+{
+    // Title
+
+    static QMap<int, QString> textMap = {
+        {PageIndexLogin,tr("login")},
+        {PageIndexProtector,tr("protector")},
+        {PageIndexTest,tr("test")},
+        {PageIndexSignature,tr("signature")},
+        {PageIndexHelp,tr("help")}
+    };
+
+    static QMap<int, QString> nameMap = {
+        { PageIndexLogin,"login" },
+        { PageIndexProtector,"protector" },
+        { PageIndexTest,"test" },
+        { PageIndexSignature,"signature" },
+        { PageIndexHelp,"help" }
+    };
+
+    static QList<PageIndex> pageList = { PageIndexLogin,PageIndexProtector,PageIndexTest };
+    QButtonGroup* group = new QButtonGroup(this);
+    group->setExclusive(true);
+    titleToolBar = new QWidget;
+    titleToolBar->setObjectName("toolbar");
+    QHBoxLayout* layoutToolBar = new QHBoxLayout(titleToolBar);
+    layoutToolBar->setContentsMargins(0, 0, 0, 0);
+    layoutToolBar->setSpacing(0);
+    for (auto index : pageList)
+    {
+        QString text = textMap.value(index);
+        QString name = nameMap.value(index);
+        QToolButton* toolbutton = new QToolButton;
+        toolbutton->setProperty("xclass", "tab");
+        toolbutton->setObjectName(name);
+        toolbutton->setText(text);
+        toolbutton->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+        toolbutton->setCheckable(true);
+        toolbutton->setChecked(false);
+        if (index == PageIndexTest)
+        {
+            toolbutton->setChecked(true);
+        }
+        connect(toolbutton, &QToolButton::clicked, [=]() {
+            toolbutton->update();
+            onSwitchPage(index); 
+        });
+        group->addButton(toolbutton);
+        layoutToolBar->addWidget(toolbutton);
+    }
+    titleToolBar->setLayout(layoutToolBar);
+
+    QLabel* logoLabel = new QLabel;
+    logoLabel->setObjectName("logo");
+
+    QHBoxLayout* layoutTitle = new QHBoxLayout;
+    layoutTitle->setContentsMargins(0, 0, 0, 0);
+    layoutTitle->setSpacing(0);
+    layoutTitle->addWidget(logoLabel);
+    layoutTitle->addStretch();
+    layoutTitle->addWidget(titleToolBar);
+    layoutTitle->addStretch();
+    titleWidget = new QWidget;
+    titleWidget->setObjectName("title");
+    titleWidget->setLayout(layoutTitle);
+}
+
+void RichText::onSwitchPage(PageIndex index)
+{
+    qDebug() << "RichText::onSwitchPage:" << index;
+    switch (index)
+    {
+    case PageIndexLogin:
+        contentStackedWidget->setCurrentWidget(loginPage);
+        break;
+    case PageIndexProtector:
+        contentStackedWidget->setCurrentWidget(protectorPage);
+        break;
+    case PageIndexTest:
+        contentStackedWidget->setCurrentWidget(testPage);
+        break;
+    default:
+        break;
+    }
 }
