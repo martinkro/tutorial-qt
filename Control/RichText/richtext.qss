@@ -221,6 +221,7 @@ QToolButton[xclass="tab"]{
     padding-top:20px;
     padding-bottom:20px;
     border:none;
+    
 }
 
 QToolButton[xclass="tab"]:hover{
