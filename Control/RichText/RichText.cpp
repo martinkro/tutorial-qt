@@ -55,6 +55,8 @@ void RichText::initUi()
     contentStackedWidget->addWidget(protectorPage);
     contentStackedWidget->addWidget(loginPage);
 
+    contentStackedWidget->setCurrentWidget(protectorPage);
+
     // main
     QVBoxLayout* main = new QVBoxLayout;
     main->setContentsMargins(0, 0, 0, 0);

@@ -5,6 +5,7 @@
 #include <memory>
 #include <map>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -34,6 +35,11 @@ int main(int argc, char *argv[])
 	QCoreApplication a(argc, argv);
 
 	qDebug() << "Hello";
+
+    const char* UIN = "hellouin";
+    std::string uin;
+    uin = std::string(UIN, 4);
+    cout << uin << endl;
 
 	qreal b = 63.23456;
 	QString text = QString::number(b,'f',1);

@@ -186,7 +186,7 @@ MenuItem#test1 > QLabel#text
 }
 
 *{
-    border:1px dotted black;
+    /*border:1px dotted black;*/
 }
 /*=== total ===*/
 RichText > QWidget#main{
@@ -276,4 +276,45 @@ ProtectorPage > QWidget#right{
     border-image:url(images/bg_content_right.png);
     qproperty-maximumSize:299px 400px;
     qproperty-minimumSize:299px 400px;
+}
+
+
+QScrollArea{
+    background:transparent;
+    border:none;
+}
+
+QScrollArea QWidget#scroll{
+    border:1px solid green;
+}
+
+QTableView{
+    /*border:none;*/
+    /*background:transparent;*/
+    /*gridline-color:white;*/
+    outline:0;
+    /*min-height:400px;*/
+}
+
+QHeaderView{
+    /*border:none;*/
+    
+}
+
+QCheckBox{
+    spacing:20px;
+    border:1px solid red;
+}
+
+QTableView::indicator{
+    /*border:1px solid red;*/
+}
+
+QTableView::item{
+    /*border:1px solid blue;*/
+    /*border:none;*/
+}
+
+QTableView QCheckBox{
+    border:1px solid red;
 }
