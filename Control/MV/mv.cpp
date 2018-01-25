@@ -73,6 +73,8 @@ void MV::testProgressBarDelegate()
 	QSlider* slider = new QSlider(Qt::Horizontal, this);
 	connect(slider, &QSlider::valueChanged, [=](int value) {
 		model->setData(model->index(0, 0, QModelIndex()), value);
+        model->setData(model->index(1, 0, QModelIndex()), value);
+        model->setData(model->index(2, 0, QModelIndex()), value);
 	});
 	slider->setRange(0, 100);
 	slider->setValue(50);

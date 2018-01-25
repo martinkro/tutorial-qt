@@ -1,0 +1,41 @@
+*{
+}
+
+QProgressBar#cell_pack_upload
+{
+    
+    /*color:#4888fe;*/
+    border:none;
+    text-align:center;
+    background:transparent;
+    /*background:rgb(68,69,73);*/
+}
+
+QProgressBar::chunk#cell_pack_upload
+{
+    border:none;
+    background: #85b1e3;
+}
+
+QListView QPushButton{
+    border:none;
+}
+
+QPushButton{
+    border:none;
+}
+
+QListView::item
+{
+    background-color:blue;
+}
+
+QListView::item:hover
+{
+    background-color:red;
+}
+
+QListView::item:pressed
+{
+    background-color:green;
+}

@@ -1,7 +1,6 @@
 #include "mv.h"
-#include <QtWidgets/QApplication>
-#include <QTableView>
 #include "currencymodel.h"
+#include "XApplication.h"
 
 #include <QSplitter>
 
@@ -15,6 +14,9 @@
 #include <QLineEdit>
 #include <QSpinBox>
 #include <QStandardItemEditorCreator>
+#include <QtWidgets/QApplication>
+#include <QTableView>
+#include <QDebug>
 
 void ChangeQItemEditorFactory();
 
@@ -149,11 +151,12 @@ int main(int argc, char *argv[])
 	//return testNameNumberInfo(argc, argv);
 	//return testQListView(argc, argv);
 
-	QApplication a(argc, argv);
+	XApplication a(argc, argv);
 
 	MV w;
 	w.show();
 
+    qDebug() << "start event loop ...";
 	return a.exec();
 }
 

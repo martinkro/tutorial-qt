@@ -17,6 +17,13 @@ class ProgressBarDelegate : public QStyledItemDelegate
 
 		static bool setItem( QTreeWidgetItem* item, int column, int progress );
 		static void initItem( QTreeWidgetItem* item, int column, int total );
+
+private:
+    void paintProgressBar1(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index)const;
+    void paintProgressBar2(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index)const;
+    void paintProgressBar3(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index)const;
+    void paintButton1(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index)const;
+    void paintButton2(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index)const;
 	protected:
 		int m_column;
 		QProgressBar m_bar;
